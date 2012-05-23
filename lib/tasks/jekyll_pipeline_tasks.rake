@@ -3,10 +3,13 @@ require 'jekyll'
 namespace :jekyll_pipeline do
   desc "Precompile jekyll site to public assets directory"
   task :precompile do
-    options = {}
-    options['source']      = File.join(JekyllPipeline::Engine.root, 'app', 'content')
-    options['destination'] = File.join(Rails.root, 'public')
+    options = {
+      'source' => File.join(JekyllPipeline::Engine.root, 'config')
+    }
     options = Jekyll.configuration(options)
+    options['source']      = File.join(JekyllPipeline::Engine.root, 'app', 'content')
+    options['destination'] = File.join(Rails.root, 'app', 'views', 'pages')
+    options['plugins']     = File.join(JekyllPipeline::Engine.root, 'lib')
 
     content = Jekyll::Site.new(options)
     puts "Building content: #{options['source']} -> #{options['destination']}"
