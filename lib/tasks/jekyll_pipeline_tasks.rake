@@ -26,6 +26,4 @@ namespace :jekyll_pipeline do
   end
 end
 
-Rake::Task["assets:precompile"].enhance do
-  Rake::Task["jekyll_pipeline:precompile"].invoke
-end
+Rake::Task["assets:precompile:all"].enhance ["jekyll_pipeline:precompile"]
