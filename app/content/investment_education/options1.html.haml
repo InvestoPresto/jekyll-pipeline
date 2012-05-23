@@ -1,0 +1,132 @@
+.wrapper
+  %article
+    %h1 Options I
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      =image_tag  "investment_education/options3.png"
+      %p An option is a legally binding contract that gives the buyer the right but not the obligation to buy (or sell) a pre-determined asset at a pre-determined price on a pre-determined date. Conversely, the seller has the obligation to deliver that underlying asset at that pre-determined price at that pre-determined time. The underlying assets can be stocks,bonds, baskets of stocks,commodities etc.
+      %h1 Terminology
+      %h1 Strike Price
+      %p The pre-determined price at which the option buyer can buy (or sell) the underlying asset at the pre-determined date.
+      %h1 Expiry Date
+      %p The pre-determined date on or before which the option buyer can buy (or sell) the underlying asset at the strike price. The option contract will become worthless after the expiry date.
+      %h1 Exercise:
+      %p The process by which the option buyer “exercises” his right to buy (or sell) the underlying asset on or before the expiry date, thereby taking/making delivery of the underlying asset.
+      %h1 American Option
+      %p The type of option which gives the buyer the right to exercise it anytime on or before the expiry date.
+      %h1 European Option
+      %p The type of option which gives the buyer the right to exercise it only on the expiry date.
+      %h1 Option Premium
+      %p The price of the option, i.e. the amount of money that the option buyer has to pay to the seller in order to buy the option.
+      %h1 In the money
+      %p If the exercise of an option would result in a profit at that particular moment, it is said to be “in the money” at that moment.
+      %h1 Out of the money
+      %p If the exercise of an option would not result in a profit at that particular moment, it is said to be “out of the money” at that moment.
+    %section
+      %h1 Types of Options:
+      %ol
+        %li 
+          Call Options: Call options give the buyer the right but not the
+          obligation to buy the underlying asset at a pre-determined price on a
+          pre-determined date.
+        %li 
+          Put Options: Put options give the buyer the right but not the
+          obligation to sell the underlying asset at a pre-determined price on a
+          pre-determined date.
+      %p
+        For example, a call option on 1 Google share with strike price of Rs.500 expiring on 22nd June, 2009 gives the buyer the right to buy 1 Google share at the price of Rs.500 on or before 22nd June, 2009.
+        Similarly, a put option on 1 Google share with strike price of Rs.500 expiring on 22nd June, 2009 gives the buyer the right to sell 1 Google share at the price of Rs.500 on or before 22nd June, 2009. Suppose that on 22nd June, Google Shares were trading at Rs.450 and if the buyer were to use his put option to sell his share for Rs.500, he would make a profit of Rs.50.
+    %section
+      %h1 Modalities:
+      =image_tag  "investment_education/options8.png"
+      %p
+        Options give investors leverage as they expose investors to large possible changes
+        in the value of their position with small amounts of initial capital. Leverage serves
+        to multiply gains as well as losses. For example, in order to gain exposure to the
+        movement in price of 1000 shares of PQR Corp, trading at Rs.10 per share, an investor
+        could spend Rs.10,000 and buy 1000 shares. A 10% increase in the share price of PQR
+        (to Rs.110 per share) would give him a profit of Rs.1000, i.e. 10% of his initial investment.
+        This is the traditional way of investing.
+      %p
+        However, if the same investor were to buy an American style call option with strike
+        price Rs.10 and 1 month to expiry, he would only have to pay the option premium which
+        is say, Rs.0.5 per option i.e. a total of Rs.500. The same 10% increase in price of
+        the underlying shares (to Rs.110 per share) would make it attractive for him to exercise
+        his options. He could exercise his options and receive 1000 shares of PQR Corp at
+        Rs.10 per share, paying Rs.10,000. He could then sell these shares in the open market
+        at Rs.110 per share (current market price), thereby making a profit of Rs.1000. This
+        is 200% of his initial investment (of Rs.500).
+      %p
+        Fortunately, this is not true even for losses. A 10% fall in the price of the underlying
+        shares would ensure that it is unattractive for the option buyer to exercise his
+        option. Why buy 1 share of PQR Corp at Rs.100 when it is available in the open market
+        for Rs.90? The investor would allow his option to expire, worthless. This however,
+        means that he would lose the option premium paid. Thus, the maximum amount that
+        an option buyer can lose is the option premium.
+      %p
+        The option seller however, has an unlimited downside. If the option were to be exercised,
+        he would have to deliver the underlying shares at the pre-determined price (call
+        option) even if it means buying shares in the open market and delivering them at
+        a loss. The option seller is rewarded for taking this risk in the form of the option
+        premium.
+        
+      =image_tag  "investment_education/options9.png"
+    %section
+      %h1 Trading:
+      %p
+        Like futures, options too are traded on exchanges. The exchange regulates the trade
+        of options and acts as the counterparty to both the buyers and the sellers. The
+        major difference between futures and options in this regard is that options on the
+        same underlying asset can have different strike prices unlike futures where the
+        price is market determined.
+    %section
+      %h1 Advantages:
+      %ol
+        %li
+          Options give their buyers leverage. Hence, they gain exposure to large price
+          movements with limited amounts of capital thereby making them excellent tools for
+          speculators.
+        %li Options are good ways to hedge exposure to the underlying asset price movement.
+    %section
+      %h1 Disadvantages:
+      %ol
+        %li Options expire on the expiry date. Hence is possible for option buyers to lose
+        their entire investment if their options expire out of the money.
+        %li  Option sellers have an unlimited downside and can lose more money than the premium they receive.
+    %section
+      %h1 Exotic Options:
+      %p
+        We have only examined basic options in this article. Complex and exotic options
+        such as Barrier options, Digital options, Bermudan style options, James Bond style
+        options exist and are popular with institutional investors. These shall be examined
+        in another article.
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.futures2'), page_path('investment_education/futures2')
+      .article_next
+        Next:
+        =link_to t('investment_education.options2'), page_path('investment_education/options2')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li An option is a contract that gives the buyer the right but not the obligation to buy (or sell) a pre-determined asset at a pre-determined price on a pre-determined date.
+        %li Conversely, the seller has the obligation to deliver that underlying asset at that pre-determined price at that pre-determined time.
+        %li Options give buyers exposure to large price movements with less capital but they may lose everything if they expire out of the money.
+        %li Option sellers have an unlimited downside and can lose more money than the premium they receive.
+        %li Call and put are the two main types of options.
+    .articles
+      %h1 Articles
+      %ul
+        %li=link_to "Options Tutorials", "http://www.investopedia.com/university/options/", html_options = {:target => "_blank"}
+    .videos
+      %h1 Videos
+      %ul
+        %li=link_to "Call Options", "http://www.youtube.com/watch?v=nnl3x1wo25g&feature=player_embedded", html_options = {:target => "_blank"}
+        %li=link_to "Put Options", "http://www.youtube.com/watch?v=6CUcgUeQS-w&feature=player_embedded", html_options = {:target => "_blank"}
+        %li=link_to "Call Payoff Diagram", "http://www.youtube.com/watch?v=MZQxeQYQCUg&feature=player_embedded", html_options = {:target => "_blank"}
+        %li=link_to "Put Payoff Diagram", "http://www.youtube.com/watch?v=VST_U297pH0&feature=player_embedded", html_options = {:target => "_blank"}
+        %li=link_to "Option Expiration and Price", "http://www.youtube.com/watch?v=OrRDNKNHtlg&feature=player_embedded", html_options = {:target => "_blank"}
+        %li=link_to "Actual Option Quotes", "http://www.youtube.com/watch?v=3o82OwR78wU&feature=player_embedded", html_options = {:target => "_blank"}

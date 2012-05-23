@@ -1,0 +1,34 @@
+%h1 Investing the Investopresto way
+%section.banner
+  %ul
+    %li
+      = image_tag "learn_investment.png"
+      %h1 Understand how investing works
+    %li
+      = image_tag "investment_mix.png"
+      %h1 Discover your personalized investment mix
+    %li
+      = image_tag "optmize_investments.png"
+      %h1 Track and optimize your investments
+    %li
+      = image_tag "community.png"
+      %h1 Collaborate with other investors and experts
+  = link_to 'Get Started', comprehensive_risk_profiler_path, :class => :get_started
+%section.interesting_facts
+  = link_to comprehensive_risk_profiler_path do
+    #fact1
+      %h1 Never invested before?
+      %p
+        Rahul has 1 lakh rupees in his bank account and wants to start investing but doesnt know how to.Investopresto's Financial Planner can help him start
+        investing by giving him his ideal investment mix based on his financial needs and constraints.
+  = link_to portfolios_path do
+    #fact2
+      %h1 Just started investing?
+      %p
+        Shruthi has just bought stocks and bonds worth Rs. 50,000 and wants to keep track of her investments.Investopresto's Portfolio tracker 
+        can help her analyze her portfolio and give her instant updates and recommendations.
+  #fact3
+    %h1 Need expert help?
+    %p
+      Pooja is sitting on losses on her investments and wants expert advise on what to do next.Investopresto's network of investment advisors can help her turn losses into profits. (Coming soon)
+

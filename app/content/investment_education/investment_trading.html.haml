@@ -1,0 +1,65 @@
+.wrapper
+  %article
+    %h1 Investment vs Trading
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %p In the financial markets the terms ‘Investing’ and ‘Trading’ are often used loosely and interchangeably.Both the activities have the same objective of making profits but the methodology involved is quite contrasting.
+      %p
+        Typically ‘Investors’ make their investments based on some fundamentals and are invested for a long
+        period of time varying from a year to 10-20 years. on the other hand, ‘Traders’ are more of speculators
+        and they play for a very short period of time where a position may last from a couple of seconds to a
+        few days. Their investments may be driven by a number of reasons some of which may be trading on the
+        basis of some news or expected news or for that matter trading on the basis of market momentum.
+      %p
+        Returns from investing in broad-based developed market indices over long periods (30 years +) tend to
+        be about 10-12 % p.a. Returns from trading vary significantly and could range from positive infinity to
+        eroding your capital completely. Speculative investments have often yielded over 100% in a single day,
+        just as they have also resulted in returns of minus 90% over a few hours.
+      %p
+        In the short term, markets are manipulated and driven by traders but over a long period, markets trade
+        at their fair value and investors are often rewarded for making good bets.
+    %section
+      %P Now let us look at Investing vs Trading from a retail investor’s perspective:
+      %ol
+        %li
+          You are more likely to make money as an investor than as a trader.
+        %li
+          You are more likely to earn regular and consistent returns as an investor than as a trader.
+        %li
+          Time involved in making investing decisions is much less than that in regular trading.
+        %li
+          If you succeed at trading, you stand to earn really high rates of returns over a short period of
+          time which would outperform returns from investing by a huge margin.
+        %li
+          Trading requires vast market knowledge, immense discipline and also the ability to devoid
+          yourself from emotions. It is considered extremely stressful (average traders quit between the
+          age of 35-40 year) and requires a bit of luck also.
+    %section
+      %P
+        In our view, as glamorous as it sounds, trading is best left alone for HNIs and extremely high risk takers.
+        You should concentrate more on investing. That will fetch you regular income and over a period of time
+        help you build a corpus. More importantly, more often than not, retailers stand to succeed as investors
+        than as traders.
+    %footer
+      .article_prev
+        Prev:-
+        =link_to t('investment_education.overview'), page_path('investment_education/overview')
+      .article_next
+        Next:-
+        =link_to t('investment_education.risk_and_return'), page_path('investment_education/risk_and_return')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li Investors are people who buy assets hoping for long term appreciation in price.
+        %li Traders are people who buy or sell assets, expecting to profit from short term changes in their price.
+    .articles
+      %h1 Articles
+      %ul
+        %li=link_to "Difference between Investing & Trading", "http://www.cnbc.com/id/42710009/The_Difference_Between_Investing_Trading", html_options = {:target => "_blank"}
+        %li=link_to "Investing Vs Trading", "http://www.investnewz.com/investnewz-7-20060621InvestingvsTradingWhatsTheDifference.html", html_options = {:target => "_blank"}
+    .videos
+      %h1 Videos
+      %ul
+        %li=link_to "Investment vs Trading", "http://www.facebook.com/video/video.php?v=1176395922417", html_options = {:target => "_blank"}

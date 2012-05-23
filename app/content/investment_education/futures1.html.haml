@@ -1,0 +1,106 @@
+.wrapper
+  %article
+    %h1 Futures
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 What are futures?
+      
+      %p
+        Futures are legally-binding contracts that give the buyer the right and the obligation to buy a pre-determined
+        asset at a pre-determined price at a pre-determined time. Conversely, the seller has the right and the obligation
+        to deliver that pre-determined asset at that pre-determined price at that pre-determined time.
+      %p The pre-determined aka underlying assets can be stocks, bonds, baskets of stocks, commodities, etc.
+      %p Futures are very much similar to #{link_to 'forwards', page_path('investment_education/forwards')}; however, there are also some notable characteristics that makes a futures contract different from a forward contract.
+    %section
+      %h1 Terminology:
+      %h1 Long Position
+      %p When an investor enters into a contract to buy a certain asset at a certain market determined price, he is said to take the long position in that contract.
+      %h1 Short Position
+      %p When an investor enters into a contract to sell a certain asset at a certain price, he is said to take the short position in that contract.
+      %h1 Market to Market (MTM)
+      %p
+        The process by which the value of holding a given futures contract at that particular moment of time is determined. This value of a contract is the
+        money that were to be gained or lost if the contract were to be settled at that moment. This is usually done on a daily basis by the exchange.
+        The gains or losses from marking to market are immediately credited (or deducted) from the investors’ accounts.
+      %p For example, if an investor were holding a long position a futures contract on ABC Stock at Rs. 714 and the market price of ABC stock were Rs.720, she would gain Rs.6 in the process of marking to market. This amount would immediately be credit to his/her account.
+      %h1 Initial Margin
+      %p This is the amount of money that investors have to deposit as a performance guarantee in order to open a futures position. This amount is determined by the exchange and is typically about 10-15% of the value of the futures contract.
+      %h1 Maintenance Margin
+      %p
+        This is the minimum amount of money, as a percentage of the contract’s value, which
+        investors have to put up in their account as a performance guarantee. If investors lose money during the process of
+        marking to market and their account margin falls below the maintenance margin, a margin call is triggered and they will have to deposit more money in their accounts.
+      %h1 Expiration
+      %p The day the contract expires.
+    %section
+      %h1 Trading of futures:
+      %p
+        Like stocks, futures are traded on exchanges. The exchange regulates the specifications of the futures contracts and their trade. The exchange also acts as the counterparty in the case of the buyer as well as the seller of the futures contract, i.e. buyers buy futures contracts from the exchange and sellers sell these contracts to the exchange.
+        This virtually eliminates the risk of default as far as the buyers and sellers are concerned.
+    %section
+      %h1 Modalities:
+      =image_tag  "investment_education/tax3.png"
+      %p
+        Futures prices are market determined and there is usually no fee required to take a position (unlike options). Futures can also be rolled over to a later date as long as all margin requirements are met.
+        Futures give investors leverage as they expose investors to large possible changes in the value of their position with small amounts of initial capital. Leverage serves to multiply gains as well as losses.
+      %p
+        For example, in order to gain exposure to the movement in price of 1000 shares of PQR Corp, trading at Rs.10 per share, an investor could spend Rs.10,000 and buy 1000 shares.
+        A 5% increase in the share price of PQR would give him a profit of Rs.500, i.e. 5% of his initial investment. This is the traditional way of investing.
+      %p
+        However, if the same investor were to enter into a futures contract, he would only have to put up the initial margin which is say,
+        10% of the value of the contract, i.e. Rs.1000. The same 5% increase in price of the underlying shares would give him the same
+        profit, i.e. Rs.500. However, this is 50% of his initial investment. Unfortunately, this is true even for losses. A 5% fall in
+        the price of the underlying shares would also cause a loss of 5% to the stock investor by a loss of 50% to the futures investor.
+      %p
+        Assume that two investors (Raj and Ravi) decide to enter into an oil futures contract on Day 1
+        with the current oil spot price at Rs.70 per barrel. The futures contract has a size of 1000. Thus, the contract is
+        worth Rs.70,000 today as it represents 100 barrels of oil. However, their brokers allow them to invest with an initial
+        margin of 7.14% (Rs.5,000) with a maintenance margin of 5.71%(Rs.4,000).
+      %p On Day 2, the futures price closes at Rs.80.
+      
+      %p Raj’s payoff : ( Rs.80 - Rs. 70) X 1000 = Rs. 10,000 (profit)
+      %p Raj’s Day 2 broker account : Rs. 5000 + Rs. 10,000 = Rs.15,000
+      %p Ravi’s payoff : (Rs. 70 - Rs. 80) X 1000 = - Rs. 10,000 (loss)
+      %p Ravi’s Day 2 broker account : Rs. 5000 - Rs.10,000 = - Rs.5,000
+      %p Since Ravi’s account has fallen below Rs. 4000, he needs to deposit more money into his account or the broker will forcibly close his position.
+      %p As we have seen, trading in futures allows investors to rake in huge profits, as well as rack up huge losses. Investors are advised to have an in-depth understanding of the financial markets before investing in futures.
+    %section
+      %h1 How individual investors can invest in futures
+      %p Investors can open futures positions through a broker. The broker would then give them access to futures traded on exchanges.
+      %h1 Advantages
+      %ol
+        %li Futures give investors leverage and can thus be used to achieve large gains with small amounts of capital.
+        %li The exchange is the counterparty to all futures transactions and thus, there is virtually no credit risk involved.
+        %li Futures can be used for speculation as well as hedging.
+      %h1 Disadvantages
+      %ol
+        %li The leverage that futures contracts give investors is also their biggest disadvantage. Investors can potentially lose more money than they had initially invested.
+        %li The marking to market feature of futures can potentially impose severe cash-flow pressure on investors.
+      %h1 Risks
+      %ol
+        %li This biggest risk of entering futures contracts is the risk arising from large amounts of leverage. Small fluctuations in the price of the underlying assets could result in large losses.
+        %li If investors are not able to meet margin calls, their positions are liquidated. One way to minimize this risk is to over-collateralize the futures position.
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.forwards'), page_path('investment_education/forwards')
+      .article_next
+        Next:
+        =link_to t('investment_education.futures2'), page_path('investment_education/futures2')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li Futures are legally-binding contracts that give the buyer/seller the right and the obligation to buy/deliver a pre-determined asset (stocks, bonds, etc) at a pre-determined price at a pre-determined time.
+        %li Default risk is eliminated since futures are traded on an exchange.
+        %li Investors can trade futures with less capital but this leverage amplifies losses and gains.
+    .articles
+      %h1 Articles
+      %ul
+        %li=link_to "Futures Fundamentals", "http://www.investopedia.com/university/futures/", html_options = {:target => "_blank"}
+    .videos
+      %h1 Videos
+      %ul
+        %li=link_to "Motivation for the Futures Exchange", "http://www.youtube.com/watch?v=iyrOGvbSS2U&feature=player_embedded", html_options = {:target => "_blank"}
+        %li=link_to "Initial and maintenance margin Of Futures", "http://www.youtube.com/watch?v=1t42z5U2uoc&feature=player_embedded", html_options = {:target => "_blank"}

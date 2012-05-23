@@ -1,0 +1,78 @@
+.wrapper
+  %article
+    %h1 Start Investing
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 Buying/Selling stocks:
+      =image_tag  "investment_education/broker1.png", :height => "150px", :width => "250px"
+      %p
+        Stocks are traded on stock exchanges. Individual investors generally need to make use of the services of a stock broker to buy/sell shares on exchanges.
+        Stock brokers carry out transactions on the behalf of clients for a commission.
+      %p Example: Opening an account in India
+      %p Investors should open a demat account before they start trading stocks. The demat account holds securities electronically instead of the investor having physical possession of the securities. You can open a demat account by visiting a Depository Participant and filling an application form. All authorized Depository Participants are listed on National Securities Depository Ltd and Central Depository Services Ltd websites. More commonly, demat accounts can be opened at most banks in India.
+    %section
+      %h1 Bid-Ask Spread:
+      =image_tag  "investment_education/broker2.png", :height => "150px", :width => "250px"
+      %p
+        Stock brokers charge clients a commission for executing their trades. They also earn money from the “bid-ask spread”. Brokers will usually quote prices from their point of view.
+        The “bid” price is the price at which the broker will buy the quoted security from you and the “ask” price is the price at which the broker will sell the security to you.
+      %p
+        In other
+        words, the “bid” price is the price at which you will sell the security to the broker and the “ask” price is the price at which you will buy from the broker. For example, if you ask
+        a broker for a quote for 1 share of Citi and receive the following price: “3.10, 3.20”, it means that the broker is willing to buy(from you) 1 share of Citi for Rs.3.10 and sell(to you)
+        1 share of Citi for Rs.3.20, where Rs.3.10 is the bid price and Rs.3.20 is the ask price.
+      %p Here, the bid price is Rs.3.10 and the ask price is Rs.3.20. Notice that if the broker buys 1 share at Rs. 3.10 and sells it at Rs.3.20, he will make a profit of Rs.0.10. This difference in the ask price and the bid price is known as the bid-ask spread.
+      %p Bid-Ask Spread = Ask Price – Bid Price
+      %p In order for the broker to profit from such transactions (always), the ask price will always be higher than the bid price. In other words, you will buy at a high price and sell at a lower price to the broker.
+    %section
+      %h1 Choosing a Broker:
+      %p
+        Cost is a very important consideration in choosing a broker as commissions and spreads can add up to a substantial sum especially for active traders. Most brokers allow
+        clients to place orders online or via telephone. Deep Discount brokers charge very low commissions and can provide reasonable execution. Most brokers also offer access to global
+        markets. Therefore, it should be possible for a trader based in Singapore to buy stocks traded on the NYSE through his broker in Singapore.
+      %p
+        Slightly more sophisticated investors have considerations other than cost while choosing brokers. For example, the quality of execution, market impact (the change in market price
+        caused by the trade), delay costs, quality of research provided, are all important factors from the point of view of investors who trade large quantities of stock or have large
+        portfolios. In my personal opinion, most small investors needn’t worry too much about these factors.
+      %p
+        A list of brokers in India can be found
+        =link_to "here", "http://business.mapsofindia.com/india-company/top-10-brokerage-firms.html", :target => "_blank"
+    %section
+      %h1 Costs:
+      =image_tag  "investment_education/broker3.png", :height => "150px", :width => "250px"
+      %p
+        Commissions typically amount to about 0.25% of the value of the trade. The catch here is that most brokerages charge a “minimum commission”. That would imply that the
+        client could end up paying Rs.20 as commission for buying a stock worth Rs.1. Minimum commissions vary across countries. They typically stand at around US$10 in USA, SGD 25 in
+        Singapore and INR 25-50 in India.*  Some brokers offer very good “per-trade” rates subject to a minimum number of trades every month.
+      %p
+        The broker not only executes trades on the client’s behalf but can also provide research reports that help clients make better trading decisions.
+        Different levels of service are available for different fees. These usually pertain to trade execution and research reports. In my opinion, beginners need not lose
+        sleep over these details.
+      %p Some other trade-related fees may include transaction levy, trading fees and stamp duties. All these fees will vary across stock exchanges around the world.
+    %section
+      %h1 Some Brokers:
+      %p India: HDFC Securities, ICICI Securities, Angel Broking,Kotak Securities,India Infoline.
+      %p * Clients should contact their brokers for detailed information in this regard
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.choosing_investments'), page_path('investment_education/choosing_investments')
+      .article_next
+        Next:
+        =link_to t('investment_education.track_investment'), page_path('investment_education/track_investment')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li Commissions are paid to the brokers on every transaction.
+        %li Pay attention to the quality of research reports and speed in executing trades.
+    .articles
+      %h1 Artcles
+      %ul
+        %li=link_to "Tips for choosing an online broker", "http://www.rediff.com/money/2009/feb/25forbes-10-tips-for-choosing-an-online-broker.htm", html_options = {:target => "_blank"}
+        %li=link_to "Comparison of Indian Online Brokerages", "http://stockeditor.blogspot.com/2010/11/best-online-brokers-in-india.html", html_options = {:target => "_blank"}
+    .videos
+      %h1 Videos
+      %ul
+        %li=link_to "How to choose a stock broker", "http://www.youtube.com/watch?v=zM7L4vuQeIA", html_options = {:target => "_blank"}

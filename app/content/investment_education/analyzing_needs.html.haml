@@ -1,0 +1,81 @@
+.wrapper
+  %article
+    %h1 Analyzing your Needs
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 Abstract
+      %p 
+        Before an individual begins to invest, he must first understand his needs and constraints. Investors have different needs. These needs stem from their goals, unique constraints, risk profiles, tax environment and their individual natures.
+      %p 
+        Future needs often depend on the age, present financial position and on the aspirations of that particular individual. For example, a young professional is likely to want to grow his portfolio to meet a specific goal later on, such as an MBA degree, purchase of a home, marriage etc. While a wealthy retiree on the other hand, is more likely to be interested in maintaining his/her standard of living than in aggressively growing his/her wealth.
+    %section
+      %h1 Needs
+      =image_tag  "investment_education/needs1.png"
+      %p 
+        Before an individual begins to invest, he must first understand his needs and constraints. Investors have different needs. These needs stem from their goals, unique constraints, risk profiles, tax environment and their individual natures.
+      %p 
+        Future needs often depend on the age, present financial position and on the aspirations of that particular individual. For example, a young professional is likely to want to grow his portfolio to meet a specific goal later on, such as an MBA degree, purchase of a home, marriage etc. While a wealthy retiree on the other hand, is more likely to be interested in maintaining his/her standard of living than in aggressively growing his/her wealth.
+      %p 
+        Some save with a specific purpose such as marriage, retirement or children’s education while some others save money out of sheer force of habit (e.g. saving for a rainy day in future).
+      %p 
+        Money set aside for solely a specific purpose such as marriage, education retirement or vacation is known as a nest egg. It is important to understand the purpose for which you are saving and the constraints that you have. This would influence the level of risk that you are willing to take and the best suited investments for you. One important concept in needs analysis will be the selection of an investment horizon. An investment horizon is the span of time which an investor plans to hold the investment security. At the end of an investment horizon, the investor will expect to cash out on the investment.
+      %h1 Short-Term Horizon
+      %p 
+        The time horizon for short-term investments is usually between 0 to 3 years. Investors with short time horizons can consider holding cash in a high interest savings account or certificates of deposits or investing in some cash equivalents and money market instruments.
+      =image_tag "investment_education/needs3.png"
+      %h1 Medium-Term Horizon:
+      %p 
+        The typical time horizon for such an investment is about 5 years to 10 years. A typical investment portfolio may include a mix of stocks and some 5-year bonds.
+      %h1 Long-Term Horizon
+      %p 
+        The typical time horizon for a long-term investment will is 10 years and above. Investors with long horizons can consider investing a large portion of their portfolios in stocks. Such individuals must have sufficient risk appetite as an equities –focused investment portfolio may see extended periods of low returns or even negative returns.
+      %p 
+        As an individual reaches retirement age, his investment time horizon will become shorter and in this case, it will be advisable to increase investments in fixed income securities such as bonds, keeping a small portion of one’s total investments in stocks. Even so, it is recommended that the investor invests in stable stocks (meaning that stock price movements are less volatile) with a stable dividend income.
+    %section
+      %h1 Risk Profile
+      =image_tag "investment_education/RiskProfile1.png"
+      %p 
+        Some investors are in a better position to take risks or are more willing to take risks than others. The distinction between the two is important since a willingness to take risk does not necessarily mean an ability to do so. Risk profiles are influenced primarily by age, financial situations and intrinsic natures. For example, young investors with decades of working life left are generally in a better position to make risky investments than older investors who are scheduled to retire in a short while. A young, unmarried IT professional is in a better position to make a risky investment than a single mother who has to provide for her daughter’s education and upkeep.
+      %p 
+        Willingness to take on risk is as important as the ability to take on risk. (Remember that in general, the higher the risk you take, the higher the return you may expect). Some people are more willing to take on risk than others. This willingness to take risk is influenced by the nature of the individual as well as the prior experiences of the individual. It is important to take on only the risk that you are comfortable taking on.
+      %p 
+        Therefore, figure out what level of risk you are comfortable with. Understand your own risk profile before making investments. This is very important as it will prevent a mismatch between your ability to take on risk and your desire to do so.
+    %section
+      %h1 Portfolios and Portfolio Management:
+      %p 
+        A portfolio is a mix of assets held by an individual or an institution. Typically, these assets consist of securities such as stocks, bonds, deposits, bills etc. These individuals/institutions hold these assets, expecting that they will appreciate in value (resulting in a capital gain) and/or provide income throughout their life (e.g. in the form of dividends, coupon payments etc). The portfolio-holder will decide upon an appropriate “mix” of assets based on his/her investment needs and risk-profile.
+      %p 
+        Portfolio Management entails the management of the composition of the portfolio such that it meets the needs of the individual/institution holding it. This typically involves the following steps:
+      %ul
+        %li Assessing the needs of the investor
+        %li Understanding the unique constraints that apply to the investor
+        %li Asset Allocation (deciding how much is invested in each asset class)
+        %li Security Selection (deciding which securities to invest in)
+        %li Portfolio Monitoring
+        %li Adjusting the portfolio to meet changing needs/ market conditions
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.investment_trading'), page_path('investment_education/investment_trading')
+      .article_next
+        Next:
+        =link_to t('investment_education.investment_plan'), page_path('investment_education/investment_plan')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li Analyzing your needs and constraints is the first step in investing.
+        %li Your age, current financial position and future goals affect your investing strategies.
+        %li Select an appropriate time horizon- the time you would like invest for e.g. 2 years, 10 years, etc.
+        %li Understand your risk profile- your ability and willingness to take on risk.
+        %li A portfolio consisting of a right mix of different securities can be constructed after needs analysis.
+    .articles
+      %h1 Articles
+      %ul
+        %li=link_to "Financial Needs Analysis", "http://ezinearticles.com/?Financial-Needs-Analysis&id=628766", html_options = {:target => "_blank"}
+        %li=link_to "Sample Needs Analysis Document", "https://www.impact-tech.com/PlanLabContent/Documents/Sample_Presentations/fna.pdf", html_options = {:target => "_blank"}
+    .videos
+      %h1 Videos
+      %ul
+        %li No video available yet.

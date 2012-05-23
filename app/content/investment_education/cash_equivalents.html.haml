@@ -1,0 +1,190 @@
+.wrapper
+  %article
+    %h1 Cash Equivalents
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 What are cash equivalents?
+      %p
+        Cash equivalents are highly liquid securities that typically mature within three
+        months of issue. Cash equivalents include money market securities, short term treasury
+        bills, short term government debt etc. Money in savings accounts and checking accounts
+        too would be considered equivalent to cash as long as the funds can readily be accessed.
+        In most countries, a government linked body guarantees checking and saving deposits
+        in banks up to a certain limit; e.g. FDIC(USA), MAS(Singapore), RBI(India).
+    %section
+      %h1 Money Market Instruments:
+      =image_tag  "investment_education/CashEquivalents.png"
+      %p
+        Money market instruments are highly liquid, short term securities with maturities
+        of less than a year, and in most cases, less than six months. They usually transact
+        in extremely large denominations, typically Rs.1million or more, making that inaccessible
+        to individual investors, who can then invest indirectly through money market funds
+        or ETFs.
+      %p
+        As far as the issuing entities are concerned, the purpose of issuing money market
+        instruments is to meet short-term financing needs. Issuing entities could range
+        from governments and banks to large corporations.
+    %section
+      %h1 Examples of Money Market Instruments:
+      %ol
+        %li 
+          Treasury Bills: Treasury Billls allow the government to raise money from the public for short-term financing needs. They are usually included in a broader class of securities known as the zero-coupon 
+          #{link_to 'Bonds', page_path('investment_education/bonds')}. A zero-coupon bond is a debt instrument
+          whose issuer promises to pay a certain sum of money(face value) at maturity. There
+          are no periodic interest payments .These instruments are issued at prices below
+          their face values. Treasury Bills are issued during an auction which involves competitive
+          and non-competitive bidding. Investors involved in competitive bidding will have
+          priority over non-competitive bidders in terms of issue placements. In fact, competitive
+          bidding is the process used to set the market price for Treasury Bills.
+        
+        %p
+          Treasury Bills are guaranteed by the government and are considered to be the safest
+          kinds of securities in the market. In the U.S., T-Bill rates are considered the
+          benchmark risk-free rates.
+        %p
+          Unlike most money market securities that trade only in large denominations, Treasury
+          Bills can also trade in smaller denominations of Rs.1000, making them accessible
+          to individual investors. They are also extremely popular because of an active secondary
+          market, making them more liquid than most other money market securities.
+        %li
+          Commercial Paper: Commercial papers are unsecured short term securities (maturities
+          below 9 months) issued by banks and corporations with very high credit ratings,
+          to meet short term obligations such as debt and payrolls. Most commercial paper
+          is sold at a discount to par value.
+        %li
+          Repurchase Agreements: Repurchase agreements are a form of collateralized borrowing
+          and are used very often in the inter-bank market. Repurchase agreements are usually
+          used to meet the short-term needs of banks and usually exist in the form of overnight
+          borrowing. In repurchase agreements, the dealer will sell debt and agree to buy
+          it back at a future date at an agreed price which is higher than the initial selling price.
+        %li
+          Certificates of Deposit: Certificates of Deposit (CDs) are bank deposits which
+          can usually be sold before maturity in the secondary market. They are considered
+          to be slightly riskier than Treasury Bills because of the risk of banks defaulting.
+        %li
+          Bankers Acceptances: Bankers Acceptances (BAs) are short term instruments that
+          are often used during international trade. They are generally very safe instruments
+          when issued by large banks. These instruments can be traded in the secondary market
+          as discount instruments. However, the face value of such instruments is usually
+          in excess of US $ 100,000
+    %section
+      %h1 Returns on Money Market Instruments:
+      =image_tag  "investment_education/CashEquivalents3.png"
+      %p
+        Due to their short maturities of less than a year and extremely low risk, money
+        market securities do not yield substantial returns. Money market instruments rates
+        are usually quoted as a discount yields. Yields can be considered the rates of return
+        investors can expect for taking on the risk of investing in that particular security.
+        The discount yield is the yield to maturity calculated based on the par value, in
+        per-annum basis.
+    %section
+      %h1 Fun Fact:
+      %ol
+        %li 
+          Calculating price based on discount yield:
+          A 90-day U.S. Treasury Bill is quoted at a discount yield of 4%. This means the
+          reasury Bill will expire 90 days later and it is currently selling at a discount
+          of 4% per annum on par value. The par value of a Bill or the value of the Bill at
+          maturity is always $100. Thus the price investors will pay at issuance will be $100
+          – 4%*(90days/360days) = $99.00. In the U.S, T-Bills have a base year of 360 days.
+        =image_tag  "investment_education/CashEquivalents4.png", :height => "150px", :weight => "250px"
+        %p
+          Different jurisdictions use different base-years. In Singapore, the base year is
+          the actual number of days in a year. This means that a 90-day Singapore Government
+          Treasury Bill with discount yield of 4% will sell at a price of $100 – 4%*(90days/365days).
+        %li 
+          Calculating true yield:
+          True yield is the true actual annualized rate of return for that security. It is
+          the change in value of the security from the purchase date to the maturity date,
+          taking into account the number of days the security was held. This value is expressed
+          on a per annum basis. Take note that the per annum basis this time incorporates
+          the investor’s actual year of 365 days, instead of 360 days, as we are calculating
+          the yield based on the investor’s true perspective.
+      %p
+        Based on the earlier example of a U.S. 90-day Treasury bill quoted at a discount
+        yield of 4% with a resulting price of $99.00, the true yield is calculated as follows:
+        (Price at maturity – Purchase Price) / Purchase Price * (365 days / 90 days) = ($100- $99)/$99 * (365/90)
+    %section
+      %h1 How individual investors invest in money market instruments.:
+      %p
+        Most money market instruments have very high face values and are probably not of
+        much interest to the individual investor. However, small investors can invest in
+        money market funds which invest in these instruments. This is a good option as long
+        as such funds don’t charge heavy entry/exit loads and administrative fees.
+        Investors can also invest in Certificates of Deposits and Time Deposits through
+        any commercial bank.
+    %section
+      %h1 Risks:
+      =image_tag  "investment_education/CashEquivalents6.png"
+      %p
+        1. Credit risk: When investing in money-market securities, there is a risk that
+        the issuer may not be able to meet its payment obligations.
+      %p
+        2. Interest rate risk: Benchmark interest rates are usually set by government agencies
+        such as the Federal Reserve in the United States, The Reserve Bank of India in India
+        and Bank of England in the UK. The Federal Reserve (also known as the Fed) sets its
+        desired interest rates, and this is the rate at which banks in the U.S. will lend
+        to each other (Federal Funds rate). As interbank lending is not collateralized, banks
+        lend to each other based on faith. Collateralized loans are loans that are backed
+        by assets. When a debt issuer defaults on its loans, the lender will seize the issuer’s
+        assets so as to recoup its investments. In the event that a bank is unable to borrow
+        from the other banks, it turns to the Federal Reserve for funds. The Federal Reserve
+        is thus known as the lender-of-last-resort as borrowing from the Fed is an indication
+        to the public that the bank is under financial stress.
+      %p
+        The Federal Funds rate is an extremely significant benchmark that is closely monitored
+        by financial markets around the world as this rate represents the U.S. Government’s
+        current monetary policy stance. A lower rate will increase availability of funds
+        to the entire economy as banks are able to obtain funds more cheaply from each other,
+        and/or the Federal Reserve.
+    %section
+      %h1 Advantages:
+      %ol
+        %li Cash equivalents are highly liquid and hence can be used in case of emergencies.
+        %li Since most cash equivalents tend to be of very high credit quality, they are generally very safe.
+    %section
+      %h1 Disadvantages:
+      %ol
+        %li The returns from cash equivalents tend to be very low, usually less than 2% p.a.in most developed economies.
+        %li Though most money market instruments are of very high credit quality, they are not 100% risk free.
+        %li Investors, especially those who invest in discount securities face interest rate risk.
+    %section
+      %h1 Fun Facts!
+      %p
+        Money markets, as we know, are supposed to be highly liquid, however, in the 2008
+        financial crisis, a rush by money market investors in the United States to convert
+        their securities into cash caused a meltdown in the market.
+      %p
+        As financial institutions regularly depended on money markets for their everyday
+        financing needs, they were suddenly unable to meet their short-term obligations
+        when all these investors began demanding their money back, or rather, stayed away
+        from the money markets. Money markets in the U.S. suddenly became illiquid.
+      %p
+        In fact, the credit markets almost came to a halt when banks refused to lend to
+        each other, thus they had to turn to the Federal Reserve, or the lender-of-last-resort
+        for their short-term financing needs. In the midst of the crisis, the Federal Reserve
+        kept the entire financial system in the U.S. from falling apart.
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.overview'), page_path('investment_education/overview')
+      .article_next
+        Next:
+        =link_to t('investment_education.bonds'), page_path('investment_education/bonds')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li Cash equivalents are assets which can be easily converted into cash and have very short term maturities (usually less than a year.)
+        %li Due to their short maturities and extremely low risk they do not yield high returns
+        %li Some of the risks involved are credit risk and interest rate risk.
+    .articles
+      %h1 Articles
+      %ul
+        %li=link_to "Cash and cash equivalents -Wikipedia", "http://en.wikipedia.org/wiki/Cash_and_investment_education/cash_equivalents", html_options = {:target => "_blank"}
+        %li=link_to "Cash Equivalents", "http://www.yourmoneycounts.com/ymc/goals/investing/investment_education/cash_equivalents.html", html_options = {:target => "_blank"}
+    .videos
+      %h1 Videos
+      %ul
+        %li=link_to "Cash Investments", "http://blip.tv/file/875982", html_options = {:target => "_blank"}

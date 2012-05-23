@@ -1,0 +1,137 @@
+.wrapper
+  %article
+    %h1 Bonds
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 What is a bond?
+      %p
+        A bond is an instrument through which an investor lends a specific sum of money (face value of the bond)
+        to the issuer of the bond. Bond issuers are usually companies and governments.
+    %section
+      %h1 Difference between a bond and a loan?
+      %p
+        The main difference between a bond and a loan is that bonds are usually traded on an exchange and
+        provide investors the flexibility to sell their bonds at their will.
+    %section
+      %h1 How risky are bonds?
+      %p
+        Bonds are generally less risky than stocks and more risky than savings bank deposits. However, the risk
+        depends on the individual bond issue and the credit worthiness of the company/government issuing the
+        bond. In general, bonds issued by government agencies/PSUs such as NHAI, IDFC, REC and bonds issued
+        by top tier business houses such as the Tata group are very safe. As a rule of thumb, government bonds
+        are safer than private bonds.
+    %section
+      %h1 How much do bonds return?
+      %p
+        Bonds in general return more than savings deposits and lower than stocks. Bond returns depend a lot
+        on the prevailing market interest rates (see below), maturity period, credit rating of the bond etc. High
+        quality government bonds generally return roughly as much as fixed deposits of nationalized banks when
+        held to maturity. This of course is only a thumb rule and market conditions may change this. Historically,
+        bonds have returned between 5-12% p.a.
+    %section
+      %h1 Bonds in India
+      %p
+        The bond market in India is at a relatively nascent stage. Earlier, only institutions and large corporations
+        were eligible to trade bonds but now even small investors are allowed to buy and sell bonds freely.
+        From a small investor’s point of view, most of the high quality bonds that they are eligible to invest in,
+        have a maturity of 10 to 15 years. While some bonds (example: NHAI bonds) are listed on secondary
+        exchanges upon allotment itself, some bonds (IFCI bonds, REC bonds) have a fixed lock-in period of 5-
+        7 years at end of which they are listed on the secondary exchange. Some issuers also offer a buy-back
+        option at end of the lock-in period but the option is exercisable purely at the discretion of the issuer.
+    %section
+      %h1 Which bonds should you invest in?
+      %p
+        While investing in bonds, an investor should carefully study out for 4 major factors:
+      %ol
+        %li Credit rating
+        %li Interest rate
+        %li Tax savings
+        %li Liquidity
+      %h1 Credit Rating
+      %p
+        An issuer is required to get the issue rated via credit rating agencies such as CRISIL, ICRA, CARE and Fitch.
+        Based on the credit worthiness of the issuer and their ability to repay principal and interest on time, the
+        agency issues a credit rating. We think anything above ‘A’ is considered investable class which essentially
+        means that your capital is relatively safe. A rating of ‘AAA’ indicates highest degree of safety.
+      %h1 Interest Rate
+      %p
+        Investors usually have the option to collect their interest either on regular basis at end of each year or
+        cumulative at end of the maturity. The market interest rate is the interest rate that investors demand for
+        a similar bond. The interest rate offered on a bond issue is based on the prevailing market rates and a
+        combination of credit worthiness of the issuer and tenure of the bond issue. Usually, bonds with higher
+        credit-rating offer relatively less interest as compared to bonds with lower credit-rating. Similarly the rate
+        offered on bonds with shorter maturity is less than those with longer maturity.
+      %h1 Tax Savings
+      %p
+        Many bonds offer tax benefits to their investors. NHAI bonds that were issued in January, 2012 carried
+        a tax-free interest rate of 8.2%. Similarly by investing in infrastructure bonds of IFCI and REC that were
+        issued in January-February, 2012, an investor could claim a deduction of Rs 20,000 from taxable income
+        under Section 80 CCF. Not all bonds offer tax benefits.
+      %h1 Liquidity
+      %p
+        As mentioned above, some bonds (example: NHAI) are listed on secondary exchanges upon allotment
+        itself while some bonds (IFCI bonds, REC bonds) have a fixed lock-in period of 5-7 years at end of which
+        they are listed on the secondary exchange. Listing of bonds on secondary exchanges provides the added
+        benefit of liquidity and this is a major differentiating factor between bonds and fixed deposits. An
+        investor in a fixed deposit cannot liquidate his investment without being penalised. However if a bond is
+        trading on an exchange, the investor has an option to cash in on his investment by selling the bonds at
+        the prevailing market price. It is important to note that the bond might actually trade at a higher or lower
+        price than its fair value. This would largely depend on the prevailing market conditions.
+    %section
+      %h1 Illustration
+      %p
+        Suppose the market interest rate is 7% and the bond that you hold offers an 8.5% interest rate. Since the
+        bond you hold is offering a higher interest rate, a large number of investors would be willing to invest
+        their money in your bond than investing elsewhere. The increase in demand could fetch you a price
+        higher than the fair value of the bond. In this case, the difference in market price and fair value of the
+        bond is known as premium. Similarly, if the prevailing market interest rate is 9% and the bond that you
+        hold offers an 8.0% interest rate. Since the bond you hold is offering a lower interest rate, a very small
+        proportion of investors would be willing to invest their money in your bond. The lack of demand would
+        result in the bond trading at a price lower than its fair value. In this case, the difference in market price
+        and fair value of the bond is known as discount.
+    %section
+      %h1 How to invest in bonds?
+      %p
+        An investor can invest in a bond at the time of issue or after it is listed on an exchange.
+      %p
+        While applying for bonds at time of issue, investors have an option to hold their bonds in a demat
+        account or apply for physical form. If an investor chooses the former, he needs to fill an application form
+        and disclose details of his demat account and submit a copy of his PAN card along with a cheque for the
+        requisite amount. If an investor chooses to opt for physical form, he needs to fill an application form and
+        submit a copy of his pan card, a cheque for the requisite amount along with a proof of address.
+      %p
+        To purchase bonds from secondary market, an investor needs to have a demat account. The investor
+        could purchase the bonds from the market through his demat account.
+    %section
+      %h1 Editor’s take
+      %p
+        Small investors are advised to stick to bonds with high credit ratings (A and above) as part of a diversified
+        portfolio. Bonds with tax saving features under Section 80 CCF are very popular these days and small
+        investors should seriously consider these bonds for investment.
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.cash_equivalents'),page_path('investment_education/cash_equivalents')
+      .article_next
+        Next:
+        =link_to t('investment_education.stocks1'), page_path('investment_education/stocks1')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li Corporations or governments issue debt instruments when they need capital.
+        %li In return the debt instrument holder receives interest and principal payments at pre-specified dates. Examples are bonds, notes, certificates, etc.
+        %li Investors can directly deal with the issuer or on the secondary market through a broker.
+        %li Be aware of credit risk, interest rate risk and liquidity risk.
+    .articles
+      %h1 Articles
+      %ul
+        %li=link_to "Indian Debt Market", "http://business.mapsofindia.com/india-market/debt.html", html_options = {:target => "_blank"}
+        %li=link_to "Basics Of Bonds", "http://www.economywatch.com/bonds/", html_options = {:target => "_blank"}
+        %li=link_to "Bonds -Wikipedia", "http://en.wikipedia.org/wiki/Bond_%28finance%29", html_options = {:target => "_blank"}
+    .videos
+      %h1 Videos
+      %ul
+        %li=link_to "Introduction to Bonds", "http://www.youtube.com/watch?v=44cYyG0LSzQ&feature=relmfu", html_options = {:target => "_blank"}
+        %li=link_to "Relationship between bond prices and interest rates" "http://www.youtube.com/watch?v=kDRqSJIiTqU&feature=player_embedded", html_options = {:target => "_blank"}

@@ -1,0 +1,21 @@
+-#= render_navigation :expand_all => true, :level => 2, :renderer => DescriptiveList
+
+%ul.level_2
+  %li#navigation-investment_concepts
+    = link_to page_path('investment_education/risk_and_return') do
+      %span Investment Concepts
+  %li#navigation-investment_process
+    = link_to page_path('investment_education/analyzing_needs') do
+      %span Investment Process
+  %li#navigation-investment_analysis
+    = link_to page_path('investment_education/fundamental_analysis1') do
+      %span Investment Analysis
+  %li#navigation-investment_types
+    = link_to page_path('investment_education/cash_equivalents') do
+      %span Types of Investments
+  %li#navigation-advanced_investments
+    = link_to page_path('investment_education/foreign_exchange1') do
+      %span Advanced Investments
+  %li#navigation-jargon_demystified
+    = link_to page_path('investment_education/glossary') do
+      %span Jargon Demystified

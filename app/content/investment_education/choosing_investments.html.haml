@@ -1,0 +1,143 @@
+.wrapper
+  %article
+    %h1 Choosing Investments
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 Security Selection:
+      %p
+        The exact mix of a portfolio’s capital allocated to different asset classes is decided
+        in the asset allocation stage. The next
+        step consists of selecting which securities to invest in and how much to invest
+        in each security. This is called security selection. Securities could be individual
+        #{link_to 'Stocks', page_path('investment_education/stocks')}, #{link_to 'Bonds', page_path('investment_education/bonds')}, #{link_to 'Commodities', page_path('investment_education/commodities')}, #{link_to 'Mutual Funds', page_path('investment_education/mutual_funds')},#{link_to 'ETFs', page_path('investment_education/exchange_traded')} etc.
+      %p
+        For example, let us assume that a portfolio consists of Rs.100,000 of capital and
+        that we have determined during the asset allocation stage that 10% will be allocated
+        to international stocks, 20% to large-cap domestic stocks, 30% to mid and small
+        cap stocks, 30% to corporate #{link_to 'Bonds', page_path('investment_education/bonds')} and 10% to cash. This implies that the amount
+        of money allocated to each asset class is:
+      %table{:border => "1px"}
+        %tr
+          %th
+            Asset Class
+          %th
+            Capital Allocated
+        %tr
+          %td
+            Large cap stocks
+          %td
+            Rs. 20,000
+        %tr
+          %td
+            Mid and Small Cap Stocks
+          %td
+            Rs. 30,000
+        %tr
+          %td
+            International Stocks
+          %td
+            Rs. 10,000
+        %tr
+          %td
+            Corporate Bonds
+          %td
+            Rs.30,000
+        %tr
+          %td
+            Cash
+          %td
+            Rs. 10,000
+        %tr
+          %td
+            %b Total
+          %td
+            %b Rs. 100,000
+      %p
+        The next step is to decide which large-cap stocks will take up the Rs.20,000 allocated
+        to this asset class and in what proportion and so on. The process of making that
+        decision is called security selection.
+      %p
+        Investors could invest passively in ETFs/Mutual funds tracking major indices or
+        invest in individual #{link_to 'Stocks', page_path('investment_education/stocks')}/#{link_to 'Bonds', page_path('investment_education/bonds')}. That decision is influenced by the investor’s
+        perceptions of his skill, of market efficiency etc.
+    %section
+      %h1 Business Cycles:
+      %p
+        It is critically important to keep in mind business cycles while analyzing markets
+        and securities. A term that is widely used to describe the swings between economic
+        booms and busts is “business cycle”. Simultaneous price movements in multiple securities
+        may reflect current market sentiments. Every business cycle typically lasts between
+        seven years to ten years or more and it is characterised by stages of recession,
+        recovery, early upswing, late stage upswing or boom.
+      %p
+        A “bubble” is a term used to describe an economy/market that is growing at an unsustainable
+        rate. This occurs when the economy is reaching its peak in terms of the current
+        capacity to consume. Another term to describe this is “overheating”. Typical characteristics
+        of such an economy include rising interest rates, rising asset prices, and stock
+        market volatility. Finally, this bubble will burst and the economy plunges into
+        recession.
+    %section
+      %h1 Typical security selection styles
+      %ol
+        %li
+          Aggressive Strategies:
+          Investors pursuing aggressive strategies tend to make relatively risky investments
+          that are expected to yield high returns. The portfolio will typically hold a large
+          amount of high-risk securities such as equities and derivatives such as futures
+          and options.
+        %li
+          Defensive Strategy:
+          The objective of such a strategy is to minimize overall portfolio risk. Investors
+          pursuing such strategies are generally risk-inverse and they tend to focus on high
+          grade corporate debt and high- dividend yield stock of large companies in the finance
+          and utilities sectors.
+        %li
+          Balanced Strategy:
+          A balanced portfolio is usually aimed at balancing risks and returns. This portfolio
+          promises some returns, though not as high as those of an aggressive portfolio. A
+          balanced portfolio carries higher risks than a defensive portfolio but lower risks
+          than an aggressive portfolio. Such a portfolio carries a relatively equal mix of
+          #{link_to 'Bonds', page_path('investment_education/bonds')}/#{link_to 'Cash Equivalents', page_path('investment_education/cash_equivalents')} and equities.
+    %section
+      %h1 There are several approaches to valuing securities:
+      =image_tag  "investment_education/ss4.png", :width => "250px", :height => "150px"
+      %h1 Fundamental Analysis:
+      %p
+        Fundamental Analysis involves assessing companies based on fundamental factors such as financial health, industry outlook, competitive advantage and quality of management.
+        Fundamental analysts are typically holistic when they value the security.
+      %p For example, in valuing a stock, analysts will analyse factors such as the future direction of the economy, the potential growth of the industry it belongs to, the operational efficiency of the company management, the competitiveness of the company strategies, etc.
+      =image_tag  "investment_education/ss5.png", :width => "250px", :height => "130px"
+      %h1 Technical Analysis:
+      %P
+        involves the analysis of securities based on the current market demand and supply. Technical analysts typically use historical charts to predict future price trends of various securities.
+        Technical analysts use technical indicators calculated from the prices and volumes of securities to make predictions about future price movements. Chartists also use chart-patterns involving price/volume data.
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.asset_allocation'), page_path('investment_education/asset_allocation')
+      .article_next
+        Next:
+        =link_to t('investment_education.start_investing'), page_path('investment_education/start_investing')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li
+          Security Selection involves choosing which securities e.g. #{link_to 'Stocks', page_path('investment_education/stocks')}, #{link_to 'Bonds', page_path('investment_education/bonds')}, etc to
+          invest in and how much to invest in each security.
+        %li
+          Depending on how much risk is being taken, selection strategies can be commonly
+          divided into aggressive, balanced and defensive.
+        %li
+          Fundamental Analysis and Technical Analysis are some of the approaches used to value
+          securities.
+    .articles
+      %h1 Articles
+      %ul
+        %li=link_to "Stock Selection techniques – Using Stock Screeners", "http://finaticsonline.com/blog/2011/01/stock-selection-techniques-%E2%80%93-using-stock-screening-models/", html_options = {:target => "_blank"}
+        %li=link_to "Stock selection criteria", "http://en.wikipedia.org/wiki/Stock_selection_criterion", html_options = {:target => "_blank"}
+    .videos
+      %h1 Videos
+      %ul
+        %li=link_to "Choosing Good Investments", "http://video.cnbc.com/gallery/?video=781699708", html_options = {:target => "_blank"}

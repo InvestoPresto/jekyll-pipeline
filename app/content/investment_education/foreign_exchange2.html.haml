@@ -1,0 +1,72 @@
+.wrapper
+  %article
+    %h1 Foreign Exchange II
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 Currency Pairs:
+      =image_tag  "investment_education/foreignExchange-Advanced.png"
+      %p Currencies are usually quoted in pairs, meaning that the price of one unit of one currency is quoted in terms of the number of units of the other currency. For example, the Japanese Yen can be quoted in terms of the US dollar as per the following:
+      %p USD/JPY = 119.20. This means that an investor can get 1 US dollar in exchange for 119.20 Japanese yen. In this case, the currency on the left of a currency pair quote is known as the base currency and the currency on the right is known as the quoted currency.
+      %p The most actively traded currency pairs in the world are:
+      %ul
+        %li USD/JPY
+        %li EUR/USD ( Euro/ US dollar)
+        %li GBP/USD ( British Pound/ US dollar)
+        %li USD/CHF ( US dollar/ Swiss Franc).
+    %section
+      %h1 Direct and Indirect Quotations:
+      %p In direct quotations, the currency pair is quoted such that the domestic currency is the base currency and the foreign currency is the quoted currency.
+      %p In indirect quotations, the currency pair is quoted such that the foreign currency is the base currency and the domestic currency is the quoted currency.
+      %p In the previous example, the currency pair is quoted as USD/JPY = 119.20. If the US dollar is the domestic currency, the currency pair USD/JPY = 119.20 will be a direct quote. This means that one US dollar can be bought or sold for 119.20 Japanese Yen. The indirect quote is simply its reciprocal, which is JPY/USD = 1/(119.20) = 0.008389. This means that one Japanese Yen can be bought or sold for 0.008389 US dollar.
+    %section
+      %h1 Market Quotations, European Terms and American Terms:
+      =image_tag  "investment_education/ForeignExchange-Advanced2.png"
+      %p The US currency, (sometimes called the greenback) is usually the international currency used in many overseas import/export transactions and trade transactions. As such, most currencies tend to be quoted such that the US dollar is the base currency, except for the Euro, British Pound, Australian Dollar and the New Zealand Dollar.
+      %p These four currencies are usually quoted as the base currencies instead: EUR/USD, GBP/USD, AUD/USD, and NZD/USD.
+      %p If currency pairs are quoted in “European terms”, it will mean that the US dollar is the base currency while those currency pairs quoted in “American terms” will have the US dollar as the quoted currency. For example:
+      European Terms: USD/CAD = 1.0598
+      American Terms: CAD/USD = 0.94356
+    %section
+      %h1 Cross Exchange Rates:
+      =image_tag  "investment_education/ForeignExchange-Advanced3.png"
+      %p Cross currency quotes are currency pairs that are quoted without the US dollar. Since most currency pairs are quoted in terms of US dollar, it is possible to obtain a cross currency quote by combining both quotes.
+      %p For example, it is possible for us to obtain a cross currency quote of CAD/JPY by combining the currency pairs of USD/CAD and USD/JPY as follows:
+      USD/CAD = 1.0598
+      USD/JPY = 119.20
+      CAD/JPY = 1/(USD/CAD) * USD/JPY = 1/1.0598 * 119.20 = 112.472
+      %p Thus the cross currency pair shows that we can either buy or sell one Canadian Dollar for 112.472 Japanese Yen.
+    %section
+      %h1 Bid-Offer Rates:
+      =image_tag  "investment_education/ForeignExchange-Advanced4.png"
+      %p Usually, when you go to a brokerage or a money-changer to change currencies, they would quote you buy and ask rates, or the bid-offer rates. The bid rate is the rate at which the brokerage will buy the currency from you, in other words, it is also the rate at which you will sell your currency to the brokerage. The offer rate is the rate at which the brokerage will sell the currency to you. Therefore, it is the rate at which you will buy your currency from the brokerage.
+      %p Brokerages or money-changers will profit from the bid-ask spread, which is the difference between the bid-offer rate. Therefore, the offer rate will always be higher than the bid rate because the brokerage will buy the currency from you at a rate lower than the rate at which it will sell it to you or to another investor.
+      %p For example, we have a typical bid-offer rate as follows:
+      EUR/USD: 1.5767 – 1.5769
+      %p The bid rate is usually quoted on the left and the offer rate will be on the right. This means that the bid rate for EUR/USD is 1.5767 and the offer rate is 1.5769.The brokerage will buy one Euro for 1.5767 USD from investors, and sell one Euro for 1.5769. In other words, you will buy one Euro for 1.5769 from your brokerage and sell one Euro for 1.5767.
+      %p Usually, the bid and offer rates differ by only the last two digits as shown above. For convenience, brokerages will usually quote the bid-offer rates as follows: EUR/USD: 1.5767/69.
+      %ul
+        %li Currencies are usually quoted in pairs. For e.g. USD/JPY = 119.20. This means that an investor can get 1 US dollar in exchange for 119.20 Japanese yen
+        %li Brokerages or money-changers will profit from the bid-ask spread, which is the difference between the bid-offer rate
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.foreign_exchange1'), page_path('investment_education/foreign_exchange1')
+      .article_next
+        Next:
+        =link_to t('investment_education.forwards'), page_path('investment_education/forwards')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li Currencies are usually quoted in pairs. For e.g. USD/JPY = 119.20. This means that an investor can get 1 US dollar in exchange for 119.20 Japanese yen
+        %li Brokerages or money-changers will profit from the bid-ask spread, which is the difference between the bid-offer rate
+    .articles
+      %h1 Articles
+      %ul
+        %li=link_to "Foreign exchange market", "http://en.wikipedia.org/wiki/Foreign_exchange_market", html_options = {:target => "_blank"}
+        %li=link_to "Forex Tutorial: Introduction to Currency Trading", "http://www.investopedia.com/university/forexmarket/", html_options = {:target => "_blank"}
+    .videos
+      %h1 Videos
+      %ul
+        %li=link_to "Guide to Forex Investing for Beginners", "http://www.youtube.com/watch?v=wAs7kin9xRs&feature=related", html_options = {:target => "_blank"}

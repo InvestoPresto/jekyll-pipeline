@@ -1,0 +1,170 @@
+.wrapper
+  %article
+    %h1 Time Value of Money
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 Abstract
+      =image_tag "investment_education/TimeValueOfMoney1.png"
+      %p 
+        In finance, we are concerned with the idea that money has a potential earning capacity. A sum of money at present has a higher value than the same amount of money in the future. For example Rs. 1 received today is worth more than Rs. 1 received one year later. The idea is that if we receive the money today, we could invest it and earn interest on the money. So, one year later, we would have the original Rs. 1 as well as the interest earned on it.
+      %p 
+        If we were to let the bank hold our money, it is only fair that we receive some interest payments as compensation from the bank because by receiving our money later, we are postponing our consumption to a later period.
+    %section
+      %h1 Calculating Simple Interest
+      %p 
+        For a saver, simple interest is earned as a percentage of the original sum, or the principal amount. This interest is paid out at the end of a specific period.
+      %p 
+        For example, assume that a saver deposits Rs. 1000 into a bank, wishing to only withdraw the money at the end of 5 years. Also assume that the bank promises to pay simple interest of 5% per annum.
+      %p 
+        In the time line below, each year is denoted by Y0, Y1, Y2, Y3, Y4, Y5. The time today is denoted by Year 0 or Y0. In exactly one year’s time, the time will be denoted by Year 1 or Y1. In two years’ time, the time will denoted by Y2, and so on. The amount of money flowing to the saver at the end of each period is known as the cash flow.
+      %table
+        %tr
+          %th Year
+          %th Simple Interest
+          %th Total Amount After Year No.
+        %tr
+          %td Y0
+          %td
+          %td
+        %tr
+          %td Y1
+          %td 5%X Rs. 1000 = Rs. 50
+          %td Rs. 1000+Rs. 50 = Rs. 1050
+        %tr
+          %td Y2
+          %td 5%X Rs. 1000 = Rs. 50
+          %td Rs. 1050+Rs. 50 = Rs. 1100
+        %tr
+          %td Y3
+          %td 5%X Rs. 1000 = Rs. 50
+          %td Rs. 1100+Rs. 50 = Rs. 1150
+        %tr
+          %td Y4
+          %td 5%X Rs. 1000 = Rs. 50
+          %td Rs. 1150+Rs. 50 = Rs. 1200
+        %tr
+          %td Y5
+          %td 5%X Rs. 1000 = Rs. 50
+          %td Rs. 1200+Rs. 50 = Rs. 1250
+      %p At the end of 5 years, the saver will receive Rs. 1250, consisting of Rs. 1000 in principal sum and Rs. 250 in simple interest. Note that simple interest is calculated as a percentage of Rs. 1000, which is the principal sum.
+    %section
+      %h1 Calculating Compound Interest
+      %p Compound Interest: For a saver, compound interest is earned as a percentage of the total sum of the original principal amount plus any interest earned. This interest is paid out at the end of a specific period.
+      %p For example, assume that a saver deposits Rs. 1000 into a bank, wishing to only withdraw the money at the end of 5 years. Also assume that the bank promises to pay a compound interest of 5% per annum compounded annually.
+      %p The interest at the end of 1 year is Rs. 50. The principal for the calculation of interest for the 2nd year is the principal at the beginning of the 1st year plus the interest earned for the 1st year i.e. Rs. 1000 + Rs. 50 = Rs. 1050.
+      %table{:border => "1px"}
+        %tr
+          %th Year
+          %th Simple Interest
+          %th Total Amount After Year No.
+        %tr
+          %td Y0
+          %td
+          %td
+        %tr
+          %td Y1
+          %td 5%X Rs. 1000 = Rs. 50
+          %td Rs. 1000+Rs. 50 = Rs. 1050
+        %tr
+          %td Y2
+          %td 5%X Rs. 1050 = Rs. 52.5
+          %td Rs. 1050+Rs. 52.5 = Rs. 1102.5
+        %tr
+          %td Y3
+          %td 5%X Rs. 1102.5 = Rs. 55.125
+          %td Rs. 1102.5+Rs. 55.125 = Rs. 1157.62
+        %tr
+          %td Y4
+          %td 5%X Rs. 1157.62 = Rs. 57.88
+          %td Rs. 1157.62+Rs. 57.88 = Rs. 1215.5
+        %tr
+          %td Y5
+          %td 5%X Rs. 1215.5 = Rs. 60.77
+          %td Rs. 1215.5+Rs. 60.77 = Rs. 1276.28
+      %p Refer to the time-line as shown below:
+      =image_tag "investment_education/TimeValueOfMoney5.png"
+    %section
+      %h1 Present Value:
+      %p
+        The value of money today (or time Y0). In this case, the present value is denoted by CF0. The cash flow for the saver at Y0 should be Rs. 1000 since he is leaving Rs. 1000 with the bank.
+        The present value can be defined as the current value of a future amount of money, calculated based a specific interest rate. It can be calculated using the following formula: (FV )/[(1+R)]^t where FV represents the future value and R represents the interest rate.
+        That means that a saver earning an interest rate of R % p.a. will be indifferent to receiving Rs. 1 today or Rs. (1+R) one year down the line.
+    %section
+      %h1 Future Value:
+      %p
+        The value of money at the end of a specific period. The future value of Rs. 1000 in 5 years time will be CF5, the future value of Rs. 1000 in 4 years’ time will be CF4, and so on. It can also be defined as the value of a present amount
+        of money at a particular time in the future, calculated based on a specific interest rate. It can be calculated using the following formula: 〖PV (1+R)〗^t where PV represents the present value and R represents the interest rate.
+    %section
+      %h1 Interest Rate:
+      %p Rate of return on the present value of an investment. The amount of money the saver will receive at the end of each period in exchange for depositing his money with the bank.
+      =image_tag "investment_education/TimeValueOfMoney6.png", :width => "500px"
+      %p At the end of 5 years, the saver will receive Rs. 1276.28, consisting of Rs. 1000 in principaln sum and Rs. 276.28 in compound interest. Note that simple interest is calculated as a percentage of Rs. 1000, which is the principal sum.
+      %p The future value of Rs. 1000 can be calculated from a given present value using the formula
+      =image_tag "investment_education/TimeValueOfMoney7.png"
+      %p The present value of Rs. 1276.28 can be calculated from a given future value using the formula
+      =image_tag "investment_education/TimeValueOfMoney8.png"
+      %p Let us take a look at another example. Assume that a saver deposits Rs. 1000 into a bank, wishing to only withdraw the money at the end of 10 years. The bank promises to pay a compound interest of 5% per annum. The future value of Rs.1000 can be calculated using the formula
+      =image_tag "investment_education/TimeValueOfMoney9.png"
+      %p From this example, we see that for a given present value, the longer the time period, the higher the future value.
+      %p Now, assume that a saver deposits Rs. 1000 into a bank, wishing to only withdraw the money at the end of 10 years. The bank promises to pay a compound interest of 7% per annum. The future value of Rs. 1000 can be calculated using the formula 〖PV (1+R)〗^t = 〖(1000) (1+0.07)〗^10 = Rs. 1967.15. In this case, we see that for a given present value, the lower the interest rate, the higher and the future value.
+    %section
+      %h1 Annuity
+      %p Annuity is a term used to describe a terminating stream of fixed payments over a specific time period. This term is frequently used in insurance plans and pension plans.
+    %section
+      %h1 Ordinary Annuity
+      %p Assume that a retiree has a pension plan that promises to pay him Rs. 1000 every year over the next 5 years. He wants to assume an interest rate of 5%. What is the present value of this pension plan?
+      %p It is possible to find the present value for every Rs. 1000 payment that the retiree will receive over the next 5 years. This can be obtained using the formula:
+      =image_tag "investment_education/TimeValueOfMoney10.png"
+      %p The present value of this pension plan will be the sum of all these present values.
+      =image_tag "investment_education/TimeValueOfMoney11.png", :width => "400px", :height => "200px"
+      =image_tag "investment_education/TimeValueOfMoney12.png"
+      %p The pension plan is worth Rs. 4329.48 today.
+    %section
+      %h1 Uneven Cash Flows
+      %p Suppose that an investor wants to buy an investment product that offers to pay him a series of cash flows over the next 5 years as shown in the following table:
+      %table{:border => "1px"}
+        %tr
+          %td Year
+          %td 1
+          %td 2
+          %td 3
+          %td 4
+          %td 5
+        %tr
+          %td Payment
+          %td Rs. 1000
+          %td Rs. 1500
+          %td Rs. 1800
+          %td Rs. 1900
+          %td Rs. 2000
+      %p He wants to assume an interest rate of 5%. What is the present value of this investment product?
+      %p It is possible to find the present value for each of the 5 payments that the investor will receive. This can be obtained using the formula:
+      =image_tag "investment_education/TimeValueOfMoney14.png"
+      %p The present value of this pension plan will be the sum of all these present values.
+      =image_tag "investment_education/TimeValueOfMoney15.png", :width => "400px", :height => "200px"
+      %p The investment product is worth Rs. 6998.02 today.
+      %p The concept of “Time Value of Money” is of paramount importance in finance. All securities are valued using this concept. You will need a financial calculator to help you use these concepts to real world situations.
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.risk_and_return'), page_path('investment_education/risk_and_return')
+      .article_next
+        Next:
+        =link_to t('investment_education_diversification'), page_path('investment_education/diversification')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li A sum of money at present has a higher value than the same amount of money in the future.
+        %li The Present Value of a of cash flow can be calculated as (Future Value of the cash flow) /[(1+R)]^t where R represents the interest rate.
+    .articles
+      %h1 Articles
+      %ul
+        %li=link_to "Time Value Of Money --> Wikipedia.", "http://en.wikipedia.org/wiki/Time_value_of_money", html_options = {:target => "_blank"}
+    .videos
+      %h1 Videos
+      %ul
+        %li=link_to "Introduction to Present Value", "http://www.youtube.com/watch?v=ks33lMoxst0&feature=relmfu", html_options = {:target => "_blank"}
+        %li=link_to "Time Value Of Money", "http://www.youtube.com/watch?v=CnRJ6Jypsj4", html_options = {:target => "_blank"}
+        %li=link_to "Calculate Time Value Of Money using Excel.",  "http://www.youtube.com/watch?v=td4nDJ04YYo", html_options = {:target => "_blank"}

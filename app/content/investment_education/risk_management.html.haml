@@ -1,0 +1,68 @@
+.wrapper
+  %article
+    %h1 Risk Management
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 What is risk management?:
+      %p Risk management is the process by which investors manage their exposure to the different types of risk that their investments carry, such as market risk, currency risk and interest rate risk. It is a rather complex process which involves identifying the sources of risks, measuring them and managing them with the appropriate tools. Understanding the need for risk management is rather simple, however the difficulty lies in actually applying it. Below are some basic risk management techniques that you can use while investing.
+    %section
+      %h1 Stop-loss orders:
+      =image_tag  "investment_education/RiskManagement1.png", :height => "150px", :width => "200px"
+      %p When trading, it is important that you control your losses so as to prevent emotional decision-making at crucial points. You can do this by placing a stop loss order on every trade. Stop loss orders are limit orders placed with the broker to sell a security when it reaches a price limit.
+      %p This is to ensure that you do not hold on to a losing position for too long, thereby limiting your losses.
+      %p Of course, the difficulty lies in applying the stop losses to your actual trades. Your stop losses should not be too tight because you will lose out on possible gains when the market swings. Stop losses should not be too far because it defeats the purpose of having stop losses in the first place.
+    %section
+      %h1 Hedging:
+      %p A hedge is like a form of insurance, where a position is taken to offset exposures to undesirable risks. There are many financial instruments used for hedging and these include futures, options and swaps.
+    %section
+      %h1 Hedging with Futures:
+      =image_tag  "investment_education/RiskManagement2.png", :height => "150px", :width => "200px"
+      %p
+        =link_to "Futures contracts", page_path('investment_education/futures1')
+        are normally used to hedge undesirable positions in energy, precious metals, foreign currency and interest rates fluctuations. When you are in a long position, you desire an increase in the price of an asset you are holding while being in the short position will mean that you desire a decrease in the price of the same asset. For example, if you buy a car, you have a natural long position on the car because it will be better for you if the price of the car increased in the future. However, you also have a natural position on petrol since you would like your fuel costs to decrease.
+      %p Futures are widely used by firms to reduce their exposures to price fluctuations. A ship-owner, Mark Alphonso needs to buy oil as fuel for his ship. He has a natural short position on oil. He is better off if the barrel of oil falls in price. However, if he thinks that the barrel of oil will become more expensive in three months, he will buy a futures contract to hedge this risk.
+      %p George Santino, an oil company executive, sells Mark Alphonso the futures contract. He has a natural long position on the barrel of oil since his company produces oil. George Santino is afraid of the potential fall in oil prices so he will sell the futures contract and hedge his current position so as to reduce exposure to fluctuating oil prices in the future.
+      %p The diagram above shows you can hedge your original position by taking an opposite position in a futures contract. As we have seen, both investors are able to reduce exposures to undesirable risks just by investing in futures. For further information on futures, refer to the article on Futures.
+      =image_tag  "investment_education/RiskManagement3.png", :width => "280px"
+      =image_tag  "investment_education/RiskManagement4.png", :width => "280px"
+    %section
+      %h1 Hedging with put options:
+      %p Married puts refer to the combination of a stock and a put option. The put option serves as a form of insurance for your long position on the stock. In this case, you purchased the stock hoping for a capital appreciation, but in the event that the stock price falls, the put option will cut off your losses at a certain limit. The payoff diagram for the combined position is shown below:
+      =image_tag  "investment_education/RiskManagement5.png", :width => "280px"
+      =image_tag  "investment_education/RiskManagement6.png", :width => "280px"
+    %section
+      %h1 Diversification:
+      %p
+        =link_to "Diversification", "investment_education/diversification"
+        is the process of reducing the overall risk of the portfolio by investing in several securities, usually across different asset classes, instead of investing in a single security. For example, an investor may choose to buy a small number of shares of 10 different companies rather than buy a large number of shares of a single company.  In the latter case, the investor’s returns depend entirely on the performance of one single company, thereby making the portfolio extremely risky.
+      %p As you can see, you need to ensure that you select your assets so that they are uncorrelated in terms of performance. There is no point in investing solely in securities that are likely to perform the same way.
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.track_your_investment'), page_path('investment_education/track_investment')
+      .article_next
+        Next:
+        =link_to t('investment_education.reduce_your_taxes'), page_path('investment_education/reduce_taxes')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li Risk management involves identifying, analyzing and monitoring the risk that your portfolio is exposed to.
+        %li It can be done by hedging- a process which offsets the risk in price movements by locking-in prices.
+        %li Hedging is usually done using derivatives such as futures and options.
+    .articles
+      %h1 Articles
+      %ul
+        %li=link_to "Hedging -Wikipedia", "http://en.wikipedia.org/wiki/Hedge_%28finance%29", html_options = {:target => "_blank"}
+        %li=link_to "How To Offset Risk", "http://www.investopedia.com/articles/trading/09/offset-risk-options-futures-hedge-funds.asp", html_options = {:target => "_blank"}
+        %li=link_to "RISK MANAGEMENT: Profiling And Hedging", "http://pages.stern.nyu.edu/~adamodar/pdfiles/papers/hedging.pdf", html_options = {:target => "_blank"}
+        %li=link_to "View our Futures article", page_path('investment_education/futures1')
+        %li=link_to "View our Forwards article", page_path('investment_education/forwards')		
+        %li=link_to "View our Options article", page_path('investment_education/options1')		
+ 	
+				
+    .videos
+      %h1 Videos
+      %ul
+        %li=link_to "Hedging in Forex,Futures & Options", "http://www.youtube.com/watch?v=8sDdyuYWtC4", html_options = {:target => "_blank"}

@@ -1,0 +1,455 @@
+.wrapper
+  %article
+    %h1 Reducing your Taxes
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 Taxation:
+      %p
+        Income earned from investments is usually taxable. The impact of taxes on investment returns can be substantial
+        and can potentially play a significant role in investment strategy. It is possible to minimize the impact of
+        taxes through tax-planning. Thus, all investors should understand the basics of taxation and the tax laws that apply to them.
+    %section
+      %h1 Marginal Tax Rate:
+      %p The tax rate applicable to every additional rupee of income earned is called the marginal tax rate. If a country's tax rates are as follows:
+      %table{:border => "1px"}
+        %tr
+          %th Income(Rs.)
+          %th Tax Rate
+        %tr
+          %td 0-60000
+          %td 5%
+        %tr
+          %td 60000-200000
+          %td 10%
+        %tr
+          %td 200000 and above
+          %td 20%
+      %p The marginal tax rate applicable to a person whose income is Rs.68,000 is 10%.
+    %section
+      %h1 Tax on Dividends and Interests:
+      =image_tag  "investment_education/tax1.png", :height => "138px", :width => "241px"
+      %p
+        Income earned as dividends from stocks or interest payments from #{link_to 'Bonds', page_path('investment_education/bonds')}, bank deposits etc is
+        usually subject to taxation. The tax rate applicable depends on the tax structure of the country of which the investor is a
+        resident. Some governments tax dividends and/or interest at a lower rate than other types of income, thereby giving investors the
+        incentive to own stocks and/or interest bearing securities.
+      %p For example, dividends are taxed at 15% p.a. in USA for most investors while dividends are not taxed at all in Hong Kong!
+    %section
+      %h1 Capital Gains Tax:
+      =image_tag  "investment_education/tax2.png", :height => "216px", :width => "275px"
+      %p
+        As we have learnt in the article on stocks, increases in the value of an asset will result in capital gains.
+        If a stock is purchased at Rs.10 and its value increases to Rs.15 over the course of 1 year, the total capital gain is Rs.5.
+        If the investor sells this stock, the capital gain is considered a realized capital gain. If the investor continues to
+        hold the stock at the end of the year, the capital gain is considered an unrealized capital gain.
+        The tax payable on the capital gains realized when an investor sells assets (e.g. stocks) is called capital gains tax.
+      %p
+        Most countries tax capital gains at lower rates than other types of income.
+        Realized and unrealized capital gains are usually taxed at different rates by most countries. In fact,
+        most countries do not tax unrealized capital gains. Most countries also tax long term capital gains at
+        a lower rate than short term capital gains.
+    %section
+      %h1 Comparing Interest/Dividend Taxes and Capital Gains Tax:
+      %p
+        Periodically, companies may reward their investors in times of high earnings. They may do so
+        by paying out cash in the form of dividends or by repurchasing shares. Share repurchases refers
+        to situations where the issuing company uses its own cash to buy a substantial number of its
+        publicly traded shares off the market, thereby decreasing the pool of shares and increasing the
+        price per share. Investors can thus, sell their shares in order to profit from this price increase.
+        Thus, the company has indirectly made a payout to investors.
+      %p
+        While investing in stocks, investors may want to take into consideration the payout policy of the company.
+        For example, large-cap companies (companies with large market capitalization) tend to pay out fixed dividends
+        since they tend to be cash-rich. They are able to do so since they have reached a stage of stable growth.
+        This is in contrast to smaller-cap companies that experience large fluctuations in earnings year-on-year and
+        will need to retain some cash to plan for contingencies.
+    %section
+      %h1 Fun Facts!
+      %p
+        Many large corporations today have policies that their company managements receive part of their compensation packages in the form
+        of stock options. Stock options will give option-holders the right to buy the underlying stock at a particular price. Thus, when the
+        stock is currently trading at a high price, option-holders can exercise their option to buy at the pre-agreed price (which is lower
+        than the current price). They will then sell the stock in the open market for a profit, which is simply is the difference between the
+        option-holder’s purchase price and the current market price. When the company management is paid in the form of stock options, their
+        pay is tied to the performance of the company.
+      %p
+        This means that since they will reap rewards when the value of the company’s stock increases. They should, in theory, work hard to
+        ensure that the company performs well. Of course this also means that in selecting a payout policy, the company management will choose
+        a share repurchase rather than a dividend payout since they will directly profit from the increase in share price. Further information
+        can be found in the article on options
+    %section
+      %h1 Wealth Tax:
+      =image_tag  "investment_education/tax4.png", :height => "216px", :width => "275px"
+      %p
+        Wealth tax is the tax imposed by some governments on the net assets of its citizens.
+        Taxable wealth may include property, houses, #{link_to 'Stocks', page_path('investment_education/stocks')}, #{link_to 'Bonds', page_path('investment_education/bonds')} and other securities. The laws pertaining to wealth tax vary widely from country to country.
+        Fortunately, wealth tax rates are generally much lower than income tax rates and are typically in the order of about 1% p.a. For example,
+        the maximum wealth tax applicable in Switzerland is about 1.5% p.a. of net assets.
+    %section
+      %h1 Tax Drag:
+      =image_tag  "investment_education/tax5.png", :height => "178px", :width => "247px"
+      %p
+        Tax drag is the decrease in possible income due to taxes. An example would best
+        illustrate the concept of tax drag. here's an illustration:-
+      %p
+        Assume that a mutual fund yields 8% annually and that the income from the investment
+        is re-invested in the same fund. Ashish Mishra invests Rs.100,000 in this mutual fund.
+        Assuming that no taxes are applicable, his investment would be worth Rs.215,892 in
+        10 years.
+      %h1 calculation:
+      %p ((1.08) ^ 10) X 100,000 = 215,892
+      %p
+        Suppose the income from mutual funds is taxed at 20%, Ashish would have a post-tax income
+        of Rs.6,400 at the end of the first year and thus would only be able to re-invest
+        the said amount at the end of the first year (As opposed to Rs.8000 assuming no taxes).
+        This results in a reduction in the 2nd year’s income. The income lost is not only
+        the tax paid but the potential interest that could be earned on the tax.
+      %p
+        The following table shows the income, tax paid and the future value of the investment
+        in the scenario where there is no tax and in the scenario where there is a 20% tax
+        payable every year.
+      %h1 Scenario 1 : No Taxes
+      %p Initial Investment: Rs.100,000
+      %table{:border => "1px", :cellpadding => "0", :cellspacing => "0"}
+        %tr
+          %th
+            Years
+          %th
+            Income(Rs.)
+          %th
+            Value of Total Investment(Rs.)
+          %th
+            Tax(at 0% p.a )
+          %th
+            Amount Reinvested(Rs.)
+        %tr
+          %td
+            0
+          %td
+            0
+          %td
+            100,000
+          %td
+            0
+          %td
+            0
+        %tr
+          %td
+            1
+          %td
+            8,000
+          %td
+            108,000
+          %td
+            0
+          %td
+            8,000
+        %tr
+          %td
+            2
+          %td
+            8,640
+          %td
+            116,640
+          %td
+            0
+          %td
+            8,640
+        %tr
+          %td
+            3
+          %td
+            9,331
+          %td
+            125,971
+          %td
+            0
+          %td
+            9,331
+        %tr
+          %td
+            4
+          %td
+            10,078
+          %td
+            136,049
+          %td
+            0
+          %td
+            10,078
+        %tr
+          %td
+            5
+          %td
+            10,884
+          %td
+            146,933
+          %td
+            0
+          %td
+            10,884
+        %tr
+          %td
+            6
+          %td
+            11,755
+          %td
+            158,687
+          %td
+            0
+          %td
+            11,755
+        %tr
+          %td
+            7
+          %td
+            12,695
+          %td
+            171,382
+          %td
+            0
+          %td
+            12,695
+        %tr
+          %td
+            8
+          %td
+            13,711
+          %td
+            185,093
+          %td
+            0
+          %td
+            13,711
+        %tr
+          %td
+            9
+          %td
+            14,807
+          %td
+            199,900
+          %td
+            0
+          %td
+            10,513
+        %tr
+          %td
+            10
+          %td
+            15,992
+          %td
+            215,892
+          %td
+            0
+          %td
+            15,992
+        %tr
+          %td
+            Total Value After 10 years(Rs.)
+          %td
+            215,892
+        %tr
+          %td
+            Total Taxes Paid(Rs.)
+          %td
+            0
+        %tr
+          %td
+            Total Potential Income Lost(Rs.)
+          %td
+            0
+      %h1 Scenario 2: 20% Annual Tax
+      %table{:border => "1px"}
+        %tr
+          %th
+            Years
+          %th
+            Income(Rs.)
+          %th
+            Value of Total Investment(Rs.)
+          %th
+            Tax(at 0% p.a )
+          %th
+            Amount Reinvested(Rs.)
+        %tr
+          %td
+            0
+          %td
+            0
+          %td
+            100,000
+          %td
+            0
+          %td
+            0
+        %tr
+          %td
+            1
+          %td
+            8,000
+          %td
+            106,400
+          %td
+            1600
+          %td
+            6,400
+        %tr
+          %td
+            2
+          %td
+            8,512
+          %td
+            113,210
+          %td
+            1,702
+          %td
+            6,810
+        %tr
+          %td
+            3
+          %td
+            9,057
+          %td
+            120,455
+          %td
+            1,811
+          %td
+            7,245
+        %tr
+          %td
+            4
+          %td
+            9,636
+          %td
+            128,164
+          %td
+            1,927
+          %td
+            7,709
+        %tr
+          %td
+            5
+          %td
+            10,253
+          %td
+            136,367
+          %td
+            2,051
+          %td
+            8,203
+        %tr
+          %td
+            6
+          %td
+            10,909
+          %td
+            145,094
+          %td
+            2,182
+          %td
+            8,727
+        %tr
+          %td
+            7
+          %td
+            11,608
+          %td
+            154,380
+          %td
+            2,322
+          %td
+            9,286
+        %tr
+          %td
+            8
+          %td
+            12,350
+          %td
+            164,260
+          %td
+            2,470
+          %td
+            9,880
+        %tr
+          %td
+            9
+          %td
+            13,141
+          %td
+            174,773
+          %td
+            2,628
+          %td
+            10,513
+        %tr
+          %td
+            10
+          %td
+            13,982
+          %td
+            185,959
+          %td
+            2,796
+          %td
+            11,185
+        %tr
+          %td
+            Total Value After 10 years(Rs.)
+          %td
+            185,959
+        %tr
+          %td
+            Total Taxes Paid(Rs.)
+          %td
+            21,490
+        %tr
+          %td
+            Total Potential Income Lost(Rs.)
+          %td
+            29,934
+          %p
+            Note that the total potential income lost due to taxes, i.e. tax drag is Rs.29,934,
+            which is more than the total tax paid (Rs.21,490).
+    %section
+      %h1 Tax Planning Strategies:
+      %p
+        It is possible to minimize the impact of taxes through careful planning. The following
+        simple strategies can go a long way in minimizing tax drag:
+      %p
+        If unrealized capital gains are not taxed, delay selling your asset and
+        realizing the capital gain for as long as possible. Do also consider the risk of
+        the fall in market price before making your decision.
+      %p
+        Consider using a tax-deferred account such as a retirement account (available in some countries)
+      %p
+        Always use after-tax returns while making decisions about investments.
+      %p
+        In the event that long-term capital gains are tax exempt (e.g. India), consider
+        holding stocks for long periods to avoid capital gains tax.
+      %p
+        Also consider tax-exempt #{link_to 'bonds', page_path('investment_education/bonds')} issued by your local government (e.g. some RBI bonds in India, certain Municipal
+        bonds in USA)
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.risk_management'), page_path('investment_education/risk_management')
+      .article_next
+        Next:
+        =link_to t('investment_education.fundamental_analysis1'), page_path('investment_education/fundamental_analysis1')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li Keep in mind that taxes can significantly reduce your returns.
+        %li Take this into account when investing.
+    .articles
+      %h1 Articles
+      %ul
+        %li No Articles yet.
+        
+    .videos
+      %h1 Videos
+      %ul
+        %li No Videos yet.
+        
