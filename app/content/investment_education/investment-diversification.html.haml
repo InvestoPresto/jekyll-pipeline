@@ -1,0 +1,102 @@
+.wrapper
+  %article
+    %h1 Diversification
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 What is Diversification:
+      %p
+        Diversification is the process of reducing the overall risk of the portfolio by investing in several securities, usually across different asset classes, instead of investing in a single security. 
+      %p
+        For example, an investor should choose to buy a small number of shares of 10 different companies rather than buy a large number of shares of a single company. In the former case, the investor’s returns do not depend entirely on the performance of one single company, thereby making the portfolio much less risky.  Since risk is defined as the volatility of returns, diversifying a portfolio reduces its risk. This is the main benefit of diversification.
+    %section
+      %h1 How does diversification work?
+      %p
+        Returns from different securities are not perfectly correlated. That means that the returns from different investments are not the same. If a stock goes up on a given day, it is not necessary that every other stock goes up on that day. Some will go up while others will go down. Losses from one security are usually offset by gains in other securities and vice versa. Therefore, if a portfolio consists of many securities, the portfolio returns vary less, thus making it less risky. For best results, investors should spread their investment portfolios across different asset classes (e.g.
+        #{link_to 'stocks',main_app.page_path('investment_education/stocks1')},
+        #{link_to 'fixed deposits',main_app.page_path('investment_education/fixed_deposits')},
+        #{link_to 'gold',main_app.page_path('investment_education/gold')},
+        ) because securities of different asset classes are not well correlated i.e. tend not to move together.
+      %p
+        The principle behind diversification is that the variance(measure of riskiness)of a basket of assets that are not perfectly correlated with one another is always less than the weighted average of the sums of the individual variances. The mathematical expressions involved are beyond the scope of this article. Small investors like us need not get into the details. The important thing to note here is that the riskiness of a diversified portfolio is always less than the riskiness of a concentrated portfolio.
+    %section
+      %h1 Illustration on the benefits of Diversification:
+      %p
+        Suppose there exist two companies, IcecreamLand and BlanketWorld which manufacture and sell ice-creams and blankets respectively. During summer, IcecreamLand has high sales and makes a profit of Rs. 1 per share each day while BlanketWorld has low sales and no profits. During winter, BlanketWorld has
+        high sales and makes a profit of Rs. 1 per share each day while IcecreamLand has very low sales and no profit. Also suppose that the shares of both these companies trade at Rs. 500 per share and that the companies pay out 100% of their profits as dividends. Also suppose that there are 180 days of winter and 180 days of summer every year.
+      %p
+        An investor with Rs. 1000 to invest could choose to invest in IcecreamLand and/or BlanketWorld. Suppose Raj invests Rs. 1000 and buys 2 shares of IcecreamLand, Anjali invests Rs. 2000 and buys 2 shares of BlanketWorld and Rohit too invests Rs. 2000 and buys 1 share of IcecreamLand and 1 share of BlanketWorld.
+      %p
+        Their portfolio returns and riskiness are as follows:
+      %table{:border => "1px"}
+        %tr
+          %th
+            Item
+          %th
+            Summer
+          %th
+            Winter
+          %th
+            Yearly Returns
+          %th
+            Variance (Riskiness)
+        %tr
+          %td
+            Raj
+          %td
+            Rs. 360
+          %td
+            Rs. 0
+          %td
+            Rs. 360
+          %td
+            Rs. 180
+        %tr
+          %td
+            Anjali
+          %td
+            Rs. 0
+          %td
+            Rs. 360
+          %td
+            Rs. 360
+          %td
+            Rs. 180
+        %tr
+          %td
+            Rohit
+          %td
+            Rs. 180
+          %td
+            Rs. 180
+          %td
+            Rs. 360
+          %td
+            0
+      %p
+        Note that all three investors earn the same return i.e. Rs. 360 over the entire year, an impressive 18% p.a. However, the important point to note here is that the riskiness of the portfolios are very different. While Raj and Anjali’s portfolios are extremely risky, Rohit’s portfolio is less risky and assures him more regular income.
+      %p
+        Thus as you notice, by investing in both IcecreamLand and BlanketWorld, Raj has gained the benefits of diversification of his portfolio and reduced his portfolio risk. On the contrary Rohit and Anjali have a very risky portfolio and the returns from them are highly volatile.
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.Where_to_Invest'), page_path('investment_education/asset_allocation')
+      .article_next
+        Next:
+        =link_to t('investment_education.Bonds'),page_path('investment_education/bonds')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li Diversification is the process of reducing the overall risk of the portfolio by investing in several securities, across different industries, instead of investing in a single security.
+        %li Losses from one security are usually offset by gains in other securities by Diversification.
+    .articles
+      %h1 Articles
+      %ul
+        %li=link_to "How to Diversify Your Investments", "http://www.schwab.com/public/schwab/research_strategies/market_insight/investing_strategies/portfolio_planning/the_portfolio_pyramid_how_to_diversify_your_investments.html", html_options = {:target => "_blank"}
+    .videos
+      %h1 Videos
+      %ul
+        %li=link_to "Introduction to Diversification","http://www.youtube.com/watch?v=pxqvzvPw2JM", html_options = {:target => "_blank"}
+        %li=link_to "Does Diversification work?","http://www.youtube.com/watch?v=H-_K5ssUcys", html_options = {:target => "_blank"}
+        %li=link_to "Portfolio Diversification -Yale University lecture.","http://www.youtube.com/watch?v=efPKwxZuLKY", html_options = {:target => "_blank"}

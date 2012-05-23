@@ -1,0 +1,95 @@
+.wrapper
+  %article
+    %h1 Stocks I
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 What is a gold?
+      %p
+        Gold is a precious metal. However in India it is more than just a precious metal. Gold is part of culture and history. Centuries ago, kings and rulers used gold as a medium of exchange to pay royalties to each other. Gold coins were used as local currency. Even in Europe, the quest for gold led to the exploration of the western hemisphere. In today’s world, many countries issue their currency against gold reserves. Thus gold has a very important role to play. Indian investors still invest in gold largely in form jewellery and coins rather than modern investment avenues like ETFs and mutual funds.
+    %section
+      %h1 How risky is gold?
+      %p
+        Gold in India is considered less risky than stocks but more risky than fixed deposits. However, for all practical purposes, given the high inflation and current account deficit in India, gold is quite safe for the retail investor.
+    %section
+      %h1 Characteristics of gold:
+      %ol
+        %li
+          %b
+            Gold is a hedge against inflation:
+          Gold has been a preserver of value through time. It has served as a natural hedge to inflation. As the inflation of a country goes up, the price of gold also climbs.
+        %li
+          %b
+            Gold is a safe haven in times of uncertainty:
+          Gold also serves a safe harbour and investors of all kinds flock to investing in gold during times of economic and political uncertainties. Example: In August 2011 when S&P downgraded Unites States of America, in matter of 2 weeks, gold rallied almost 10% from approx. Rs. 25,500 to Rs 28,000 (per 10 grams).
+        %li
+          %b
+            Gold is quoted in US dollars globally and is subject to currency risk:
+          Globally, gold is quoted in US dollars. The gold price in rupees is calculated by multiplying the gold price in dollars by the exchange rate between dollars and rupees. Thus when the exchange rate between USD and rupee changes, it has a bearing on price of gold in Rupees too. Example: From April 1st 2012 to May 1st 2012, gold in USD changed by -0.83%, however gold in rupees increased by 2.31%. The difference in the two prices can be explained by change in exchange rate of USD vs INR which rose from Rs 50.87  per dollar to Rs 52.51 per dollar. Similarly if the exchange rate of INR vs USD were to decrease and price of gold in the international market were to be constant, you could witness a decrease in price of gold in India. 
+    %section
+      %h1 DIFFERENCE IN PRICE OF GOLD IN RUPEES AND DOLLARS
+    %section
+      %h1 How much does gold return?
+      %p
+        Gold has been performing very well over the decades in India. For example, over the last 5 years amidst all the uncertainties and economic turmoil, gold has appreciated by a fabulous 139.41%. As mentioned earlier, gold serves as a safe heaven. The more the uncertainty, the greater the appreciation you can expect.
+    %section
+      %h1 HISTORICAL GOLD PRICES FROM 1971- 2012
+    %section
+      %h1 How to invest in gold?
+      %p
+        People in India traditionally bought gold in the physical form i.e. jewellery, coins, biscuits, bars etc. Relatively new methods involve investing via gold exchange traded funds (ETF) and
+        #{link_to 'mutual funds', main_app.page_path('investment_education/mutual_funds')}
+        dedicated to investing in gold. E.g. Goldman Sachs Gold Exchange Traded Scheme (Goldbees), Kotak Gold ETF, Reliance Gold Savings Fund.
+      %p
+        Investing in Gold ETF s / Gold Mutual Funds give you the following benefits over investing in physical gold:
+      %ol
+        %li
+          %b
+            Smaller denominations:
+          Investors can invest as little as few hundreds depending on the face value of units issued by ETFs. ETFs unit value (at time of issue) can vary from Rs 100 to Rs 3000 or even higher than that.
+        %li
+          %b
+            Better Liquidity:
+          ETFs are and mutual funds are traded on exchanges and it is extremely easy to increase or decrease your position. Moreover the trades take place immediately and the amount is either debited (in case you purchase) or credited (in case you sell) to/from your demat account. Note: When you sell an ETF or your mutual fund holding, it usually takes around 2-3 days for the money to be credited in your demat account and  probably another day from your demat account to your bank account. Thus in case of an emergency, you decide to sell your holdings in ETFs and Mutual funds though you will be able to transact immediately, it might still take 5-6 days before you get your money.
+        %li
+          %b
+            Reduced transaction and holding cost:
+          While purchasing gold in physical form you incur expenses like making charges (for jewellery), sales tax, VAT etc. However while investing via ETFs and mutual funds, you only pay a nominal brokerage charge and some related transaction charges such as STT (Securities and Transaction Tax).
+        %li
+          %b
+            Safety:
+          Since investment in gold ETFs/Mutual Funds are held in the demat form and not in physical form, it cannot be stolen. You also save on the additional holding cost such as bank locker charges you might incur if you were to invest in the physical form.
+        %li
+          %b
+            Tax Benefits:
+          When you invest in gold ETFs and mutual funds, if your holding period is above one year you are subject to long term capital gain tax which at present is nil. If you were to hold the same investment in the physical form, you get this tax benefit only for a holding period of 3 years or more. Note that short term capital gain is subject to 15% tax. You also do not pay any wealth tax in case of demat holdings.
+    %section
+      %h1 Editor’s take
+      %p
+        Gold is a fantastic investment in the Indian context (high inflation) and should be part of every investor’s portfolio. Gold is not highly correlated to stocks, bonds or other assets. Hence it serves as a classic
+        #{link_to 'diversification', main_app.page_path('investment_education/diversification')}
+        asset. We advise investing in gold ETFs and gold Mutual funds as opposed to physical gold.
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.fixed_deposits'), page_path('investment_education/fixed_deposits')
+      .article_next
+        Next:
+        =link_to t('investment_education.shares'), page_path('investment_education/stocks1')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li Stocks represent claims on the issuing company’s earnings and assets.
+        %li This after the company pays their debt holders and taxes, thereby making stock riskier compared to debt instruments.
+        %li The stock of a company can be bought at the time of Initial Public Offering or in the secondary market.
+    .articles
+      %h1 Articles
+      %ul
+        %li=link_to "Stocks -Wikipedia", "http://en.wikipedia.org/wiki/Stock", html_options = {:target => "_blank"}
+    .videos
+      %h1 Videos
+      %ul
+        %li=link_to "Introduction to Stocks", "http://www.youtube.com/watch?v=r0k3qmaIW5k", html_options = {:target => "_blank"}
+        %li=link_to "What it means to buy a company's stock", "http://www.youtube.com/watch?v=WvITkPn83gc&feature=player_embedded", html_options = {:target => "_blank"}
+        %li=link_to "Bonds vs. Stocks", "http://www.youtube.com/watch?v=rs1md3e4aYU", html_options = {:target => "_blank"}

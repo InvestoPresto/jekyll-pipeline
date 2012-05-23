@@ -1,0 +1,26 @@
+
+.wrapper
+  %article
+    %h1 Overview
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %ul
+        %li
+          = link_to 'Time Value of Money', main_app.page_path('investment_education/time-value-of-money')
+        %li
+          = link_to 'Risk Management', main_app.page_path('investment_education/risk-management')
+        %li
+          = link_to 'Cash Equivalents', main_app.page_path('investment_education/cash-equivalents')
+        %li
+          = link_to 'Insurance Products', main_app.page_path('investment_education/insurance-products')
+        %li
+          = link_to 'Real Estate', main_app.page_path('investment_education/real-estate-investment')
+        %li
+          = link_to 'Foreign Exchange', main_app.page_path('investment_education/foreign-exchange')
+        %li
+          = link_to 'Forwards', main_app.page_path('investment_education/forwards')
+        %li
+          = link_to 'Futures', main_app.page_path('investment_education/futures')
+        %li
+          = link_to 'Options', main_app.page_path('investment_education/options')
+
