@@ -1,0 +1,107 @@
+.wrapper
+  %article
+    %h1 Shares
+    = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 What is a share (stock)?
+      %p
+        A share(stock) is defined as a part ownership of a company. Initially, shares  are sold by the owners of the company to the public in an Initial Public Offering,  generally  to finance the company’s expansion. After the Initial Public Offering (IPO), the shares are traded on an exchange such as the Bombay Stock Exchange (BSE) or National Stock Exchange (NSE), where an investor can purchase and sell shares. Small investors cannot transact directly with exchange. They need to open an account with a brokerage firm(e.g. Kotak Securities, ICICI Securities) which acts as an intermediary between the investor and the exchange.
+    %section
+      %h1 Shares and Investment return
+      %p
+        Investors enjoy returns in 2 forms:
+      %ul
+        %li
+          %b
+            Capital Gain:
+          Shares often appreciate in price over time. The difference between the purchase price and selling price of the shares is called capital gain. This is the main form of return from shares.
+        %li
+          %b
+            Dividends:
+          Companies often pay out a part of their profits to the shareholder. The share of profits which a company distributes to its shareholders is called dividend. Dividends are usually quite small are rarely yield over 2% p.a.
+      %p
+        The share price of a company is largely dictated by the company’s performance. If the company is performing well, the share price goes up.
+        Similarly if the company performs poorly the share price goes down. Apart from company’s performance, the share price is also influenced by the trend and sentiment of the market.
+        A positive sentiment and upward trend usually help to push the price up while a negative sentiment and downward trend may push the shares price down. Read our article on
+        #{link_to 'fundamental analysis',main_app.page_path('investment_education/fundamental_analysis1')}
+        to gain an insight on how to evaluate a company’s performance and
+        #{link_to 'what moves share markets',main_app.page_path('investment_education/share_market')}
+        to understand how market sentiments effects the share market.
+    %section
+      %h1 How much do shares return?
+      %p
+        Shares generally return more than bonds.Over the last 10 years, shares as an asset class has outperformed bonds and fixed deposits by a huge margin but its lags behind gold. Moreover the returns are subject to extreme volatility.
+      %table
+        %tr
+          %th Period
+          %th S&P CNX Nifty
+          %th CNX Mid Cap
+          %th CNX Small Cap
+        %tr
+          %td 1 year
+          %td -9.23%
+          %td -4.09%
+          %td -5.52%
+        %tr
+          %td 3 Year
+          %td 75.29%
+          %td 126.31%
+          %td 114.63%
+        %tr
+          %td 5 Year
+          %td 38.57%
+          %td 59.00%
+          %td 12.60%
+        %tr
+          %td 10 year
+          %td 441.36%
+          %td 761.91%
+          %td N/A
+      .center_align
+        %b
+          10 year historical price of the Nifty
+    %section
+      %h1 How risky are shares?
+      %p
+        Shares as an asset class are perhaps the riskiest amongst all asset classes. Further if a person was to be involved in trading as opposed to investing, the risk increases all the more. Consider this: During the 2008 subprime crisis, in spite of the Indian economy being insulated from most of the global mess, in no more than 14 months the share markets declined by more than 50% from their January 2008 highs. Later when the panic settled down, the equity markets rose by 100% from their March 2009 lows. During this time gold traded in a range between X-Y while your fixed deposits would have yielded you a standard Z% return. Also while the overall index declined by a little more than 50%, there were several shares that declined by more than 80%. Similarly in the run up too, several shares increased by 200-300% from their lows. To shield yourself from such extreme volatility, it is important you 
+        #{link_to 'diversify', main_app.page_path('investment_education/diversification')}
+        your portfolio across several shares and sectors.
+    %section
+      %h1 How to invest in shares?
+      %p
+        An investor can invest directly in shares of a company or through equity
+        #{link_to 'mutual funds and ETFs', main_app.page_path('investment_education/mutual_funds')}.
+        As mentioned above, while investing in shares directly, it is important that you concentrate on diversifying your portfolio across shares and sectors. Another mix of asset classes within shares can are: large caps, midcaps and small caps.
+      %p
+        Mutual funds are collective pools of investments actively managed by professionals. There are several mutual funds dedicated towards investing in equities.  ETFs are passively managed investment pools that are designed to track the performance of certain index. Investing in mutual funds and ETFs, offer the advantage of diversification at a reduced cost.
+    %section
+      %h1 How are shares taxed?
+      %p
+        From tax reasons, your holdings are divided into long term holdings and short term holdings. Any holding for a period above 1 year is considered a long term and gains on it are exempt from tax. A holding period of less than a year is considered a short term and capital gains over the short term are subject to 15% short term capital gain tax.
+      %p
+        Dividends received are taxed at the company’s end before they are distributed to the shareholder and as such are tax free in hand of the investor.
+    %footer
+      .article_prev
+        Prev:
+        =link_to t('investment_education.Gold'), page_path('investment_education/gold')
+      .article_next
+        Next:
+        =link_to t('investment_education.Mutual_Funds'), page_path('investment_education/mutual_funds')
+      #disqus_thread
+  .extracontent
+    .takeaway
+      %h1 Take Away
+      %ul
+        %li Stocks represent claims on the issuing company’s earnings and assets.
+        %li This after the company pays their debt holders and taxes, thereby making stock riskier compared to debt instruments.
+        %li The stock of a company can be bought at the time of Initial Public Offering or in the secondary market.
+    .articles
+      %h1 Articles
+      %ul
+        %li=link_to "Stocks -Wikipedia", "http://en.wikipedia.org/wiki/Stock", html_options = {:target => "_blank"}
+    .videos
+      %h1 Videos
+      %ul
+        %li=link_to "Introduction to Stocks", "http://www.youtube.com/watch?v=r0k3qmaIW5k", html_options = {:target => "_blank"}
+        %li=link_to "What it means to buy a company's stock", "http://www.youtube.com/watch?v=WvITkPn83gc&feature=player_embedded", html_options = {:target => "_blank"}
+        %li=link_to "Bonds vs. Stocks", "http://www.youtube.com/watch?v=rs1md3e4aYU", html_options = {:target => "_blank"}

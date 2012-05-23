@@ -4,151 +4,140 @@
     = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What is a mutual fund?
-      =image_tag  "investment_education/MF1.png"
       %p
-        Simply put, a mutual fund is a financial institution that pools money from all its
-        investors and invests it in a basket of securities. This basket may include a mix
-        of assets like #{link_to 'stocks', page_path('investment_education/stocks')}, #{link_to 'bonds', page_path('investment_education/bonds')}, short-term money market instruments and other securities.
-        The mutual fund raises capital through the issue of shares to investors in a process
-        called a New Fund Offer (NFO). The fund is managed by an individual called the Fund
-        Manager. The fund then invests this capital in different types of assets as per
-        the objective of the fund as outlined in the prospectus issued to investors. The
-        mutual fund investors therefore, indirectly own the assets of the mutual fund by
-        owning pieces of the mutual fund. The net proceeds or losses are then distributed
-        among investors annually.
+        A mutual fund is a pool of money invested by small investors and managed by investment professionals to meet certain investment objectives. Small investors get together and invest in this pool known as a corpus which is then used by professional money managers to invest in a diversified portfolio of investments.
     %section
-      %h1 Fun Facts!
+      %h1 What is a unit or a share of a mutual fund?
       %p
-        The term “mutual fund” was created because of the idea of “mutual ownership” of
-        the fund assets between the fund and its investors.
+        A unit (sometimes known as a share) of a mutual fund is issued by the fund manager in return for money invested by the small investor. This unit or share of the mutual fund represents a piece of ownership of the entire mutual fund’s investment portfolio. So, if you own 1 unit or 1 share of HDFC Tax Saver Fund (Dividend scheme) and the fund has 100,000 units, you own 1/100,000 i.e. 0.001% of the investment portfolio of the mutual fund.
     %section
-      %h1 Types of Assets owned by the Fund:
+      %h1 What is the NAV / Net Asset Value of a mutual fund?
       %p
-        Most mutual funds are equity funds, i.e. they invest in stocks. However, several
-        mutual funds invest in corporate #{link_to 'bonds', page_path('investment_education/bonds')}, #{link_to 'commodities', page_path('investment_education/commodities')} or a combination of all of these.
-        For example, the Fidelity Equity-Income fund aims to invest 80% of its portfolio
-        in shares of large-cap American companies while the SBI Magnum Midcap fund aims
-        to invest predominantly in a well diversified basket of shares of Midcap companies
-        in India. Investors will know beforehand, which asset classes the fund invests in
-        as the target asset allocation and the type of investments considered will be outlined
-        in the prospectus. 
+        As we mentioned above, each unit or share of a mutual fund represents a small piece of ownership of the value of investment portfolio of the fund. The monetary value of this is known as the Net Asset Value i.e. NAV. So, if the investment portfolio of HDFC Tax Saver Fund (Dividend scheme) is worth Rs 50 lakhs and there are 100,000 units or shares of the fund, then the NAV of 1 unit /share of the fund is Rs 50.
     %section
-      %h1 Net Asset Value (NAV):
+      %h1 What are the types of mutual funds?
+      %h1
+        By structure of the mutual fund:
       %p
-        Net Asset Value of a mutual fund is the total market value of all the assets owned
-        by the fund minus the total market value of all the liabilities of the fund divided
-        by the total number of shares issued by the fund. In other words, it is the per-share
-        value of the fund. For example, if ABC mutual fund owns shares of several companies
-        totaling 5 million US$ and owes its employees, salaries totaling Rs.500,000 and has
-        issued 1 million shares since its inception, its net asset value is 4.5 per share
+        %b
+          Closed ended funds:
+        A closed ended fund has a fixed maturity and the units are issued only at the time of creating of the fund. Once this window is closed, investors have an option to buy/sell units from each other and not directly from
+        the fund. Some funds also give investors the offer to repurchase units on fixed dates. However the number of units issued after the initial offer period cannot be increased.
       %p
-        NAV = (Total MV of all assets – Total MV of all liabilities)/Shares issued
+        %b
+          Open ended fund:
+        An open ended fund does not have any fixed maturity period. The fund offers to sell and buyback units directly from investors throughout the year.
       %p
-        The NAV of funds are marked-to-market daily, meaning that they are calculated daily
-        at close and investors will then trade at this closing price. Investors can place
-        orders throughout the day to buy or sell shares in the fund. However, all orders
-        will transact at the same price when the NAV has been calculated at close. This
-        is known as “forward-pricing”.
+        The key benefit of an open-ended fund is liquidity. If a close ended fund is not performing well, it may not have any takers at its Net Asset Value (NAV). An investor may be forced to sell unit at a discount to its value. However in an open ended fund, the fund offers to buy back the units at a price close to its NAV.
+      %h1
+        By nature of the mutual fund:
+      %p
+        %b
+          Equity funds:
+        These funds allocate most of their corpus in the share/stock markets. These funds can further be classified based on various themes like:
+      %ul
+        %li Sector agnostic or diversified.
+        %li Growth, value, blend etc.
+        %li Funds focusing on Large cap stocks or mid-caps stock or small caps or a mix of all 3.
+      %p
+        %b
+          Debt Funds:
+        These funds focus on investing most of the corpus in debt instruments issued by government and corporates. These funds are considered risk averse and returns though low, are mostly assured. They are investor’s favourite during turbulent times.
+      %p
+        %b
+          Balanced Funds:
+        Balanced funds invest in both equities and debt. The funds have a dual objective of moderate growth and regular income. They are less risky than equity funds but more risky than debt funds.
+      %h1
+        By investment objective of the mutual fund:
+      %p
+        %b
+          Growth funds:
+        Growth funds aim at capital appreciation (growth). These funds usually invest primarily in stocks/shares.
+      %p
+        %b
+          Income funds:
+        Income funds aim at investing in such a way that it assures regular income in form of interest and dividends. These funds invest primarily in debt instruments.
     %section
-      %h1 Open ended and Closed ended Mutual Funds:
-      =image_tag  "investment_education/MF2.png"
-      %h1 Open ended funds
+      %h1 What are the types of returns from mutual funds?
       %p
-        are mutual funds that do no limit the number of shares issued by them. In other
-        words, shares of the open ended mutual funds can be issued and redeemed by the fund.
-        The investors of open ended funds transact directly with the fund. New investors
-        who would like to invest in the fund are issued new shares by the fund. Investors
-        who want to disinvest from the fund receive cash from the fund after redemption
-        of their shares.
-      %h1 Closed Ended Funds:
+        %b
+          Mutual funds offer returns in 2 forms:
       %p
-        These are mutual funds who limit
-        the number of shares issued by them. After the NFO, investors who want to invest
-        in closed ended funds have to buy shares of the fund from existing investors of
-        the fund. The fund does not normally issue new shares after the NFO. Closed end
-        funds typically trade at a discount to NAV.
+        %b
+          Dividend distribution:
+        Mutual funds distribute the income that they earn in form of dividends. They have 2 sources of income:
+      %p
+        Income via interest and dividends: Usually they distribute all the income earned from these sources. Income via capital gains: Funds usually distribute a part of
+        their capital gains i.e. they sell some of their investments that have increased in value and distribute these profits as dividends to their investors.
+      %p
+        %b
+          Capital gains:
+        When a fund does well, the value of its investments go up which results in an increase in NAV. If an investor chooses, he can opt to sell his units at higher price and book profit on them.
     %section
-      %h1 Fun Facts!
-      %p In the case of closed end funds, the numbers of shares are fixed. As investors lack information on the true value of the fund, they will only be willing to pay less than its actual value and hence, more often than not, closed end funds will trade at a discount to NAV. This is an inherent problem in free markets known as information asymmetry.
-    %section
-      %h1 Advantages:
-      %ol
-        %li 
-          Diversification: Investing in mutual funds is a relatively cheap way of diversifying. By owning shares in a mutual fund instead of individual stocks, one’s risk can be spread out. This is because every share in a mutual fund represents a basket of securities and the loss on any particular security can be offset by gains in the other securities.
-        %li 
-          Economies of Scale: Depending on the fund objective and structure, it could also provide economies of scale. A mutual fund buys and sells
-          huge amounts of securities at a time, thus its transaction costs per security will
-          be far lower than what an individual will pay for each security. For example, for
-          a person wanting to invest $100 in telecom companies in USA, it would be far easier
-          and cheaper to buy 10 shares of XYZ Telecom mutual fund than buy 1 share of AT&T,
-          1 share of Verizon and so on.
-        %li 
-          Affordability: A mutual fund allows individuals to invest in securities that would have been out-of-reach for them if they had chosen to invest individually.
-        %p
-          For example, money markets transact in extremely large denominations such that only
-          institutional investors are able to trade them directly. An individual investor
-          can choose to invest in money markets indirectly through a money market mutual fund
-    %section
-      %h1 Disadvantages:
-      =image_tag  "investment_education/mf5.png", :width => "280px", :height => "133px"
-      %ol
-        %li 
-          Professional Management: The financial expertise of professional fund managers
-          is often questionable. In fact, index funds under passive fund management have often
-          been able to deliver more favorable returns than actively managed mutual funds.
-        %li 
-          Costs:
-          Mutual funds often charge entry and exit loads i.e. one time fees
-          to issue and redeem of shares. This money goes to the fund and is often used for
-          marketing and sales activities. These loads typically amount to about 1-3% of the
-          investment. Thus, investors who invest Rs.100 in mutual funds typically only end up
-          getting shares worth Rs.97. Funds also charge Management fees and/or other fees which
-          typically amount to 1-1.5% p.a. This cost too is borne by the investor. More often
-          than not, actual returns from the basket of securities as represented by a mutual
-          fund may be wiped out by the sheer amounts of transactions costs and other fees
-          imposed by the mutual fund.
+      %h1 Mutual Fund Fees and Loads
       %p
-        The emergence of No-Load mutual funds is a big step in towards eliminating such
-        unnecessary expense for the investors. Several funds, especially Exchange Traded
-        Funds (ETFs) now have low expense ratios, typically less than 1% p.a. Investors
-        can consider investing in such funds.
+        Fund managers also charge unitholders a small fee for fund management and administrative expenses. This is typicall between 1-3% p.a. In addition, investors sometimes have to pay entry/exit load(fee) while buying and selling mutual fund units/shares. However, these days, entry loads are usually 0% and exit loads for periods greater than 1 year are also usually 0% in the case of most mutual funds.
     %section
-      %h1 What is the risk-return profile of mutual funds?
-      =image_tag  "investment_education/MF3.png"
+      %h1 What are the returns from mutual fund investments?
       %p
-        The risk-return profile of a mutual fund depends heavily on the fund’s objective, the asset classes
-        it invests in and the type of securities it invests in. An asset class is a group of securities that exhibit similar characteristics and behave similarly in the market.The bottom line is that a mutual fund has the same risk profile as the securities that it invests in.
-      %p Equity mutual funds carry the risk profile of equity securities while bond funds carry the risks of #{link_to 'bonds', page_path('investment_education/bonds')} and so on. Midcap funds are generally more risky than large cap funds while money market funds are usually the safest. Since most mutual funds invest in a well diversified basket of securities, the risk carried by such funds is much lower than the risk from investing in a single security.
+        Returns from mutual funds largely vary depending upon the nature of the scheme. While equity mutual funds return roughly in the range of the index and are subject to volatility, returns from debt schemes are more constant and roughly hover around 10% p.a.  We have classified returns from some of the schemes across various categories to give you a rough idea of how the returns vary (data as on May 11, 2012):
+      .center_align
+        %b
+          EQUITY
+      .center_align
+        %b
+          DEBT
+      .center_align
+        %b
+          HYBRID
     %section
-      %h1 Types of Mutual Funds:
-      %h1 Equity Funds
-      %p Invest in equity securities i.e. shares. They may also invest in stock options, futures etc. Equity funds may focus on investment style such as Value/ Growth funds or on specific sectors such as Infrastructure, Automobiles, Telecom etc. Mid-cap funds invest in mid-market capitalization companies while small cap funds invest in companies with small market capitalization.Similarly, Emerging market funds invest in companies from emerging markets such as India, Russia, Brazil etc.
-      %h1 Bond Funds
-      %p Invest in a basket of corporate bonds. Bond funds provide #{link_to 'diversification', page_path('investment_education/diversification')} benefits and reduce the total credit risk borne by the investor.
-      %h1 Balanced Funds
-      %p Invest in a combination of equity and debt instruments i.e. #{link_to 'shares', page_path('investment_education/stocks')} and #{link_to 'bonds', page_path('investment_education/bonds')}.
-      %h1 Funds of funds
-      %p (FoF) ) are mutual funds that invest in other mutual funds. This may be suitable for investors who are unable to determine their own asset allocation model.
-      =image_tag  "investment_education/mf10.png", :width => "500px"
-      %p This is also a good choice for investors who wish to enter into a variety of emerging markets. Fund of funds could invest in hedge funds from these emerging markets rather than pick out individual securities themselves. This is because funds of funds do not have intimate knowledge of these markets but still want exposure to their growth potential. Therefore, it may be better for them to invest with the aid of hedge fund managers who have experience investing in these markets.
-      %p Hedge funds choose securities based on their expertise and the funds of funds invest in reputed hedge funds.
-      %p A disadvantage of this is that an investor may end up paying multiple layers of costs. Investors ultimately bear transaction costs and the management fees charged by in investee hedge funds as well as the fund of funds. These fees could add up to several hundred basis points and should be taken into consideration before making decisions about investing in funds of funds.
-      =image_tag  "investment_education/mf9.png", :width => "500px"
+      %h1 How risky are mutual funds?
       %p
-        The main risk that investors in mutual funds face is, market risk
-        i.e. the risk that the prices of the assets that the mutual fund invests in, fall due to changes in market conditions thereby reducing the Net Asset Value of the fund.
+        The riskiness of a mutual fund depends on the kind of investments the fund invests in. Equity funds are riskier than debt funds. But on the whole, investing in mutual funds is less risky than investing in equities directly. This is because mutual funds offer the benefit of diversification<Link to diversification> and specialised investing. However due to factors market volatility, mutual funds are ranked higher than fixed deposits in the risk barometer.
+    %section
+      %h1 What are ETFs?
       %p
-        Note that unsystematic risk (The risk that fluctuations in the prices of individual stocks/bonds due to company specific reasons will affect the NAV), is virtually nil. This is due to #{link_to 'diversification', page_path('investment_education/diversification')} benefits.
-        Investors also bear the risk that the fund manager will deviate from the fund’s stated objective thereby distorting returns. This risk is called manager risk. Investors in funds that invest outside their home country also bear currency risk(The risk that changes in exchange rates distort returns).
-      %h1 How can one invest in mutual funds?
-      %p Investors can approach funds directly or use the services of a broker(e.g. Charles Schwab or E-Trade) in order to buy shares of mutual funds. Most brokers charge a brokerage fee for enabling you to buy no load funds or exchange traded funds.
+        ETFs stand for Exchange Traded Funds. They are mutual funds formed with the intent of closely tracking the returns of a particular asset or an index. In India, there are 2 major types of ETFs for retail investors:
+      %p
+        %b
+          Index ETFs:
+        Index ETFs hold securities in their portfolio in a proportion that is very close to that of the constituents of the index it is tracking. They aim to replicate the returns of the index they are tracking. Example: Kotak Nifty ETF tracks the S&P CNX Nifty.
+      %p
+        %b
+          Commodity ETFs:
+        Commodity ETFs invest in the commodity they are tracking. Example: ICICI Prudential Gold Exchange Traded Fund tracks gold.
+    %section
+      %h1 How can one invest in an ETF?
+      %p
+        ETFs trade on stock exchanges such as the BSE and NSE. They can be traded just like shares via a stock broker. The management fees and administrative expenses of ETFs are generally lower than that of other mutual funds. Entry and Exit loads are also absent in the case of ETFs.
+      %h1 Advantages of investing in Mutual funds and ETFs:
+      %p The main advantages of investing in mutual funds and ETFs are:
+      %p
+        %b
+          Diversification:
+        The biggest advantage of investing in mutual funds and ETFs is that they give you access to a diversified portfolio at a low cost. Can you imagine constructing an own portfolio in exactly the same proportion as the index. For a retail investor not only would this be a mighty expensive task but also a very difficult one.
+      %p
+        %b
+          Professional Management:
+        Mutual funds are managed by professionals. By investing in mutual funds not only are relying on professionals expertise but also saving the time and effort of tracking and managing your own portfolio.
+      %p
+        %b
+          Tax saving:
+        Some mutual funds offer you the advantage of claiming tax deduction under Section 80C. These are known as ELSS or Equity Linked Saving Schemes. Sometime the tax benefits that you enjoy can outweigh the losses you stand to face in case the NAV of the mutual fund were to fall. Example: For tax purposes, in case your income falls in the 5-8 lakhs slab, you would be subject to 20% tax. Say you invest Rs 1,00,000 in a particular mutual fund that offers you deduction under Sec 80C. You would have 1,00,000 deducted from taxable income under Section 80c and thus have to pay Rs 20,000 less in tax. Now suppose that the fund’s NAV is constant and doesn’t go up, you would still have saved Rs 20,000 in tax.
+      %p
+        Investing in ETFs also offers certain tax advantages. Example: ETFs are considered market instruments and any holding held for a period greater than a year is considered “long term” for capital gain taxation. Long term capital gains tax is 0%. The period for other form of investments varies. For investment in physical gold, the period is 3 years. Thus if you were to invest in gold ETF instead of physical gold, you could claim long term capital gains after 1 year instead of waiting for 3 years (as in the case of physical gold). Short term capital gain is taxed at 15% of gains.
+    %section
+      %h1 Editor’s Note:
+      %p
+        Mutual Funds and ETFs are fantastic for small investors just starting out as they give you diversification benefits at a low cost. We strongly recommend that you try to max out your potential tax deduction under Section 80c by investing in 80c compliant schemes such as ELSSs to save tax.
+
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.stocks2'), page_path('investment_education/stocks2')
+        =link_to t('investment_education.shares'), page_path('investment_education/shares')
       .article_next
         Next:
-        =link_to t('exchange_traded_funds'), page_path('investment_education/exchange_traded')
+        =link_to t('investment_education.share_market'), page_path('investment_education/share_market')
       #disqus_thread
   .extracontent
     .takeaway
