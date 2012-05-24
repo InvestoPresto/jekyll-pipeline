@@ -1,6 +1,6 @@
 .wrapper
   %article
-    %h1 Asset allocation and choosing investments
+    %h1 Where to invest
     = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 Assets and Asset Classes:
@@ -37,9 +37,11 @@
           market conditions and vary widely from year to year. Unlike fixed deposits or bonds, returns are
           not certain. Investors can even end up losing money. We have divided equity into the following sub-
           asset classes based on their market capitalization which is a measure of how large the company is.
-          Market Capitalization of a company = No. of shares outstanding X Price of each share
-          Classification into largecaps, midcaps and smallcaps varies widely but we have adopted the following
-          convention:
+        %br
+          %p
+            Market Capitalization of a company = No. of shares outstanding X Price of each share
+          %p
+            Classification into largecaps, midcaps and smallcaps varies widely but we have adopted the following convention:
           %ol
             %li
               %b Largecap stocks:
@@ -73,7 +75,7 @@
         different asset classes. As discussed previously, asset classes are sets of assets that behave similarly
         and have similar characteristics, e.g. stocks, fixed income securities, commodities and cash
         equivalents. Investors should not invest all their money in one asset class or one single security, or
-        else the portfolio becomes too risky. #{link_to 'Diversification', page_path('investment_education/diversification')} across asset classes helps
+        else the portfolio becomes too risky. #{link_to 'Diversification', main_app.page_path('investment_education/investment-diversification')} across asset classes helps
         reduce the risk of a portfolio immensely.
     %section
       %h1 Why asset allocation?
@@ -98,7 +100,7 @@
         check out our #{link_to 'free Risk Profiling and Asset Allocation tool', edit_comprehensive_risk_profiler_path} for a
         risk profile and asset allocation that is personalized to your needs and constraints.
       %p
-        For example, let us assume that a portfolio consists of Rs.100, 000 and that we have determined
+        For example, let us assume that a portfolio consists of Rs.1,00,000 and that we have determined
         during the asset allocation stage that 40% will be allocated to #{link_to 'stocks', page_path('investment_education/stocks1')}, 30% to fixed
         deposits<link to fixed deposits> and 30% to gold <link to gold>. This implies that the amount of
         money allocated to each asset class is:
@@ -120,7 +122,7 @@
           %td Rs 20,000
         %tr
           %td Total
-          %td Rs. 100,000
+          %td Rs. 1,00,000
     %section
       %h1 Why personalize asset allocation?
       %p
@@ -144,10 +146,10 @@
           catering to different investing needs. There are funds that invest only in large caps, some
           that invest only in mid-caps, some only in gold, others in a mix of different assets including
           fixed income, equities etc. Choosing this method is relatively easy, less time consuming
-          and safe as the funds are #{link_to 'well diversified', page_path('investment_education/diversification')} and are managed by
+          and safe as the funds are #{link_to 'well diversified', main_app.page_path('investment_education/investment-diversification')} and are managed by
           professionals.
           %p
-            From our previous example, choosing this method entails investing Rs 40,000 in a mutual fund that invests solely in large cap stocks.l
+            From our previous example, choosing this method entails investing Rs 40,000 in a mutual fund that invests solely in large cap stocks.
         %li
           %b Picking each security individually:
           The more difficult of the two options, this process
@@ -163,15 +165,16 @@
             money in individual large cap stocks such as Reliance Industries, TCS, ITC, Sun Pharma etc
             with the total amount invested in largecap stocks adding up to Rs 40,000.
       %p
-        Read our sections on “Understanding Stock Markets”<link> and Fundamental Analysis <link> to
+        Read our sections on #{link_to 'Understanding Stock Markets', main_app.page_path('investment_education/share-market')}
+        and #{link_to 'Fundamental Analysis', main_app.page_path('investment_education/fundamental-analysis-shares')} to
         learn how to select stocks to invest in.
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.Where_to_Invest'), page_path('investment_education/asset_allocation')
+        =link_to t('investment_education.Investment_Plan'), page_path('investment_education/investment-plan')
       .article_next
         Next:
-        =link_to t('investment_education.Diversification'), page_path('investment_education/diversification')
+        =link_to t('investment_education.Diversification'), page_path('investment_education/investment-diversification')
       #disqus_thread
   .extracontent
     .takeaway

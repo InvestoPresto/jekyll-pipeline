@@ -1,6 +1,6 @@
 .wrapper
   %article
-    %h1 Share Market
+    %h1 Share market : What drives it?
     = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What affects share prices?
@@ -18,7 +18,7 @@
       %h1 Factors that affect the long term performance of shares (stocks)
       %p
         The price of a company’s shares is determined by fundamental factors in the long term. While most factors relate to the company being analyzed, there are several country-wide/global factors to consider too.  Remember that when you buy a share of a company, you are buying a small piece of the company.
-        #{link_to 'Read this article to understand what shares are',main_app.page_path('investment_education/share_market')}.
+        #{link_to 'Read this article to understand what shares are',main_app.page_path('investment_education/shares')}.
         Therefore, your shares become more valuable as the company becomes more valuable.
     %section
       %h1 Main Macroeconomic factors that affect shares
@@ -101,10 +101,10 @@
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.stocks1'), page_path('investment_education/stocks1')
+        =link_to t('investment_education.Bonds'), page_path('investment_education/bonds')
       .article_next
         Next:
-        =link_to t('investment_education.mutual_funds'), page_path('investment_education/mutual_funds')
+        =link_to t('investment_education.Fundamental_Analysis'), page_path('investment_education/fundamental-analysis-shares')
       #disqus_thread
   .extracontent
     .takeaway

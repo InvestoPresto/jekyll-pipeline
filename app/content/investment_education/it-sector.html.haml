@@ -1,6 +1,7 @@
 .wrapper
   %article
     %h1 How to analyze IT sector shares
+    = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What is information technology?
       %p
@@ -105,7 +106,7 @@
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.sectors : banking'), page_path('investment_education/banking-sector-shares')
+        =link_to t('investment_education.Banking_Sector'), page_path('investment_education/banking-sector-shares')
       .article_next
         Next:
         =link_to t('investment_education.articles'), page_path('investment_education/articles')
