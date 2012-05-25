@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Cash Equivalents
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What are cash equivalents?
       %p
@@ -36,7 +37,6 @@
           and non-competitive bidding. Investors involved in competitive bidding will have
           priority over non-competitive bidders in terms of issue placements. In fact, competitive
           bidding is the process used to set the market price for Treasury Bills.
-        
         %p
           Treasury Bills are guaranteed by the government and are considered to be the safest
           kinds of securities in the market. In the U.S., T-Bill rates are considered the
@@ -167,10 +167,10 @@
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.overview'), page_path('investment_education/overview')
+        =link_to t('investment_education.risk_management'), page_path('investment_education/risk-management')
       .article_next
         Next:
-        =link_to t('investment_education.bonds'), page_path('investment_education/bonds')
+        =link_to t('investment_education.bonds'), page_path('investment_education/insurance-products')
       #disqus_thread
   .extracontent
     .takeaway

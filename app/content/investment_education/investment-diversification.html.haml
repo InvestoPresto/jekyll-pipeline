@@ -1,20 +1,19 @@
 .wrapper
   %article
-    %h1 Diversification
-    = render :partial => 'layouts/facebook_recommend'
+    %h1 Diversifying investments across sectors and asset classes
     %section
-      %h1 What is Diversification:
-      %p
-        Diversification is the process of reducing the overall risk of the portfolio by investing in several securities, usually across different asset classes, instead of investing in a single security. 
-      %p
-        For example, an investor should choose to buy a small number of shares of 10 different companies rather than buy a large number of shares of a single company. In the former case, the investor’s returns do not depend entirely on the performance of one single company, thereby making the portfolio much less risky.  Since risk is defined as the volatility of returns, diversifying a portfolio reduces its risk. This is the main benefit of diversification.
+      = render :partial => 'layouts/facebook_recommend'
+    %section
+      %h1 What is Diversification?
+      %p Diversification is the process of reducing the overall risk of the portfolio by investing in several securities, usually across different asset classes, instead of investing in a single security.
+      %p For example, an investor should choose to buy a small number of shares of 10 different companies rather than buy a large number of shares of a single company. In the former case, the investor’s returns do not depend entirely on the performance of one single company, thereby making the portfolio much less risky.  Since risk is defined as the volatility of returns, diversifying a portfolio reduces its risk. This is the main benefit of diversification.
     %section
       %h1 How does diversification work?
       %p
         Returns from different securities are not perfectly correlated. That means that the returns from different investments are not the same. If a stock goes up on a given day, it is not necessary that every other stock goes up on that day. Some will go up while others will go down. Losses from one security are usually offset by gains in other securities and vice versa. Therefore, if a portfolio consists of many securities, the portfolio returns vary less, thus making it less risky. For best results, investors should spread their investment portfolios across different asset classes (e.g.
-        #{link_to 'stocks',main_app.page_path('investment_education/stocks1')},
-        #{link_to 'fixed deposits',main_app.page_path('investment_education/fixed_deposits')},
-        #{link_to 'gold',main_app.page_path('investment_education/gold')},
+        #{link_to 'stocks',main_app.page_path('investment_education/shares')},
+        #{link_to 'fixed deposits',main_app.page_path('investment_education/investment-fixed-deposits')},
+        #{link_to 'gold',main_app.page_path('investment_education/gold-investment')},
         ) because securities of different asset classes are not well correlated i.e. tend not to move together.
       %p
         The principle behind diversification is that the variance(measure of riskiness)of a basket of assets that are not perfectly correlated with one another is always less than the weighted average of the sums of the individual variances. The mathematical expressions involved are beyond the scope of this article. Small investors like us need not get into the details. The important thing to note here is that the riskiness of a diversified portfolio is always less than the riskiness of a concentrated portfolio.
@@ -76,13 +75,62 @@
         Note that all three investors earn the same return i.e. Rs. 360 over the entire year, an impressive 18% p.a. However, the important point to note here is that the riskiness of the portfolios are very different. While Raj and Anjali’s portfolios are extremely risky, Rohit’s portfolio is less risky and assures him more regular income.
       %p
         Thus as you notice, by investing in both IcecreamLand and BlanketWorld, Raj has gained the benefits of diversification of his portfolio and reduced his portfolio risk. On the contrary Rohit and Anjali have a very risky portfolio and the returns from them are highly volatile.
+    %section
+      %h1 Diversification protects your investments: An example from 2008
+      %p n the following section, you will see how a well-diversified portfolio protects you when markets are going through bad times. During the sub-prime crisis of late 2008, the market slumped almost 38% in 9 months beginning 1st April 2008 only to recover 9 months later and trade at similar levels one-and-half years later in October 2009. In our illustration we have taken examples of 2 portfolios:
+      %ol
+        %li Portfolio 1 => 100% shares (returns represented by the Nifty)
+        %li Portfolio 2 => A diversified portfolio consisting of 33% shares, 33% gold and 33% fixed deposits
+      %table
+        %tr
+          %th.center_align{:rowspan => 2}Date
+          %th.center_align{:rowspan => 2} Portfolio 1
+          %th.center_align{:colspan => 4} Portfolio 2
+        %tr
+          %th.center_align Equity
+          %th.center_align Gold
+          %th.center_align Fixed Deposit
+          %th.center_align Total
+        %tr.right_align
+          %td.center_align 1st April 2008
+          %td 100,000
+          %td 33,333
+          %td 33,333
+          %td 33,333
+          %td 100,000
+        %tr.right_align
+          %td.center_align 31st December 2008
+          %td 62,438
+          %td 20,813
+          %td 40,529
+          %td 34,791
+          %td 96,133
+        %tr.right_align
+          %td.center_align 31st March 2009
+          %td 63,742
+          %td 21,247
+          %td 44,818
+          %td 36,250
+          %td 102,315
+        %tr.right_align
+          %td.center_align 30th October 2009
+          %td 98,906
+          %td 32,968
+          %td 46,005
+          %td 37,708
+          %td 116,682
+    %section
+      %p As you notice, at end of one-and-half years, diversified portfolio has outperformed the 100% share portfolio by about 18% .  More importantly, even in times of extreme adversity the diversified portfolio was down only Rs.3,867 as compared to Rs.37,562 in the case of the 100% share portfolio.
+    %section
+      %h1 Editor’s take
+      %p We strongly recommend that you diversify your investment portfolio across asset classes to protect the value of your investments.
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.Where_to_Invest'), page_path('investment_education/asset_allocation')
+        =link_to t('investment_education.Where_to_Invest'), page_path('investment_education/where-to-invest')
       .article_next
         Next:
-        =link_to t('investment_education.Bonds'),page_path('investment_education/bonds')
+        =link_to t('investment_education.Planning_your_Taxes'),page_path('investment_education/tax-planning')
       #disqus_thread
   .extracontent
     .takeaway

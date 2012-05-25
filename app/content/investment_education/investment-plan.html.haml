@@ -1,18 +1,16 @@
 .wrapper
   %article
-    %h1 Investment Plan
-    = render :partial => 'layouts/facebook_recommend'
+    %h1 Investment Planning
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %p “Expect the best, plan for the worst, and prepare to be surprised.”- Denis Waitley
       %h1 Why is investment planning important?
       %p
-        Planning not only brings in an element of discipline into the investing process but also helps you better understand your investment objectives, needs, constraints and risk tolerance.
-        In essence, it helps you build and manage an investment portfolio that is suited to you. Good planning can also help you reduce your portfolio risk and improve returns. Sounds too good to be true? Read on.
-      %h1 Steps to create an investment plan
+        Planning not only brings in an element of discipline into the investing process but also helps you better understand your investment objectives, needs, constraints and risk tolerance. In essence, it helps you build and manage an investment portfolio that is suited to you. Good planning can also help you reduce your portfolio risk and improve returns.
       %p
-        It helps to have a written plan as opposed to a vague mental note. Not only does this bring clarity but it also becomes
-        useful when you want to refer to your plan in future.
-      %h1 Outline your investment objectives
+        %b
+          Steps to create an investment plan
     %section
       %h1 Step 1: Always plan on paper
       %p
@@ -20,11 +18,11 @@
     %section
       %h1 Step 2: Outline your investment objectives
       %p
-        You should outline your long term investment objectives in detail. What do you want to achieve through investing? Do you want to be able to pay for your MBA? Do you want to save for a dream vacation? Are you saving for your daughter’s education? Or are you simply investing to become a crorepati? All of these are legitimate investment objectives. 
+        You should outline your long term investment objectives in detail. What do you want to achieve through investing? Do you want to be able to pay for your MBA? Do you want to
+        save for a dream vacation? Are you saving for your daughter’s education? Or are you simply investing to become a crorepati? All of these are legitimate investment objectives.
         Whatever your objective is, write it down on paper and be honest with yourself.
       %p
-        The next step after answering the previous question is to answer the following questions: 
-        What sort of returns would you like over the long run? Can you bear the risk you need to take to generate those returns?
+        The next step after answering the previous question is to answer the following questions: What sort of returns would you like over the long run? Can you bear the risk you need to take to generate those returns? 
       %p
         %b
           Objectives are broadly classified into the following heads:
@@ -51,7 +49,7 @@
         Some investors are in a better position to take risks or are more willing to take risks than others. The distinction between the two is important since a willingness to take risk does not necessarily mean an ability to do so. Risk profiles are influenced primarily by age, financial situations and intrinsic natures. For example, young investors with decades of working life left are generally in a better position to make risky investments than older investors who are scheduled to retire in a short while. 
         A young, unmarried IT professional is in a better position to make a risky investment than a single mother who has to provide for her daughter’s education and upkeep.
       %p
-        #{link_to 'Figure out what level of risk you are comfortable with', main_app.edit_comprehensive_risk_profiler_path}
+        Figure out what level of risk you are comfortable with.
         Understand your own risk profile before making investments. This is very important as it will prevent a mismatch between your ability to take on risk and your desire to do so. Whatever be the risk tolerance of investors, 
         it should be documented and taken into account while making investing decisions.
       %p
@@ -77,13 +75,13 @@
           Short-Term Horizon:
         An investment horizon of a few days to 6 months is considered a short term horizon.
         Investors with short time horizons can consider holding cash in a high interest savings account or 
-        #{link_to 'fixed deposits',main_app.page_path('investment_education/fixed_deposits')}.
+        #{link_to 'fixed deposits',main_app.page_path('investment_education/investment-fixed-deposits')}.
       %p
         %b
           Medium-Term Horizon:
         The typical time horizon for such an investment is about 6 months  year to 2 years. A typical investment portfolio appropriate for a medium term horizon is a mix of
-        #{link_to 'stocks',main_app.page_path('investment_education/shares')},
-        #{link_to ' mutual funds', main_app.page_path('investment_education/mutual_funds')}
+        #{link_to 'stocks', main_app.page_path('investment_education/shares')},
+        #{link_to ' mutual funds', main_app.page_path('investment_education/mutual-funds-etf')}
         and some bonds.
       %p
         %b
@@ -104,9 +102,9 @@
     %section
       %h1 Step 6: Work on Asset Allocation
       %p
-        #{link_to 'Asset allocation', main_app.page_path('investment_education/where_to_invest')}
+        #{link_to 'Asset allocation', main_app.page_path('investment_education/where-to-invest')}
         is the process by which the investor decides how much is to be invested in each asset class i.e. stocks, fixed deposits, gold etc. Your ideal asset allocation also known as ideal investment mix is determined by your financial risk profile, needs and constraints.Our
-        #{link_to 'asset allocation tool', main_app.comprehensive_risk_profiler_path}
+        #{link_to 'asset allocation tool', main_app.edit_comprehensive_risk_profiler_path}
         can help you calculate at your ideal asset allocation.
       %p
         Once you know your ideal asset allocation/investment mix, you should try to stick to this asset mix unless there is a drastic change in your financial situation or market conditions.
@@ -140,24 +138,29 @@
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.Investingi_vs_Trading'), page_path('investment_education/investment_trading')
+        =link_to t('investment_education.Investingi_vs_Trading'), page_path('investment_education/investing-trading-shares')
       .article_next
         Next:
-        =link_to t('investment_education.Where_to_Invest'), page_path('investment_education/where_to_invest')
+        =link_to t('investment_education.Where_to_Invest'), page_path('investment_education/where-to-invest')
       #disqus_thread
   .extracontent
     .takeaway
       %h1 Take Away
       %ul
-        %li Security Selection involves choosing which securities e.g. stocks, bonds, etc to invest in and how much to invest in each security.
-        %li Depending on how much risk is being taken, selection strategies can be commonly divided into aggressive, balanced and defensive.
-        %li Fundamental Analysis and Technical Analysis are some of the approaches used to value securities.
+        %li Investment planning is the most important step in the investment planning process.
+        %li Outline your investment objectives.
+        %li Understand and document your risk tolerance.
+        %li Outline your needs and constraints.
+        %li Understand your tax implications.
+        %li Work on Asset Allocation.
+        %li Plan your response to unexpected changes in market conditions.
     .articles
       %h1 Articles
       %ul
-        %li=link_to "Stock Selection techniques – Using Stock Screeners", "http://finaticsonline.com/blog/2011/01/stock-selection-techniques-%E2%80%93-using-stock-screening-models/", html_options = {:target => "_blank"}
-        %li=link_to "Stock selection criteria",  "http://en.wikipedia.org/wiki/Stock_selection_criterion", html_options = {:target => "_blank"}
+        %li=link_to "Tips for investment planning", "http://www.rediff.com/money/2009/mar/30perfin-tips-for-investment-planning.htm", html_options = {:target => "_blank"}
+        %li=link_to "Systematic Investment Plan(SIP)", "http://www.onemint.com/2010/03/24/systematic-investment-plan/", html_options = {:target => "_blank"}
     .videos
       %h1 Videos
       %ul
-        %li=link_to "Choosing Good Investments", "http://video.cnbc.com/gallery/?video=781699708", html_options = {:target => "_blank"}
+        %li=link_to "SIP", "http://www.youtube.com/watch?v=uZnXinkypd8", html_options = {:target => "_blank"}
+        %li=link_to "The Investment Process", "http://www.youtube.com/watch?v=YKDTVHFkOsQ&feature=results_video&playnext=1&list=PLAD3E896E2B44E903", html_options = {:target => "_blank"}

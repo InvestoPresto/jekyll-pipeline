@@ -1,9 +1,11 @@
 
 .wrapper
   %article
-    %h1 Overview
-    = render :partial => 'layouts/facebook_recommend'
+    %h1 Shares, Mutual Funds, Fixed Deposits, Bonds and Gold : Types of Investments
     %section
+      = render :partial => 'layouts/facebook_recommend'
+    %section
+      %p In this article, we will go through the characteristics of shares(stocks),mutual funds, fixed deposits, bonds and  gold: the main investments available to the Indian investor.
       %ul
         %li
           %a{:href => "#fixed"} Fixed Deposits
@@ -23,17 +25,18 @@
         Investing in fixed deposits is probably the most common form of investment in India. A fixed
         deposit is a deposit made with a bank for a fixed period of time. The investor is usually not allowed
         to withdraw this money till the end of the period (known as term) without paying a penalty. The
-        interest rate paid on the deposit is pre decided at the beginning on the period and an investor has
+        interest rate paid on the deposit is pre decided at the beginning of the period and an investor has
         the option to withdraw interest either at regular periods or take a lump sum at maturity.
     %section
       %h1 How much do fixed deposits return?
       %p
         Fixed deposit returns vary over time. In early 2012, most banks offered between 8-10.5% p.a. for a 1 year term.
       %p
-        Unfortunately very few people understand the dynamics of investing in fixed deposits and forget that variables like tax and inflation affect real returns. 
+        Unfortunately very few people understand the dynamics of investing in fixed deposits and forget that variables like tax and inflation affect real returns.
         These underlying hidden costs can virtually erode all the returns you earn from them. The following illustration projects the returns for a 1 year fixed deposit.
     %section
-      %h1 Illustration
+      %p
+        %b Illustration
       %ul
         %li
           The average interest rate on fixed deposit is around 10%.
@@ -149,13 +152,13 @@
     %section
       %h1 How much does gold return?
       %p
-        Gold, returned X% over the last 5 years. Returns from gold tend to vary over the years and it is
+        Gold, returned 139.41% over the last 5 years. Returns from gold tend to vary over the years and it is
         possible that gold can lose value over certain periods. Gold returns are linked to the performance
         of Indian Rupee v/s the US Dollar since gold prices in international markets are quoted in US$.
         Investments in physical gold don’t pay dividends or interest. Thus, the only return you get from
         investing in gold, is price appreciation. Gold Mutual funds or ETFs may pay dividends.
     %section
-      %h1 How risky are gold?
+      %h1 How risky is gold?
       %p
         Theoretically, gold is just as risky as any other commodity. However, for all practical purposes in
         the Indian context, gold is quite safe. It is riskier than fixed deposits but safer than stocks.
@@ -166,7 +169,7 @@
         S&P in August 2011, in matter of 2 weeks, gold rallied almost 10% from approx. Rs 25,500 to Rs
         28,000(per 10 grams). Gold is not highly correlated to stocks, bonds or other assets. Hence it serves
         as a classic
-        #{link_to 'diversification', page_path('investment_education/diversification')}
+        #{link_to 'diversification',main_app.page_path('investment_education/investment-diversification')}
         asset.
     %section
       %h1 How can you invest in gold?
@@ -271,8 +274,8 @@
         price of shares are called capital gains.
       %p
         Stock returns vary widely. Stocks of different companies return different amounts of money and
-        this return is not fixed or known in advance. Stocks in general (Nifty) returned X% over the last 5
-        years and Y% over the last 10 years. In general, stocks return more than fixed deposits, bonds and
+        this return is not fixed or known in advance. Stocks in general (Nifty) returned 12.2% over the last 5
+        years and 440.27% over the last 10 years. In general, stocks return more than fixed deposits, bonds and
         real estate.
     %section
       %h1 How risky are shares / stocks ?
@@ -284,7 +287,8 @@
       %p
         This risk can be reduced through diversification, i.e. investing in many stocks instead of just 1 stock,
         to spread the risk. When investing, people often look for a rationale behind the market movements
-        but remember, in the short run markets tend to get driven by speculators and act irrationally.
+        but remember, in the short run markets tend to get driven by
+        #{link_to 'speculators and act irrationally',main_app.page_path('investment_education/share-market')}.
         However in the long run, the irrationality is ironed out and markets tend to trade at fair valuations.
         Example: During the 2008 subprime crisis, the Indian economy was one of the most robust
         economies. Yet the stock markets crashed from 20,800 (in January 2008) to 8,300 (50% decrease
@@ -317,24 +321,26 @@
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.invest_successfully'), page_path('investment_education/invest_successfully')
+        =link_to t('investment_education.How_to_Invest'), page_path('investment_education/smart-investments')
       .article_next
         Next:-
-        =link_to t('investment_education.investment_trading'), page_path('investment_education/investment_trading')
+        =link_to t('investment_education.investment_trading'), page_path('investment_education/investing-trading-shares')
   .extracontent
     .takeaway
       %h1 Take Away
       %ul
-        %li Returns can be considered compensation for taking on investment risk.
-        %li Investors seeking high returns from investments must be prepared to take on a high amount of risk.
+        %li Government bonds and Fixed Deposits at public banks are probably the safest investments.
+        %li Gold is a hedge against inflation and should be part of every portfolio.
         %li Risk can be classified as Systematic and Unsystematic risk.
-        %li Systematic Risk of an investment is associated with market risk that is inherent to all investments. This risk cannot be eliminated. 
-        %li Unsystematic Risk is the company or industry specific risk associated with an investment and is unique to it. This risk can be eliminated by diversifying your portfolio.				
+        %li Shares yield the highest return in the long term but are risky.
+        %li Mutual Funds offer you an easy way of investing in shares and bonds.
     .articles
       %h1 Articles
       %ul
-        %li No articles yet.
+        %li=link_to "Three types of Investments", "http://moneyover55.about.com/od/howtoinvest/a/investforincome.htm", html_options = {:target => "_blank"}
+        %li=link_to "Dangerous moves for first time investors", "http://www.investopedia.com/articles/basics/11/dangerous-moves-first-time-investors.asp", html_options = {:target => "_blank"}
     .videos
       %h1 Videos
       %ul
-        %li No videos yet
+        %li=link_to "Types of investments for beginners", "http://www.youtube.com/watch?v=5dhrzIMhYeI", html_options = {:target => "_blank"}
+        %li=link_to "Mutual Funds", "http://www.youtube.com/watch?v=fpcvJiO-rjk&feature=related", html_options = {:target => "_blank"}

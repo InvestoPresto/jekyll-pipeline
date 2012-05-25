@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Options I
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       =image_tag  "investment_education/options3.png"
       %p An option is a legally binding contract that gives the buyer the right but not the obligation to buy (or sell) a pre-determined asset at a pre-determined price on a pre-determined date. Conversely, the seller has the obligation to deliver that underlying asset at that pre-determined price at that pre-determined time. The underlying assets can be stocks,bonds, baskets of stocks,commodities etc.
@@ -69,7 +70,6 @@
         option) even if it means buying shares in the open market and delivering them at
         a loss. The option seller is rewarded for taking this risk in the form of the option
         premium.
-        
       =image_tag  "investment_education/options9.png"
     %section
       %h1 Trading:
@@ -157,10 +157,7 @@
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.futures2'), page_path('investment_education/futures2')
-      .article_next
-        Next:
-        =link_to t('investment_education.options2'), page_path('investment_education/options2')
+        =link_to t('investment_education.futures'), page_path('investment_education/futures')
       #disqus_thread
   .extracontent
     .takeaway
