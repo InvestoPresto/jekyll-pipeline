@@ -1,18 +1,13 @@
 .wrapper
   %article
-    %h1 How to invest successfully
+    %h1 Making Smart Investments
     %section
-      %h1 Practical investment strategies
+      = render :partial => 'layouts/facebook_recommend'
+    %section
       %p
-        Managing your hard earned money wisely is as tough as earning it and it is something that most investors
-        fail at either because of the lack of knowledge or because of the wrong attitude towards investing. Therefore, a
-        large number of investors in the stock markets end up making losses.
-      %p
-        In our education center we try to highlight some of the basic steps that you, as an investor, you should keep in
-        mind to safeguard your investments.
-      %p
-        %b Lesson 1:
-        Do not rely solely on advice. Do your own research.
+        Managing your hard earned money wisely is as tough as earning it and it is something that most investors fail at either because of the lack of knowledge or because of the wrong attitude towards investing. Therefore, a large number of investors in the share markets end up making losses.
+      %p Here are some of the basic steps that you, as an investor, you should keep in mind to safeguard your investments.
+      %h1 Tip number 1: Do not rely solely on advice. Do your own research.
       %p
         The most common mistake made by retail investors is that they tend to make most of their investments based
         on someone else’s advice. The advice could be from a friend, an uncle, a broker or even a “professional expert”.
@@ -33,12 +28,9 @@
         investments for a 30 year old crorepati who has no immediate liquidity needs.
       %p
         %b Lesson:
-        Back your investment with sufficient research and knowledge. Remember it is your hard earned money
-        that is at stake.
+        %snap Back your investment with sufficient research and knowledge. Remember it is your hard earned money that is at stake.
     %section
-      %p
-        %b Lesson 2:
-        Diversify, diversify, diversify !
+      %h1 Tip number 2: Diversify across shares (stocks) , gold and fixed deposits.
       %p
         Have you ever imagined having a wardrobe of all the same shirts or all the same trousers? I suppose not.
         The reasons are multiple but one of the underlying reasons is also that different types of weather conditions
@@ -62,6 +54,9 @@
         and stocks (shares), what you are essentially doing is safeguarding your portfolio from extreme swings in any
         market and thereby protecting the total value of your investments.
       =image_tag "investment_education/invest_successfully_graphs.png", :width => "560px"
+      %small
+        Source: WWW.TRADINGECONOMICS.COM
+    %section
       %p
         Notice in the above diagram, box numbers 1, 3 and 4 show a sudden rise in stock (shares) markets and a relative
         fall in bond markets. Similarly the phase marked in box 2 is when the stock (shares) markets completely collapsed
@@ -70,15 +65,13 @@
         In stock markets no 2 sectors exhibit negative correlation constantly. However some sectors like FMCG & Oil
         and Gas, Realty & I.T. exhibit low correlation towards each other and can provide diversification benefits.
       %p
-        Remember in the short term #{link_to 'markets tend to act irrationally'} and it is always advisable to safeguard your
+        Remember in the short term #{link_to 'markets tend to act irrationally',main_app.page_path('investment_education/share-market')} and it is always advisable to safeguard your
         investment.
       %p
         %b Lesson:
-        Do not put all your eggs in the same basket. Invest across asset classes, sectors and companies.
+        %snap Do not put all your eggs in the same basket. Invest across asset classes, sectors and companies.
     %section
-      %p
-        %b Lesson 3:
-        Do not invest everything in one shot. Invest in multiple phases.
+      %h1 Tip number 3: Do not invest everything in one shot. Invest in multiple phases.
       %p
         Can you imagine eating all that you can in one meal and surviving for the next 5 days? Of course not!
         Investments work similarly. To be a successful investor, it is essential that you make your investments in
@@ -93,52 +86,55 @@
       %p
         This strategy ensures that the losses that you incur in falling markets are far less than what you would have
         incurred had you bought all shares at once. This of course comes at a cost of reduced profits in a rising market.
-        Also #{link_to 'in short term markets are unpredictable and can act irrationally'}
+        Also #{link_to 'in short term markets are unpredictable and can act irrationally', main_app.page_path('investment_education/share-market')}
       %p
         %b Lesson:
-        Break your investment into chunks and invest over a period of time. A bird in hand is worth two in the
+        %snap Break your investment into chunks and invest over a period of time. A bird in hand is worth two in the
         bush.
     %section
-      %p
-        %b Lesson 4:
-        Planning and discipline
+      %h1 Tip number 4: Plan your investments and be disciplined.
       %p
         In the world of share markets it is extremely important that you stick to the original investment plan and do not
         get carried away by emotions. The original investment plan should have the following aspects covered.
       %ul
         %li
-          %b Write down the underlying reason for making an investment.
-          This will help you refine your investing
-          decision making process in the long run.
+          %p
+            %b Write down the underlying reason for making an investment.
+            This will help you refine your investing
+            decision making process in the long run.
         %li
-          %b Have specific target prices
-          i.e. prices at which you will sell your stocks and book profits.
+          %p
+            %b Have specific target prices
+            i.e. prices at which you will sell your stocks and book profits.
         %li
-          %b Have a strict stop loss
-          i.e. the price at which you will sell your stocks to avoid further losses.
+          %p
+            %b Have a strict stop loss
+            i.e. the price at which you will sell your stocks to avoid further losses.
       %p
         %b Write down the underlying reason for making an investment:
         An investor should always write down the reason
-        for that investment. For a stock, it may be because the company’s currently valuation is very low and its shares
+        for that investment. For a stock, it may be because the company’s current valuation is very low and its shares
         are available at a very cheap price or maybe the company is undergoing massive expansion and its shares might
         rise in future or maybe you expect the company has bid for a huge order and you expect the company to bag
         it The reason can be anything. You should write it down. Following are the advantages of writing down the
         underlying reason of making an investment:
       %ul
         %li
-          It helps you stay focused and not be driven by temporary fluctuations in markets. Example: You have
-          invested in ABC Ltd. expecting the company to announce a buy back in its forth coming meeting at a
-          huge premium to the current trading price. After a few days (much before the meeting) the company’s
-          share price is trading below your initial purchase price. A sense of panic might set in but if you fall back
-          and read your reason, it could be comforting to know that you are anticipating a jump in share price
-          only after the announcement is made in the meeting. Since the meeting is yet to take place, you can still
-          hold onto the shares.
+          %p
+            It helps you stay focused and not be driven by temporary fluctuations in markets. Example: You have
+            invested in ABC Ltd. expecting the company to announce a buy back in its forth coming meeting at a
+            huge premium to the current trading price. After a few days (much before the meeting) the company’s
+            share price is trading below your initial purchase price. A sense of panic might set in but if you fall back
+            and read your reason, it could be comforting to know that you are anticipating a jump in share price
+            only after the announcement is made in the meeting. Since the meeting is yet to take place, you can still
+            hold onto the shares.
         %li
-          Review your analysis: When you make a profit/loss from an investment, your reasoning will help you
-          figure out if your analysis was right or wrong. In case your investment has back fired and you incurred
-          losses, reviewing your decision would be really helpful to understand if your analysis was wrong or
-          it was because of some external factor that you did not consider. Periodic reviews would help you to
-          improve your analysis over time.
+          %p
+            Review your analysis: When you make a profit/loss from an investment, your reasoning will help you
+            figure out if your analysis was right or wrong. In case your investment has back fired and you incurred
+            losses, reviewing your decision would be really helpful to understand if your analysis was wrong or
+            it was because of some external factor that you did not consider. Periodic reviews would help you to
+            improve your analysis over time.
       %p
         A noted investor once mentioned that one of the primary reasons why retail investors fail to make money in
         markets is because they do not write the reason for making an investment and get lost in all the noise and
@@ -183,12 +179,9 @@
         discrepancies in the notes will help you evaluate your final decisions better.
       %p
         %b Lesson:
-        Record all your investments and base your decision on rationality and not greed/fear. He who follows his
-        investment plan strictly shall eventually prosper.
+        %snap Record all your investments and base your decision on rationality and not greed/fear. He who follows his investment plan strictly shall eventually prosper.
     %section
-      %p
-        %b Lesson 5:
-        Not enough follow up
+      %h1 Tip number 5: Follow up on your investments
       %p
         While cooking, have you ever noticed anyone mixing all the ingredients at once, leaving it to cook and expecting
         the stove to switch off automatically when the food is prepared? I suppose not. That would be a recipe for
@@ -199,28 +192,30 @@
         investment is never complete till you have sold it. Till then, you need to track your portfolio on regular basis.
       %p
         %b Lesson :
-        Follow your portfolio regularly to avoid ending up with a ‘burnt’ portfolio.
+        %span Follow your portfolio regularly to avoid ending up with a ‘burnt’ portfolio.
     %footer
       .article_next
         Next:-
-        =link_to t('investment_education.overview'), page_path('investment_education/overview')
+        =link_to t('investment_education.Types of Investments'), page_path('investment_education/investment-types')
       #disqus_thread
   .extracontent
     .takeaway
       %h1 Take Away
       %ul
-        %li Corporations or governments issue debt instruments when they need capital.
-        %li In return the debt instrument holder receives interest and principal payments at pre-specified dates. Examples are bonds, notes, certificates, etc.
-        %li Investors can directly deal with the issuer or on the secondary market through a broker.
-        %li Be aware of credit risk, interest rate risk and liquidity risk.
+        %li Do not rely solely on advice. Do your own research.
+        %li Diversify across shares (stocks) , gold and fixed deposits.
+        %li Do not invest everything in one shot. Invest in multiple phases.
+        %li Plan your investments and be disciplined.
+        %li Follow up on your investments.
     .articles
       %h1 Articles
       %ul
-        %li=link_to "Indian Debt Market", "http://business.mapsofindia.com/india-market/debt.html", html_options = {:target => "_blank"}
-        %li=link_to "Basics Of Bonds", "http://www.economywatch.com/bonds/", html_options = {:target => "_blank"}
-        %li=link_to "Bonds -Wikipedia", "http://en.wikipedia.org/wiki/Bond_%28finance%29", html_options = {:target => "_blank"}
+        %li=link_to "Wikihow-How To Invest ", "http://www.wikihow.com/Invest", html_options = {:target => "_blank"}
+        %li=link_to "How to invest in gold", "http://www.gold.org/investment/why_how_and_where/how_to_invest/", html_options = {:target => "_blank"}
+        %li=link_to "Kotak Securities", "http://www.kotaksecurities.com/aboutus/aboutkotak.html", html_options = {:target => "_blank"}
     .videos
       %h1 Videos
       %ul
-        %li=link_to "Introduction to Bonds", "http://www.youtube.com/watch?v=44cYyG0LSzQ&feature=relmfu", html_options = {:target => "_blank"}
-        %li=link_to "Relationship between bond prices and interest rates" "http://www.youtube.com/watch?v=kDRqSJIiTqU&feature=player_embedded", html_options = {:target => "_blank"}
+        %li=link_to "Burton Malkiel on investing", "http://www.youtube.com/watch?v=3oACFpS_t1Q", html_options = {:target => "_blank"}
+        %li=link_to "Warren Buffet on stocks", "http://www.youtube.com/watch?v=JQPhXFSnocw", html_options = {:target => "_blank"}
+        %li=link_to "Warren Buffet on financial planning", "http://www.youtube.com/watch?v=PHzs9keop5A&feature=related", html_options = {:target => "_blank"}

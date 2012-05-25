@@ -1,14 +1,15 @@
 .wrapper
   %article
     %h1 Bonds
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What is a bond?
       %p
         A bond is an instrument through which an investor lends a specific sum of money (face value of the bond)
         to the issuer of the bond. Bond issuers are usually companies and governments.
     %section
-      %h1 Difference between a bond and a loan?
+      %h1 Difference between a bond and a loan
       %p
         The main difference between a bond and a loan is that bonds are usually traded on an exchange and
         provide investors the flexibility to sell their bonds at their will.
@@ -47,13 +48,13 @@
         %li Interest rate
         %li Tax savings
         %li Liquidity
-      %h1 Credit Rating
+      %h1 Credit Rating of bonds
       %p
         An issuer is required to get the issue rated via credit rating agencies such as CRISIL, ICRA, CARE and Fitch.
         Based on the credit worthiness of the issuer and their ability to repay principal and interest on time, the
         agency issues a credit rating. We think anything above ‘A’ is considered investable class which essentially
         means that your capital is relatively safe. A rating of ‘AAA’ indicates highest degree of safety.
-      %h1 Interest Rate
+      %h1 Interest Rates offered by bonds
       %p
         Investors usually have the option to collect their interest either on regular basis at end of each year or
         cumulative at end of the maturity. The market interest rate is the interest rate that investors demand for
@@ -61,13 +62,13 @@
         combination of credit worthiness of the issuer and tenure of the bond issue. Usually, bonds with higher
         credit-rating offer relatively less interest as compared to bonds with lower credit-rating. Similarly the rate
         offered on bonds with shorter maturity is less than those with longer maturity.
-      %h1 Tax Savings
+      %h1 Tax Savings with bonds
       %p
         Many bonds offer tax benefits to their investors. NHAI bonds that were issued in January, 2012 carried
         a tax-free interest rate of 8.2%. Similarly by investing in infrastructure bonds of IFCI and REC that were
         issued in January-February, 2012, an investor could claim a deduction of Rs 20,000 from taxable income
         under Section 80 CCF. Not all bonds offer tax benefits.
-      %h1 Liquidity
+      %h1 Liquidity of bonds
       %p
         As mentioned above, some bonds (example: NHAI) are listed on secondary exchanges upon allotment
         itself while some bonds (IFCI bonds, REC bonds) have a fixed lock-in period of 5-7 years at end of which
@@ -78,7 +79,7 @@
         the prevailing market price. It is important to note that the bond might actually trade at a higher or lower
         price than its fair value. This would largely depend on the prevailing market conditions.
     %section
-      %h1 Illustration
+      %b Illustration
       %p
         Suppose the market interest rate is 7% and the bond that you hold offers an 8.5% interest rate. Since the
         bond you hold is offering a higher interest rate, a large number of investors would be willing to invest
@@ -111,19 +112,19 @@
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.Diversification'),page_path('investment_education/diversification')
+        =link_to t('investment_education.mutual_funds'),page_path('investment_education/mutual-funds-etf')
       .article_next
         Next:
-        =link_to t('investment_education.fixed_deposits'), page_path('investment_education/fixed_deposits')
+        =link_to t('investment_education.share_market'), page_path('investment_education/share-market')
       #disqus_thread
   .extracontent
     .takeaway
       %h1 Take Away
       %ul
-        %li Corporations or governments issue debt instruments when they need capital.
-        %li In return the debt instrument holder receives interest and principal payments at pre-specified dates. Examples are bonds, notes, certificates, etc.
-        %li Investors can directly deal with the issuer or on the secondary market through a broker.
-        %li Be aware of credit risk, interest rate risk and liquidity risk.
+        %li Corporations or governments issue bonds when they need capital.
+        %li In return the bond holder receives interest and principal payments at pre-specified dates.
+        %li Investors can directly deal with the bond issuer or on the secondary market through a broker.
+        %li Be aware of credit risk, interest rate risk and liquidity risk while investing in bonds.
     .articles
       %h1 Articles
       %ul
@@ -134,4 +135,4 @@
       %h1 Videos
       %ul
         %li=link_to "Introduction to Bonds", "http://www.youtube.com/watch?v=44cYyG0LSzQ&feature=relmfu", html_options = {:target => "_blank"}
-        %li=link_to "Relationship between bond prices and interest rates" "http://www.youtube.com/watch?v=kDRqSJIiTqU&feature=player_embedded", html_options = {:target => "_blank"}
+        %li=link_to "Relationship between bond prices and interest rates", "http://www.youtube.com/watch?v=kDRqSJIiTqU&feature=player_embedded", html_options = {:target => "_blank"}

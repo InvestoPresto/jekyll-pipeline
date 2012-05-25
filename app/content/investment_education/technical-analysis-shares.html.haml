@@ -1,7 +1,8 @@
 .wrapper
   %article
-    %h1 Technical Analysis
-    = render :partial => 'layouts/facebook_recommend'
+    %h1 Technical Analysis of shares
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What is Technical Analysis of shares?
       %p Technical analysis is a method of investment analysis in which future movements in the price of a security are predicted by examining some patterns or trends that are obtained from the analysis of past market data. Technical analysis differs from fundamental analysis in that it does not attempt to analyze companies, industries or economies but simply treats prices and volumes as sets of data with hidden patterns in them. It is concerned with the idea of predicting trends and price movements due to changes in the demand and supply in the market.
@@ -34,20 +35,25 @@
       %p There are three basic trends that analysts try to find when plotting charts. Analysts try to plot trend lines by attempting to identify a pattern in the peaks and troughs of price curves.
       %p A peak is the highest point on a curve before it begins to fall and a trough is simply the lowest point on a curve before it begins to move upwards. The three types of trend lines are the downtrends, uptrends and horizontal/sideways trends. Obviously, a downtrend will indicate a bearish outlook and an uptrend will indicate a bullish outlook. The horizontal trend is ambiguous in that it does not clearly indicate any definite direction, whether up or down.
       %b Downtrend:
+      =image_tag  "investment_education/Downtrend_Nifty.png"
       %p A downtrend (shown above) is characterized by a series of falling peaks and falling troughs. The trend line can be plotted joining up the series of falling peaks or troughs as shown by the red arrow. It is obvious that the trend is falling because each successive peak is lower than the previous peak. Similarly, each successive trough is lower than the previous trough.
       %b Uptrend:
+      =image_tag  "investment_education/Uptrend_Nifty.png"
       %p In the diagram, we see that an uptrend is characterized by a series of increasing peaks and increasing troughs. The plotted trend line is denoted by the red arrows on top of the peaks and below the troughs.
       %p In an uptrend, we will see that each successive peak is higher than the previous peak, and each successive trough lower than the previous trough.
       %b Horizontal Trend or Sideways Trend:
+      =image_tag  "investment_education/Horizontal_Trend_Nifty.png"
       %p The horizontal (or some say “sideways”) trend is characterized by a series of peaks and troughs that do not clearly show any direction, whether up or down. This trend shows ambiguity in the future direction of stock prices. This trend may indicate that the market is jittery, because prices are fluctuating up and down without indicating any particular direction. It may show that traders are currently unsure of the future direction in the economy and financial markets. Most people are probably taking a wait-and-see attitude.
     %section
       %h1 Technical Analysis Tools
       %ol
         %li
-          Technical Indicators: Technical indicators are mathematical values obtained from calculations involving price and volume data. For example, moving averages are weighted averages of security prices across a fixed time period, with weights determined by different weighting methods. Examples of moving averages are – simple moving averages, exponential moving averages etc. The calculation of technical indicators can get quite complex. Some other commonly used technical 1. indicators are: Relative Strength Index, Moving Average Convergence Divergence, Average Directional index etc.
+          %p
+            Technical Indicators: Technical indicators are mathematical values obtained from calculations involving price and volume data. For example, moving averages are weighted averages of security prices across a fixed time period, with weights determined by different weighting methods. Examples of moving averages are – simple moving averages, exponential moving averages etc. The calculation of technical indicators can get quite complex. Some other commonly used technical 1. indicators are: Relative Strength Index, Moving Average Convergence Divergence, Average Directional index etc.
         %li
-          Charts: Technical analysts tend to make heavy use of charts. They believe that visual patterns on charts repeat themselves over time. They attempt to identify such patterns and predict future movement of stock prices.
-          Some common chart patterns are – Head and shoulders pattern, ascending triangle pattern, descending triangle pattern etc. 
+          %p
+            Charts: Technical analysts tend to make heavy use of charts. They believe that visual patterns on charts repeat themselves over time. They attempt to identify such patterns and predict future movement of stock prices.
+            Some common chart patterns are – Head and shoulders pattern, ascending triangle pattern, descending triangle pattern etc. 
     %section
       %h1 How do traders use technical analysis?
       %p
@@ -57,10 +63,10 @@
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.fundamental analysis'), page_path('investment_education/fundamental-analysis-shares')
+        =link_to t('investment_education.fundamental_analysis'), page_path('investment_education/fundamental-analysis-shares')
       .article_next
         Next:
-        =link_to t('investment_education.sectors:banking'), page_path('investment_education/banking-sector-shares')
+        =link_to t('investment_education.Banking_Sector'), page_path('investment_education/banking-sector-shares')
       #disqus_thread
   .extracontent
     .takeaway

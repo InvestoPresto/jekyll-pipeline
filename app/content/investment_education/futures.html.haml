@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Futures
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What are futures?
       %p
@@ -56,7 +57,6 @@
         worth Rs.70,000 today as it represents 100 barrels of oil. However, their brokers allow them to invest with an initial
         margin of 7.14% (Rs.5,000) with a maintenance margin of 5.71%(Rs.4,000).
       %p On Day 2, the futures price closes at Rs.80.
-      
       %p Raj’s payoff : ( Rs.80 - Rs. 70) X 1000 = Rs. 10,000 (profit)
       %p Raj’s Day 2 broker account : Rs. 5000 + Rs. 10,000 = Rs.15,000
       %p Ravi’s payoff : (Rs. 70 - Rs. 80) X 1000 = - Rs. 10,000 (loss)
@@ -142,7 +142,7 @@
         =link_to t('investment_education.forwards'), page_path('investment_education/forwards')
       .article_next
         Next:
-        =link_to t('investment_education.futures2'), page_path('investment_education/futures2')
+        =link_to t('investment_education.options'), page_path('investment_education/options')
       #disqus_thread
   .extracontent
     .takeaway

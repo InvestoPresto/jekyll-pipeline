@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Real Estate Investments
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What is real estate?
       =image_tag  "investment_education/RealEstate1.png"
@@ -51,10 +52,10 @@
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.insurance_products'), page_path('investment_education/insurance_products')
+        =link_to t('investment_education.insurance_products'), page_path('investment_education/insurance-products')
       .article_next
         Next:
-        =link_to t('investment_education.foreign_exchange1'), page_path('investment_education/foreign_exchange1')
+        =link_to t('investment_education.foreign_exchange'), page_path('investment_education/foreign-exchange')
       #disqus_thread
   .extracontent
     .takeaway

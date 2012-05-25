@@ -2,6 +2,8 @@
   %article
     %h1 How to analyze IT sector shares
     %section
+      = render :partial => 'layouts/facebook_recommend'
+    %section
       %h1 What is information technology?
       %p
         Information Technology is the use of technology (usually computers) to store, process and analyze information. IT has huge applications in every single industry, from manufacturing to telecommunications; from banking to healthcare. IT is used to improve the productivity of individuals, processes and therefore companies. Extensive use of IT improves the profitability of companies and helps them grow faster that they would otherwise be able to.
@@ -46,7 +48,8 @@
           Net profit margin is an indicator of the profitability of the company. It is calculated as Net Profit/Sales. In order to attract new customers some companies actually cut down on their price. Though you might witness an increase in profits on a year-on-year basis, such a cut in prices is not sustainable over a long period of time and should be looked down upon negatively. Similarly an increase in net interest margin is a positive signal for its shares.
     %section
       .center_align
-        %b Performance of CNX IT Index
+        %small Performance of CNX IT Index
+      =image_tag  "investment_education/CNX_IT_Index.png"
       %table
         %tr
           %th.center_align{:colspan => 8}Yearly Returns of IT Stocks*
@@ -99,13 +102,12 @@
           %td 77.21%
           %td 21.97%
           %td 1.11%
-      .center_align
-        %small
-          * The above returns are adjusted for stock bonus and stock splits
+      %small
+        * The above returns are adjusted for stock bonus and stock splits
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.sectors : banking'), page_path('investment_education/banking-sector-shares')
+        =link_to t('investment_education.Banking_Sector'), page_path('investment_education/banking-sector-shares')
       .article_next
         Next:
         =link_to t('investment_education.articles'), page_path('investment_education/articles')
@@ -114,16 +116,13 @@
     .takeaway
       %h1 Take Away
       %ul
-        %li Stockholders usually receive a part of the company’s income as dividend, although some companies may not pay dividends regularly.
-        %li Total return on stocks is the sum of capital gains and dividends received.
-        %li Common stock and preferred stock are the two types of stock.
+        %li The IT sector has historically been a high growth and profitable.
+        %li The IT sector is very sensitive to the Exchange rate between the Rupee and the US Dollar.
     .articles
       %h1 Articles
       %ul
-        %li=link_to "Stocks -Wikipedia", "http://en.wikipedia.org/wiki/Stock", html_options = {:target => "_blank"}
+        %li=link_to "IT Sector in India", "http://en.wikipedia.org/wiki/Information_technology_in_India", html_options = {:target => "_blank"}
     .videos
       %h1 Videos
       %ul
-        %li=link_to "Introduction to Stocks", "http://www.youtube.com/watch?v=r0k3qmaIW5k", html_options = {:target => "_blank"}
-        %li=link_to "What it means to buy a company's stock", "http://www.youtube.com/watch?v=WvITkPn83gc&feature=player_embedded", html_options = {:target => "_blank"}
-        %li=link_to "Bonds vs. Stocks", "http://www.youtube.com/watch?v=rs1md3e4aYU", html_options = {:target => "_blank"}
+        %li=link_to "The Infosys story", "http://www.youtube.com/watch?v=vE15mp3zUQc", html_options = {:target => "_blank"}

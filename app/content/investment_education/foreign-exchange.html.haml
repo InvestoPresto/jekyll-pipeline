@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Foreign Exchange
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What does foreign exchange mean?
       =image_tag  "investment_education/ForeignExchange1.png"
@@ -90,7 +91,7 @@
         =link_to t('investment_education.real_estate_investment'), page_path('investment_education/real_estate_investment')
       .article_next
         Next:
-        =link_to t('foreign_exchange2'), page_path('investment_education/foreign_exchange2')
+        =link_to t('investment_education.forwards'), page_path('investment_education/forwards')
       #disqus_thread
   .extracontent
     .takeaway

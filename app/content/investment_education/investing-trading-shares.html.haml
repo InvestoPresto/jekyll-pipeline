@@ -1,52 +1,46 @@
 .wrapper
   %article
-    %h1 Investment vs Trading
-    = render :partial => 'layouts/facebook_recommend'
+    %h1 Investing v/s Trading in shares
     %section
-      %p In the financial markets the terms ‘Investing’ and ‘Trading’ are often used loosely and interchangeably.Both the activities have the same objective of making profits but the methodology involved is quite contrasting.
+      = render :partial => 'layouts/facebook_recommend'
+    %section
+      %p In the financial markets, the terms ‘Investing’ and ‘Trading’ are often used loosely and interchangeably.  Both the activities have the same objective of making profits but they are quite different in reality.
+    %section
+      %h1 What is the difference between investment and trading in shares?
       %p
-        Typically ‘Investors’ make their investments based on some fundamentals and are invested for a long
-        period of time varying from a year to 10-20 years. on the other hand, ‘Traders’ are more of speculators
-        and they play for a very short period of time where a position may last from a couple of seconds to a
-        few days. Their investments may be driven by a number of reasons some of which may be trading on the
-        basis of some news or expected news or for that matter trading on the basis of market momentum.
+        ‘Investors’ make their investments based on fundamental factors such as the long term profitability and growth potential of companies. They tend to stay invested over long periods of time ranging from 1 year to 20 years. On the other hand, ‘Traders’ are more of speculators and they trade over short periods of time ranging from a couple of minutes to a few days. Their investments are usually driven by a number of factors such as news/anticipated news or momentum gauged by technical analysis.
+    %section
+      %h1 What are the returns from trading and investing in shares?
       %p
-        Returns from investing in broad-based developed market indices over long periods (30 years +) tend to
-        be about 10-12 % p.a. Returns from trading vary significantly and could range from positive infinity to
-        eroding your capital completely. Speculative investments have often yielded over 100% in a single day,
-        just as they have also resulted in returns of minus 90% over a few hours.
+        Returns from investing in broad-based market indices over long periods (30 years +) tend to be about 15-20 % p.a. Returns from trading are extremely uncertain. You can potentially multiply your capital many-fold or can lose a lot more than you had invested in the first place (through futures and options). Speculative investments have often yielded over 100% in a single day, just as they have also resulted in returns of minus 100% over a few hours. 
       %p
         In the short term, markets are manipulated and driven by traders but over a long period, markets trade
         at their fair value and investors are often rewarded for making good bets.
     %section
-      %P Now let us look at Investing vs Trading from a retail investor’s perspective:
-      %ol
+      %h1 Should you invest or trade?
+      %p Now let us look at Investing vs Trading from a retail investor’s perspective:
+      %ul
         %li
           You are more likely to make money as an investor than as a trader.
         %li
           You are more likely to earn regular and consistent returns as an investor than as a trader.
         %li
-          Time involved in making investing decisions is much less than that in regular trading.
+          If you succeed at trading, you stand to earn really high rates of return over a short period of time which would outperform returns from investing. However, you could go bankrupt if you make bad trading decisions especially on futures and options. 
         %li
-          If you succeed at trading, you stand to earn really high rates of returns over a short period of
-          time which would outperform returns from investing by a huge margin.
-        %li
-          Trading requires vast market knowledge, immense discipline and also the ability to devoid
-          yourself from emotions. It is considered extremely stressful (average traders quit between the
-          age of 35-40 year) and requires a bit of luck also.
+          Trading requires sound market knowledge, immense discipline and the ability to manage your emotions in a detached manner. It is also considered extremely stressful (on an average, traders quit at the age of  35 ).
     %section
+      %h1 Editor’s take
       %P
-        In our view, as glamorous as it sounds, trading is best left alone for HNIs and extremely high risk takers.
-        You should concentrate more on investing. That will fetch you regular income and over a period of time
-        help you build a corpus. More importantly, more often than not, retailers stand to succeed as investors
-        than as traders.
+        In our view, as glamorous as it sounds, trading is best left for professionals with training and the necessary tools. You should concentrate on investing over periods not less than 1 year. That will fetch you regular income and over a period of time help you build a good capital base. More importantly, small investors are much more likely to succeed as investors than as traders. Remember – 
+        %b
+          Slow and steady wins the race.
     %footer
       .article_prev
         Prev:-
-        =link_to t('investment_education.overview'), page_path('investment_education/overview')
+        =link_to t('investment_education.Types_of_Investments'), page_path('investment_education/investment-types')
       .article_next
         Next:-
-        =link_to t('investment_education.risk_and_return'), page_path('investment_education/risk_and_return')
+        =link_to t('investment_education.Investment_Plan'), page_path('investment_education/investment-plan')
       #disqus_thread
   .extracontent
     .takeaway

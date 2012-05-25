@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Insurance Products
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What is insurance?
       %p
@@ -176,10 +177,10 @@
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.commodities'), page_path('investment_education/commodities')
+        =link_to t('investment_education.cash_equivalents'), page_path('investment_education/cash-equivalents')
       .article_next
         Next:
-        =link_to t('investment_education.real_estate_investments'), page_path('investment_education/real_estate_investment')
+        =link_to t('investment_education.real_estate_investments'), page_path('investment_education/real-estate-investment')
       #disqus_thread
   .extracontent
     .takeaway

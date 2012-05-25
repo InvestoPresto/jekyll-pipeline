@@ -1,7 +1,8 @@
 .wrapper
   %article
-    %h1 Shares
-    = render :partial => 'layouts/facebook_recommend'
+    %h1 Investing in shares
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What is a share (stock)?
       %p
@@ -23,14 +24,15 @@
         The share price of a company is largely dictated by the company’s performance. If the company is performing well, the share price goes up.
         Similarly if the company performs poorly the share price goes down. Apart from company’s performance, the share price is also influenced by the trend and sentiment of the market.
         A positive sentiment and upward trend usually help to push the price up while a negative sentiment and downward trend may push the shares price down. Read our article on
-        #{link_to 'fundamental analysis',main_app.page_path('investment_education/fundamental_analysis1')}
+        #{link_to 'fundamental analysis',main_app.page_path('investment_education/fundamental-analysis-shares')}
         to gain an insight on how to evaluate a company’s performance and
-        #{link_to 'what moves share markets',main_app.page_path('investment_education/share_market')}
+        #{link_to 'what moves share markets',main_app.page_path('investment_education/share-market')}
         to understand how market sentiments effects the share market.
     %section
       %h1 How much do shares return?
       %p
         Shares generally return more than bonds.Over the last 10 years, shares as an asset class has outperformed bonds and fixed deposits by a huge margin but its lags behind gold. Moreover the returns are subject to extreme volatility.
+    %section
       %table
         %tr
           %th Period
@@ -57,20 +59,21 @@
           %td 441.36%
           %td 761.91%
           %td N/A
+    %section
       .center_align
-        %b
+        %small
           10 year historical price of the Nifty
+      =image_tag  "investment_education/Shares_Nifty_Graph.png"
     %section
       %h1 How risky are shares?
       %p
         Shares as an asset class are perhaps the riskiest amongst all asset classes. Further if a person was to be involved in trading as opposed to investing, the risk increases all the more. Consider this: During the 2008 subprime crisis, in spite of the Indian economy being insulated from most of the global mess, in no more than 14 months the share markets declined by more than 50% from their January 2008 highs. Later when the panic settled down, the equity markets rose by 100% from their March 2009 lows. During this time gold traded in a range between X-Y while your fixed deposits would have yielded you a standard Z% return. Also while the overall index declined by a little more than 50%, there were several shares that declined by more than 80%. Similarly in the run up too, several shares increased by 200-300% from their lows. To shield yourself from such extreme volatility, it is important you 
-        #{link_to 'diversify', main_app.page_path('investment_education/diversification')}
-        your portfolio across several shares and sectors.
+        #{link_to 'diversify', main_app.page_path('investment_education/investment-diversification')} your portfolio across several shares and sectors.
     %section
       %h1 How to invest in shares?
       %p
         An investor can invest directly in shares of a company or through equity
-        #{link_to 'mutual funds and ETFs', main_app.page_path('investment_education/mutual_funds')}.
+        #{link_to 'mutual funds and ETFs', main_app.page_path('investment_education/mutual-funds-etf')}.
         As mentioned above, while investing in shares directly, it is important that you concentrate on diversifying your portfolio across shares and sectors. Another mix of asset classes within shares can are: large caps, midcaps and small caps.
       %p
         Mutual funds are collective pools of investments actively managed by professionals. There are several mutual funds dedicated towards investing in equities.  ETFs are passively managed investment pools that are designed to track the performance of certain index. Investing in mutual funds and ETFs, offer the advantage of diversification at a reduced cost.
@@ -83,10 +86,10 @@
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.Gold'), page_path('investment_education/gold')
+        =link_to t('investment_education.Gold'), page_path('investment_education/gold-investment')
       .article_next
         Next:
-        =link_to t('investment_education.Mutual_Funds'), page_path('investment_education/mutual_funds')
+        =link_to t('investment_education.Mutual_Funds'), page_path('investment_education/mutual-funds-etf')
       #disqus_thread
   .extracontent
     .takeaway

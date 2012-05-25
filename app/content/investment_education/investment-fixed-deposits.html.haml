@@ -1,12 +1,13 @@
 .wrapper
   %article
-    %h1 Fundamental Analysis II
-    = render :partial => 'layouts/facebook_recommend'
+    %h1 Investing in Fixed Deposits
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What is a Fixed deposit?
       %p A Fixed Deposit (also known as Term Deposit) colloquially referred to as “FD” is a form of investment in which an investor deposits his money with a bank for a fixed period of time at a predetermined interest rate. After the term of the deposit ends, the investor gets the principal amount along with any outstanding interest.  Fixed deposits are also known as term deposits.
     %section
-      %h What is the term of fixed deposits?
+      %h1 What is the term of fixed deposits?
       %p Fixed deposit terms range from 1 week to 10 years. However, terms of 1 year, 2 years and 5 years are the most popular.
     %section
       %h1 When is interest paid?
@@ -90,9 +91,9 @@
     %section
       %h1 What is the interest rate on fixed deposits?
       %p Returns on fixed deposit are typically less than those from bonds and shares. This is because fixed deposits are immune to market volatility, economic turmoil and offer assured returns. Interest rates offered on fixed deposits vary over time and are largely influenced by the actions of the RBI.  Over the last 10 years, returns of fixed deposits for a period of 1 year have varied from 4.00% (In 2003-2004) to 8.25% (in 2010-2011).
-      .center_align
-        %b Deposit Rate of Major Banks for Term deposits of more than 1 year maturity
       %table.center_align
+        %caption
+          Deposit Rate of Major Banks for Term deposits of more than 1 year maturity
         %tr
           %th.center_align
             Year
@@ -205,12 +206,15 @@
       %p
         If we take a view of a period of 20 years (1992-2011), returns form fixed deposits have exceeded those from the share markets. In 1992, had we invested equal sums of Rs 10,000 in shares and fixed deposits, fixed deposits would be worth Rs 55,740 today while shares (Nifty)  would be worth Rs 45,676.
       .center_align
-        %b
+        %caption
           20 Year's comparison of Share Return vs Fixed Deposit Returns
+      =image_tag  "investment_education/20years_stock_fixeddeposit_returns.png"
       %p
         However if we curtail the time period to 10 years (2002-2011), share market overwhelmingly outperforms fixed deposits. In 1992, had we invested an equal sum of Rs 10,000 in shares and fixed deposits, fixed deposits would be worth Rs 17,779 while shares would be worth a whopping Rs 51,856.
       .center_align
-        %b 10 Year's comparison of Share Returns vs Fixed Deposit Returns
+        %caption
+          10 Year's comparison of Share Returns vs Fixed Deposit Returns
+      =image_tag  "investment_education/10years_returns_graph.png"
       %p The above difference is because the share markets in India were stagnant between 1992 and 2002 and returned -11.92%. However after 2002 the share markets took off in a big way and returned 577.3% over the next 10 years.
     %section
       %h1 Tax aspects of Fixed Deposits
@@ -224,36 +228,29 @@
         Note: If you invest in a fixed deposit and claim tax benefit under 80C against it, you cannot break the fixed deposit before it matures.
     %section
       %h1 Editor’s take
-      %p If you are investing more than Rs 1 lakh in fixed deposits, try to spread your investment across different banks with no single investment over Rs 1 lakh. By doing this, you are ensuring that in the worst case scenario even if banks go bust your savings are insured.If you are looking to invest in a fixed deposit from the perspective of tax saving under Section 80c, be double sure about it because your investment is locked for a period of 5 years.
+      %p If you are investing more than Rs 1 lakh in fixed deposits, try to spread your investment across different banks with no single investment over Rs 1 lakh. By doing this, you are ensuring that in the worst case scenario even if banks go bust your savings are insured. If you are looking to invest in a fixed deposit from the perspective of tax saving under Section 80c, be double sure about it because your investment is locked for a period of 5 years.
 
 
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.fundamental_analysis1'), page_path('investment_education/fundamental_analysis1')
+        =link_to t('investment_education.Planning_your_Taxes'), page_path('investment_education/tax-planning')
       .article_next
         Next:
-        =link_to t('investment_education.technical_analysis'), page_path('investment_education/technical_analysis')
+        =link_to t('investment_education.Gold'), page_path('investment_education/gold-investment')
       #disqus_thread
   .extracontent
     .takeaway
       %h1 Take Away
       %ul
-        %li Fundamental Analysis helps in determining the actual value of a company.
-        %li Analysis involves financial health, industry outlook, competitive advantage, trends in the respective industries and economy as well as the quality of management.
-        %li One of the frameworks is Porter’s 5 five forces analysis.
+        %li Fixed Deposits in public banks are some of the safest investment options available.
+        %li Premature withdrawal of Fixed Deposits entail penalties.
+        %li The interest rate paid on Fixed Deposits varies with the maturity of the fixed deposit.
     .articles
       %h1 Articles
       %ul
-        %li=link_to "Dividend Discount Model (DDM)", "http://thismatter.com/money/stocks/valuation/dividend-discount-model.htm", html_options = {:target => "_blank"}
-        %li=link_to "Evaluating Stocks using Dividend Discount Model", "http://mylifedump.com/2008/01/04/evaluating-stocks-using-dividend-discount-model/", html_options = {:target => "_blank"}
-        %li=link_to "Discounted cash flow -Wikipedia", "http://en.wikipedia.org/wiki/Discounted_cash_flow", html_options = {:target => "_blank"}
-        %li=link_to "P/E Ratio:Tutorial", "http://www.investopedia.com/university/peratio/", html_options = {:target => "_blank"}
+        %li=link_to "Try our Fixed Deposit tool"
     .videos
       %h1 Videos
       %ul
-        %li=link_to "Introduction to the Dividend Discount Model (DDM)", "http://www.youtube.com/watch?v=ruQry3TWvQc", html_options = {:target => "_blank"}
-        %li=link_to "Stock Valuation using Dividend Discount Model", "http://www.youtube.com/watch?v=JLYtreQdVoU", html_options = {:target => "_blank"}
-        %li=link_to "Discounted cash flow Introduction", "http://www.youtube.com/watch?v=XUi9tGwtT1U&feature=related", html_options = {:target => "_blank"}
-        %li=link_to "Discounted Cash Flow: Tutorial", "http://www.youtube.com/watch?v=X73WplHHw4g&feature=related", html_options = {:target => "_blank"}
-        %li=link_to "Introduction to the Price-to-Earnings Ratio", "http://www.youtube.com/watch?v=cppxO67e6eo", html_options = {:target => "_blank"}
+        %li=link_to "Fixed Deposit Investment Advice", "http://www.youtube.com/watch?v=d2RxWNblH8o&feature=related", html_options = {:target => "_blank"}
