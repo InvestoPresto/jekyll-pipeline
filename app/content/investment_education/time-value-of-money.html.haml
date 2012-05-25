@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Time Value of Money
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 Abstract
       =image_tag "investment_education/TimeValueOfMoney1.png"
@@ -145,12 +146,9 @@
       %p The investment product is worth Rs. 6998.02 today.
       %p The concept of “Time Value of Money” is of paramount importance in finance. All securities are valued using this concept. You will need a financial calculator to help you use these concepts to real world situations.
     %footer
-      .article_prev
-        Prev:
-        =link_to t('investment_education.risk_and_return'), page_path('investment_education/risk_and_return')
       .article_next
         Next:
-        =link_to t('investment_education_diversification'), page_path('investment_education/diversification')
+        =link_to t('investment_education.risk_management'), page_path('investment_education/risk-management')
       #disqus_thread
   .extracontent
     .takeaway

@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Making Smart Investments
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %p
         Managing your hard earned money wisely is as tough as earning it and it is something that most investors fail at either because of the lack of knowledge or because of the wrong attitude towards investing. Therefore, a large number of investors in the share markets end up making losses.
@@ -201,18 +202,20 @@
     .takeaway
       %h1 Take Away
       %ul
-        %li Corporations or governments issue debt instruments when they need capital.
-        %li In return the debt instrument holder receives interest and principal payments at pre-specified dates. Examples are bonds, notes, certificates, etc.
-        %li Investors can directly deal with the issuer or on the secondary market through a broker.
-        %li Be aware of credit risk, interest rate risk and liquidity risk.
+        %li Do not rely solely on advice. Do your own research.
+        %li Diversify across shares (stocks) , gold and fixed deposits.
+        %li Do not invest everything in one shot. Invest in multiple phases.
+        %li Plan your investments and be disciplined.
+        %li Follow up on your investments.
     .articles
       %h1 Articles
       %ul
-        %li=link_to "Indian Debt Market", "http://business.mapsofindia.com/india-market/debt.html", html_options = {:target => "_blank"}
-        %li=link_to "Basics Of Bonds", "http://www.economywatch.com/bonds/", html_options = {:target => "_blank"}
-        %li=link_to "Bonds -Wikipedia", "http://en.wikipedia.org/wiki/Bond_%28finance%29", html_options = {:target => "_blank"}
+        %li=link_to "Wikihow-How To Invest ", "http://www.wikihow.com/Invest", html_options = {:target => "_blank"}
+        %li=link_to "How to invest in gold", "http://www.gold.org/investment/why_how_and_where/how_to_invest/", html_options = {:target => "_blank"}
+        %li=link_to "Kotak Securities", "http://www.kotaksecurities.com/aboutus/aboutkotak.html", html_options = {:target => "_blank"}
     .videos
       %h1 Videos
       %ul
-        %li=link_to "Introduction to Bonds", "http://www.youtube.com/watch?v=44cYyG0LSzQ&feature=relmfu", html_options = {:target => "_blank"}
-        %li=link_to "Relationship between bond prices and interest rates", "http://www.youtube.com/watch?v=kDRqSJIiTqU&feature=player_embedded", html_options = {:target => "_blank"}
+        %li=link_to "Burton Malkiel on investing", "http://www.youtube.com/watch?v=3oACFpS_t1Q", html_options = {:target => "_blank"}
+        %li=link_to "Warren Buffet on stocks", "http://www.youtube.com/watch?v=JQPhXFSnocw", html_options = {:target => "_blank"}
+        %li=link_to "Warren Buffet on financial planning", "http://www.youtube.com/watch?v=PHzs9keop5A&feature=related", html_options = {:target => "_blank"}

@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 How to analyze IT sector shares
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What is information technology?
       %p
@@ -115,16 +116,13 @@
     .takeaway
       %h1 Take Away
       %ul
-        %li Stockholders usually receive a part of the company’s income as dividend, although some companies may not pay dividends regularly.
-        %li Total return on stocks is the sum of capital gains and dividends received.
-        %li Common stock and preferred stock are the two types of stock.
+        %li The IT sector has historically been a high growth and profitable.
+        %li The IT sector is very sensitive to the Exchange rate between the Rupee and the US Dollar.
     .articles
       %h1 Articles
       %ul
-        %li=link_to "Stocks -Wikipedia", "http://en.wikipedia.org/wiki/Stock", html_options = {:target => "_blank"}
+        %li=link_to "IT Sector in India", "http://en.wikipedia.org/wiki/Information_technology_in_India", html_options = {:target => "_blank"}
     .videos
       %h1 Videos
       %ul
-        %li=link_to "Introduction to Stocks", "http://www.youtube.com/watch?v=r0k3qmaIW5k", html_options = {:target => "_blank"}
-        %li=link_to "What it means to buy a company's stock", "http://www.youtube.com/watch?v=WvITkPn83gc&feature=player_embedded", html_options = {:target => "_blank"}
-        %li=link_to "Bonds vs. Stocks", "http://www.youtube.com/watch?v=rs1md3e4aYU", html_options = {:target => "_blank"}
+        %li=link_to "The Infosys story", "http://www.youtube.com/watch?v=vE15mp3zUQc", html_options = {:target => "_blank"}

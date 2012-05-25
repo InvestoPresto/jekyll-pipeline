@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Gold as an investment
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What is a gold?
       %p
@@ -87,16 +88,18 @@
     .takeaway
       %h1 Take Away
       %ul
-        %li Stocks represent claims on the issuing company’s earnings and assets.
-        %li This after the company pays their debt holders and taxes, thereby making stock riskier compared to debt instruments.
-        %li The stock of a company can be bought at the time of Initial Public Offering or in the secondary market.
+        %li Gold is a hedge against inflation.
+        %li Gold is a safe haven in times of uncertainty.
+        %li Gold is quoted in US dollars globally and is subject to currency risk.
+        %li Gold has performed very well in India over the last decade.
     .articles
       %h1 Articles
       %ul
-        %li=link_to "Stocks -Wikipedia", "http://en.wikipedia.org/wiki/Stock", html_options = {:target => "_blank"}
+        %li=link_to "Gold as an investment", "http://en.wikipedia.org/wiki/Gold_as_an_investment", html_options = {:target => "_blank"}
+        %li=link_to "World Gold council on gold as an investment", "http://www.gold.org/investment/", html_options = {:target => "_blank"}
+        %li=link_to "Rules for investing in gold", "http://www.usagold.com/gildedopinion/hathawayten.html", html_options = {:target => "_blank"}
     .videos
       %h1 Videos
       %ul
-        %li=link_to "Introduction to Stocks", "http://www.youtube.com/watch?v=r0k3qmaIW5k", html_options = {:target => "_blank"}
-        %li=link_to "What it means to buy a company's stock", "http://www.youtube.com/watch?v=WvITkPn83gc&feature=player_embedded", html_options = {:target => "_blank"}
-        %li=link_to "Bonds vs. Stocks", "http://www.youtube.com/watch?v=rs1md3e4aYU", html_options = {:target => "_blank"}
+        %li=link_to "Investing in precious metals", "http://www.youtube.com/watch?v=maFKBNVArKA", html_options = {:target => "_blank"}
+        %li=link_to "Robert Kiyosaki on gold", "http://www.youtube.com/watch?v=SNcMUHwK4bE&feature=related", html_options = {:target => "_blank"}

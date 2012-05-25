@@ -4,8 +4,8 @@
     %h1 Shares, Mutual Funds, Fixed Deposits, Bonds and Gold : Types of Investments
     %section
       = render :partial => 'layouts/facebook_recommend'
-    %p In this article, we will go through the characteristics of shares(stocks),mutual funds, fixed deposits, bonds and  gold: the main investments available to the Indian investor.
     %section
+      %p In this article, we will go through the characteristics of shares(stocks),mutual funds, fixed deposits, bonds and  gold: the main investments available to the Indian investor.
       %ul
         %li
           %a{:href => "#fixed"} Fixed Deposits
@@ -329,16 +329,18 @@
     .takeaway
       %h1 Take Away
       %ul
-        %li Returns can be considered compensation for taking on investment risk.
-        %li Investors seeking high returns from investments must be prepared to take on a high amount of risk.
+        %li Government bonds and Fixed Deposits at public banks are probably the safest investments.
+        %li Gold is a hedge against inflation and should be part of every portfolio.
         %li Risk can be classified as Systematic and Unsystematic risk.
-        %li Systematic Risk of an investment is associated with market risk that is inherent to all investments. This risk cannot be eliminated. 
-        %li Unsystematic Risk is the company or industry specific risk associated with an investment and is unique to it. This risk can be eliminated by diversifying your portfolio.				
+        %li Shares yield the highest return in the long term but are risky.
+        %li Mutual Funds offer you an easy way of investing in shares and bonds.
     .articles
       %h1 Articles
       %ul
-        %li No articles yet.
+        %li=link_to "Three types of Investments", "http://moneyover55.about.com/od/howtoinvest/a/investforincome.htm", html_options = {:target => "_blank"}
+        %li=link_to "Dangerous moves for first time investors", "http://www.investopedia.com/articles/basics/11/dangerous-moves-first-time-investors.asp", html_options = {:target => "_blank"}
     .videos
       %h1 Videos
       %ul
-        %li No videos yet
+        %li=link_to "Types of investments for beginners", "http://www.youtube.com/watch?v=5dhrzIMhYeI", html_options = {:target => "_blank"}
+        %li=link_to "Mutual Funds", "http://www.youtube.com/watch?v=fpcvJiO-rjk&feature=related", html_options = {:target => "_blank"}

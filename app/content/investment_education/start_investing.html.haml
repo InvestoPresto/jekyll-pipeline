@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Start Investing
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 Buying/Selling stocks:
       =image_tag  "investment_education/broker1.png", :height => "150px", :width => "250px"

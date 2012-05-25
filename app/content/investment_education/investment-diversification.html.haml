@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Diversifying investments across sectors and asset classes
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What is Diversification?
       %p Diversification is the process of reducing the overall risk of the portfolio by investing in several securities, usually across different asset classes, instead of investing in a single security.
@@ -10,9 +11,9 @@
       %h1 How does diversification work?
       %p
         Returns from different securities are not perfectly correlated. That means that the returns from different investments are not the same. If a stock goes up on a given day, it is not necessary that every other stock goes up on that day. Some will go up while others will go down. Losses from one security are usually offset by gains in other securities and vice versa. Therefore, if a portfolio consists of many securities, the portfolio returns vary less, thus making it less risky. For best results, investors should spread their investment portfolios across different asset classes (e.g.
-        #{link_to 'stocks',main_app.page_path('investment_education/stocks1')},
-        #{link_to 'fixed deposits',main_app.page_path('investment_education/fixed_deposits')},
-        #{link_to 'gold',main_app.page_path('investment_education/gold')},
+        #{link_to 'stocks',main_app.page_path('investment_education/shares')},
+        #{link_to 'fixed deposits',main_app.page_path('investment_education/investment-fixed-deposits')},
+        #{link_to 'gold',main_app.page_path('investment_education/gold-investment')},
         ) because securities of different asset classes are not well correlated i.e. tend not to move together.
       %p
         The principle behind diversification is that the variance(measure of riskiness)of a basket of assets that are not perfectly correlated with one another is always less than the weighted average of the sums of the individual variances. The mathematical expressions involved are beyond the scope of this article. Small investors like us need not get into the details. The important thing to note here is that the riskiness of a diversified portfolio is always less than the riskiness of a concentrated portfolio.

@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Investing in shares
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What is a share (stock)?
       %p
@@ -62,6 +63,7 @@
       .center_align
         %small
           10 year historical price of the Nifty
+      =image_tag  "investment_education/Shares_Nifty_Graph.png"
     %section
       %h1 How risky are shares?
       %p

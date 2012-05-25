@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Risk Management
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What is risk management?:
       %p Risk management is the process by which investors manage their exposure to the different types of risk that their investments carry, such as market risk, currency risk and interest rate risk. It is a rather complex process which involves identifying the sources of risks, measuring them and managing them with the appropriate tools. Understanding the need for risk management is rather simple, however the difficulty lies in actually applying it. Below are some basic risk management techniques that you can use while investing.
@@ -39,10 +40,10 @@
     %footer
       .article_prev
         Prev:
-        =link_to t('investment_education.track_your_investment'), page_path('investment_education/track_investment')
+        =link_to t('investment_education.risk_management'), page_path('investment_education/risk-management')
       .article_next
         Next:
-        =link_to t('investment_education.reduce_your_taxes'), page_path('investment_education/reduce_taxes')
+        =link_to t('investment_education.cash_equivalents'), page_path('investment_education/cash-equivalents')
       #disqus_thread
   .extracontent
     .takeaway

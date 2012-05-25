@@ -1,7 +1,8 @@
 .wrapper
   %article
     %h1 Share market : What drives it?
-    = render :partial => 'layouts/facebook_recommend'
+    %section
+      = render :partial => 'layouts/facebook_recommend'
     %section
       %h1 What affects share prices?
       %p
@@ -118,16 +119,17 @@
     .takeaway
       %h1 Take Away
       %ul
-        %li Stockholders usually receive a part of the company’s income as dividend, although some companies may not pay dividends regularly.
-        %li Total return on stocks is the sum of capital gains and dividends received.
-        %li Common stock and preferred stock are the two types of stock.
+        %li Share markets are affected by market sentiment.
+        %li Macroeconomic factors such as GDP growth, interest rates and inflation affect the share markets.
+        %li FII inflows and the strength of the rupee also affect the share markets.
     .articles
       %h1 Articles
       %ul
-        %li=link_to "Stocks -Wikipedia", "http://en.wikipedia.org/wiki/Stock", html_options = {:target => "_blank"}
+        %li=link_to "Our Shares page", main_app.stocks_path
+        %li=link_to "BSE's website", "http://www.bseindia.com/", html_options = {:target => "_blank"}
+        %li=link_to "How the Share market works", "http://money.howstuffworks.com/personal-finance/financial-planning/stocks.htm", html_options = {:target => "_blank"}
     .videos
       %h1 Videos
       %ul
-        %li=link_to "Introduction to Stocks", "http://www.youtube.com/watch?v=r0k3qmaIW5k", html_options = {:target => "_blank"}
-        %li=link_to "What it means to buy a company's stock", "http://www.youtube.com/watch?v=WvITkPn83gc&feature=player_embedded", html_options = {:target => "_blank"}
-        %li=link_to "Bonds vs. Stocks", "http://www.youtube.com/watch?v=rs1md3e4aYU", html_options = {:target => "_blank"}
+        %li=link_to "Cartoon on the share market", "http://www.youtube.com/watch?v=5KD5B7WZthQ", html_options = {:target => "_blank"}
+
