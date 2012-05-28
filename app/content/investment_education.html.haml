@@ -1,21 +1,57 @@
 -#= render_navigation :expand_all => true, :level => 2, :renderer => DescriptiveList
+.articles
+  .navigation.preparing-to-invest
+    =image_tag "investment_education/smart_investments.jpg"
+    %h1 Preparing to Invest
+    %ul
+      %li
+        %h2= link_to 'How to invest', main_app.page_path('investment_education/smart-investments')
+      %li
+        %h2= link_to 'Types Of Investemnts', main_app.page_path('investment_education/investment-types')
+      %li
+        %h2= link_to 'Investing vs Trading', main_app.page_path('investment_education/investing-trading-shares')
 
-%ul.level_2
-  %li#navigation-investment_concepts
-    = link_to page_path('investment_education/risk_and_return') do
-      %span Investment Concepts
-  %li#navigation-investment_process
-    = link_to page_path('investment_education/analyzing_needs') do
-      %span Investment Process
-  %li#navigation-investment_analysis
-    = link_to page_path('investment_education/fundamental_analysis1') do
-      %span Investment Analysis
-  %li#navigation-investment_types
-    = link_to page_path('investment_education/cash_equivalents') do
-      %span Types of Investments
-  %li#navigation-advanced_investments
-    = link_to page_path('investment_education/foreign_exchange1') do
-      %span Advanced Investments
-  %li#navigation-jargon_demystified
-    = link_to page_path('investment_education/glossary') do
-      %span Jargon Demystified
+  .navigation.before-you-invest
+    =image_tag "investment_education/InvestmentConcepts_1.jpg"
+    %h1 Before you Invest
+    %ul
+      %li
+        %h2= link_to 'Where to Invest', main_app.page_path('investment_education/where-to-invest')
+      %li
+        %h2= link_to 'Diversification', main_app.page_path('investment_education/investment-diversification')
+      %li
+        %h2= link_to 'Planning your Taxes', main_app.page_path('investment_education/tax-planning')
+  .navigation.investment-types
+    =image_tag "investment_education/InvestmentTypes_1.jpg"
+    %h1 Types of Investments
+    %ul
+      %li
+        %h2= link_to 'Fixed Deposits', main_app.page_path('investment_education/investment-fixed-deposits')
+      %li
+        %h2= link_to 'Gold', main_app.page_path('investment_education/gold-investment')
+      %li
+        %h2= link_to 'Shares', main_app.page_path('investment_education/shares')
+      %li
+        %h2= link_to 'Mutual Funds and ETFs', main_app.page_path('investment_education/mutual-funds-etf')
+      %li
+        %h2= link_to 'Bonds', main_app.page_path('investment_education/bonds')
+  .navigation.investing-in-shares
+    =image_tag "investment_education/InvestmentAnalysis.jpg"
+    %h1 Investing in Shares
+    %ul
+      %li
+        %h2= link_to 'Share Market', main_app.page_path('investment_education/share-market')
+      %li
+        %h2= link_to 'Fundamental Analysis', main_app.page_path('investment_education/fundamental-analysis-shares')
+      %li
+        %h2= link_to 'Technical Analysis', main_app.page_path('investment_education/technical-analysis-shares')
+      %li
+        %h2= link_to 'Banking Sector', main_app.page_path('investment_education/banking-sector-shares')
+      %li
+        %h2= link_to 'IT Sector', main_app.page_path('investment_education/it-sector')
+  .navigation.futher-reading
+    =image_tag "investment_education/InvestmentEducation.png", {:style => "height: 200px;"}
+    %h1 Further Reading
+    %ul
+      %li
+        %h2= link_to 'Articles', main_app.page_path('investment_education/articles')
