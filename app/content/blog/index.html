@@ -10,7 +10,7 @@ title: Blog
     <span class="date">{{post.date}}</span>
   </p>
   <div class="content">
-    {{ post.content }}
+    {{ post.content | split:'<!---abstract-->' | first }}
   </div>
 {% endfor %}
 
