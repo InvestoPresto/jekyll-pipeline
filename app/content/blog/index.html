@@ -2,16 +2,19 @@
 title: Blog
 ---
 
+<div class= "postarea">
 {% for post in paginator.posts %}
 
    <!-- here add you post markup -->
-   <h1><a href="/pages{{ post.url }}">{{ post.title }}</a></h1>
-   <p class="author">
-    <span class="date">{{post.date}}</span>
-  </p>
-  <div class="content">
-    {{ post.content | split:'<!---abstract-->' | first }}
-  </div>
+   <article>
+     <h1><a href="/pages{{ post.url }}">{{ post.title }}</a></h1>
+     <p class="author">
+      <span class="date">{{ post.date | date_to_long_string }}</span>
+    </p>
+    <div class="content">
+      {{ post.content | split:'<!---abstract-->' | first }}
+    </div>
+  </article>
 {% endfor %}
 
 <!-- Pagination links -->
@@ -27,4 +30,15 @@ title: Blog
   {% else %}
     <span class="next ">Next</span>
   {% endif %}
+</div>
+</div>
+<div class= "extracontent">
+   <div class= "takeaway">
+    <h1> Best of Investopresto </h1>
+    <ul>
+      <li> Stockholders usually receive a part of the company’s income as dividend, although some companies may not pay dividends regularly.</li>
+      <li> Total return on stocks is the sum of capital gains and dividends received.</li>
+      <li> Common stock and preferred stock are the two types of stock.</li>
+    </ul>
+  </div>
 </div>
