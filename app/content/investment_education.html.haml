@@ -16,6 +16,8 @@
     %h1 Before you Invest
     %ul
       %li
+        %h2= link_to 'Investment Plan', main_app.page_path('investment_education/investment-plan')
+      %li
         %h2= link_to 'Where to Invest', main_app.page_path('investment_education/where-to-invest')
       %li
         %h2= link_to 'Diversification', main_app.page_path('investment_education/investment-diversification')
@@ -35,6 +37,10 @@
         %h2= link_to 'Mutual Funds and ETFs', main_app.page_path('investment_education/mutual-funds-etf')
       %li
         %h2= link_to 'Bonds', main_app.page_path('investment_education/bonds')
+      %li
+        %h2= link_to 'Life Insurance', main_app.page_path('investment_education/life-insurance-policies')
+      %li
+        %h2= link_to 'Sip', main_app.page_path('investment_education/sip')
   .navigation.investing-in-shares
     =image_tag "investment_education/InvestmentAnalysis.jpg"
     %h1 Investing in Shares
